@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    background: red;
+    width: 100%;
+
+    &__wrapper {
+        display: flex;
+        padding: 10px;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        a {
+            img {
+                margin: 0;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        &__nav {
+            ul {
+                display: flex;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    margin: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        margin: 0 10px;
+                    }
+                }
+
+            }
+        }
+
+        &__cta {
+            button {
+                background: none;
+                border: none;
+            }
+        }
+    }
+    
+}
