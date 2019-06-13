@@ -5,4 +5,18 @@
         max-width: 940px;
         margin: 0 auto;
     }
+
+    &--home {
+        min-height: 100vh;
+        background: grey;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        
+        .hero__wrapper__content {
+            
+        }
+
+    }
+
 }
