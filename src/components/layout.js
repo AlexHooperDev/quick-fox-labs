@@ -5,36 +5,34 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import Footer from '../components/footer'
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Modal from '../components/modal'
 import "./layout.scss"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          <main>{children}</main>
-          <Footer />
-        </div>
-      </>
-    )}
-  />
-)
+function Layout({ children }) {
+  const [modal, toggleModal] = useState(0);
+
+  function contactModal() {
+    toggleModal(modal ? false : true);
+  }
+
+  return (
+    <>
+      <Header contactModal={contactModal} />
+      <div>
+        <main>
+          {modal ? <Modal contactModal={contactModal} /> : ''}
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

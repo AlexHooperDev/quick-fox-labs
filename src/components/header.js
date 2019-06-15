@@ -4,7 +4,7 @@ import React from "react"
 
 import './header.scss'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ contactModal }) => (
   <header className="header">
     <div className="header__wrapper">
       <div className="header__logo">
@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
           </ul>
         </nav>
         <div className="header__links__cta">
-          <button>Contact us</button>
+          <button onClick={() => contactModal()}>Contact us</button>
         </div>
       </section>
     </div>

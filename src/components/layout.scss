@@ -620,3 +620,21 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+// Custom CSS
+
+.section {
+  padding: 50px 0;
+
+  &__wrapper--col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__wrapper, &__wrapper--col, &__wrapper--simple {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
