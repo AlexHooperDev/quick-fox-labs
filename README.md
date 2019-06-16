@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/36cb646f-8ba2-4f9e-8c64-696672528ab8/deploy-status)](https://app.netlify.com/sites/quizzical-babbage-ed1ade/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
