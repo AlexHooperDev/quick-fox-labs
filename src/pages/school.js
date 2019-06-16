@@ -5,7 +5,12 @@ import Layout from "../components/layout"
 import Hero from '../components/hero'
 import SimpleP from '../components/simpleP'
 import SEO from "../components/seo"
-import ThreeColBlock from "../components/threeColBlock";
+import ThreeColBlock from "../components/threeColBlock"
+import TwoColCTA from "../components/twoColCTA"
+import TrainingStructure from '../components/trainingStructure'
+import GatedCTA from '../components/gatedCTA'
+import BannerCTA from '../components/bannerCTA'
+import GivingBack from '../components/givingBack'
 
 const School = () => (
   <Layout>
@@ -36,6 +41,49 @@ const School = () => (
         copy: 'See More'
       }
     ]} />
+    <TwoColCTA
+      title="Why do this course?"
+      cta1Title="Train yourself"
+      cta1Copy="You’re a fledgling business that doesn’t have the budget or need for a full time marketer and you don’t need a full service agency right now."
+      cta1Button="Take the quiz "
+      cta2Title="Train your team"
+      cta2Copy="Stop recruiting and train your team – upskill, growth, career ladder. Further your current knowledge beyond what you can learn on the job, to become a true master of digital marketing."
+      cta2Button="Take the quiz"
+    />
+    <TrainingStructure
+      title="Training structure"
+      data={[
+        {
+          icon: '/',
+          copy: '5 days per week, 3 hours per day'
+        },
+        {
+          icon: '/',
+          copy: 'Training is unique and hands-on: with guides to kick start your projects and office hours with our trainers to check, help and guide as you learn'
+        },
+        {
+          icon: '/',
+          copy: 'We work with you to go from ‘what is digital marketing’ to your first leads/sales'
+        },
+        {
+          icon: '/',
+          copy: 'And once you’ve finished, you’ll join our Alumni of Quick Foxes, where we will post updated learnings and you can ask questions of other graduates and our team'
+        },
+      ]}
+    />
+    <GatedCTA title="What you'll learn" copy="Some copy should go here telling you about this gated PDF content" />
+    <BannerCTA title="Questions?" copy="Book a call with one of us and we will answer them" link1="/" link2="/quiz" />
+    <GivingBack
+      quote="There is a special place in hell for women who do not help other women"
+      author="Madeleine Albright"
+      copy="As female founders, we want to help other female founders on their road to success. So, per course, we offer two free spots to women doing incredible things in business. To find out more about this, <contact us>."
+    />
+    <BannerCTA
+      title="Want more?"
+      copy="Keep up to date with the latest digital marketing news and tips..."
+      link1="/blog"
+      link2="/"
+    />
   </Layout>
 )
 
