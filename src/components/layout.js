@@ -23,7 +23,7 @@ function Layout({ children }) {
   return (
     <>
       <Header contactModal={contactModal} />
-      <div>
+      <div className={`${modal ? 'noScroll' : ''}`}>
         <main>
           {modal ? <Modal contactModal={contactModal} /> : ''}
           {children}
