@@ -1,3 +1,7 @@
 .col {
   flex-basis: 33%;
+  &--cta,
+  &--2 {
+    flex-basis: 50%;
+  }
 }
