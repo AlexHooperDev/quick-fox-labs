@@ -1,11 +1,13 @@
 .header {
     position: fixed;
-    background: red;
+    background: #cfe0e8;
     width: 100%;
+    box-shadow: -1px 3px 11px rgba(0, 0, 0, 0.11);
+    z-index: 999;
 
     &__wrapper {
         display: flex;
-        padding: 10px;
+        padding: 10px 20px;
         flex-flow: row;
         justify-content: space-between;
     }
@@ -14,12 +16,25 @@
         a {
             img {
                 margin: 0;
+                width: 160px;
+                padding: 5px 15px;
             }
         }
     }
 
     &__links {
         display: flex;
+        align-items: center;
+
+        &__cta {
+            button {
+                background: #ff6952;
+                color: #fff;
+                font-size: 13px;
+                letter-spacing: 1.5px;
+                padding: 5px 10px;
+            }
+        }
 
         &__nav {
             ul {
@@ -31,19 +46,16 @@
                     margin: 0;
 
                     a {
+                        font-family: 'P22 Underground CY Pro';
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-size: 14px;
                         text-decoration: none;
-                        color: #000;
-                        margin: 0 10px;
+                        color: #1a1b38;
+                        margin: 0 15px;
                     }
                 }
 
-            }
-        }
-
-        &__cta {
-            button {
-                background: none;
-                border: none;
             }
         }
     }

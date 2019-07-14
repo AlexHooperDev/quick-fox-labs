@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Logos({ title, copy, brands }) {
     return (
-        <section className="section">
+        <section className="section section--d-blue">
             <div className="section__wrapper">
-                <h2>
+                <h2 className="white">
                     {title}
                 </h2>
                 <p>

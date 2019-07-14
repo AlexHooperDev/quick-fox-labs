@@ -3,10 +3,10 @@ import Button from './button'
 
 export default function BannerCTA({ title, copy, link1, link2 }) {
     return (
-        <section className="section">
+        <section className="section section--cta">
             <div className="section__wrapper--col">
                 <div className="section__wrapper__content">
-                    <h2>
+                    <h2 className="no-underline">
                         {title}
                     </h2>
                     <p>
@@ -14,8 +14,8 @@ export default function BannerCTA({ title, copy, link1, link2 }) {
                     </p>
                 </div>
                 <div className="section__wrapper__cta">
-                    <Button link={link1} copy="Take the quiz" />
-                    <Button link={link2} copy="Book a meeting" />
+                    <Button banner link={link1} copy="Take the quiz" />
+                    <Button banner2 link={link2} copy="Book a meeting" />
                 </div>
             </div>
         </section>

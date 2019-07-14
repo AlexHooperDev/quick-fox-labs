@@ -640,6 +640,14 @@ main {
 .section {
   padding: 50px 0;
 
+  &--l-blue {
+    background: #cfe0e8;
+  }
+
+  &--d-blue {
+    background: #3d8ca3;
+  }
+
   &__wrapper--col {
     display: flex;
     align-items: center;
@@ -651,8 +659,169 @@ main {
     }
   }
 
+  &--cta {
+    .section {
+      &__wrapper {
+        &__content {
+          max-width: 280px;
+        }
+      }
+    }
+    h2 {
+      padding-top: 20px;
+      font-size: 47px;
+    }
+
+    h2:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: 2px;
+      background: #1a1c38;
+    }
+  }
+
   &__wrapper, &__wrapper--col, &__wrapper--simple {
     max-width: 940px;
     margin: 0 auto;
+
+    &__content {
+      position: relative;
+    }
+
+  }
+
+  &__wrapper {
+    .list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin: 50px 0;
+      li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          max-height: 70px;
+          max-width: 80px;
+          margin: 0;
+        }
+        p {
+          font-family: "Rubik";
+          font-weight: 500;
+          padding-left: 20px;
+        }
+      }
+    }
   }
 }
+
+h1 {
+  font-family: 'P22 Underground CY Pro';
+  font-size: 68px;
+}
+
+h2 {
+  position: relative;
+  font-family: 'P22 Underground CY Pro';
+  font-size: 40px;
+  padding: 0 0 10px 0;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #ff6952;
+    bottom: 0;
+    left: 0;
+  }
+
+  &.white {
+    color: #fff;
+  }
+
+  &.no-underline {
+    &:after {
+      content: none;
+    }
+  }
+
+}
+
+h3 {
+  font-family: 'P22 Underground CY Pro';
+}
+
+h4 {
+  font-family: 'Rubik';
+  font-weight: normal;
+}
+
+h5 {
+  font-family: 'Rubik';
+  font-weight: normal;
+}
+
+p {
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 16px;
+}
+
+button {
+  font-family: 'Proxima Nova Rg';
+  text-transform: uppercase;
+}
+
+// Fonts
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/rubik/Rubik-Light.eot');
+  src: url('../assets/fonts/rubik/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/rubik/Rubik-Regular.woff2') format('woff2'),
+      url('../assets/fonts/rubik/Rubik-Regular.woff') format('woff'),
+      url('../assets/fonts/rubik/Rubik-Regular.ttf') format('truetype'),
+      url('../assets/fonts/rubik/Rubik-Regular.svg#Rubik-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/rubik/Rubik-Light.eot');
+  src: url('../assets/fonts/rubik/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/rubik/Rubik-Light.woff2') format('woff2'),
+      url('../assets/fonts/rubik/Rubik-Light.woff') format('woff'),
+      url('../assets/fonts/rubik/Rubik-Light.ttf') format('truetype'),
+      url('../assets/fonts/rubik/Rubik-Light.svg#Rubik-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../assets/fonts/proxima/ProximaNova-Regular.eot');
+  src: url('../assets/fonts/proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/proxima/ProximaNova-Regular.woff2') format('woff2'),
+      url('../assets/fonts/proxima/ProximaNova-Regular.woff') format('woff'),
+      url('../assets/fonts/proxima/ProximaNova-Regular.ttf') format('truetype'),
+      url('../assets/fonts/proxima/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'P22 Underground CY Pro';
+  src: url('../assets/fonts/p22/P22UndergroundCYPro-Demi.eot');
+  src: url('../assets/fonts/p22/P22UndergroundCYPro-Demi.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/p22/P22UndergroundCYPro-Demi.woff2') format('woff2'),
+      url('../assets/fonts/p22/P22UndergroundCYPro-Demi.woff') format('woff'),
+      url('../assets/fonts/p22/P22UndergroundCYPro-Demi.ttf') format('truetype'),
+      url('../assets/fonts/p22/P22UndergroundCYPro-Demi.svg#P22UndergroundCYPro-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

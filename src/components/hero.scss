@@ -1,5 +1,5 @@
 .hero {
-    background: rgb(212, 212, 212);
+    background: #fff;
 
     &__wrapper {
         max-width: 940px;
@@ -7,16 +7,35 @@
     }
 
     &--home {
-        min-height: 100vh;
-        background: grey;
+        min-height: calc(100vh + 77.7px);
         display: flex;
         flex-flow: column;
         justify-content: center;
-        
-        .hero__wrapper__content {
-            
-        }
 
+        .hero {
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                min-width: 940px; // to delete
+
+                &__content {
+                    max-width: 400px;
+                    h1 {
+                        font-size: 68px;
+                    }
+                    h2 {
+                        font-size: 22px;
+                        font-family: 'Rubik';
+                        font-weight: 300;
+                    }
+                }
+
+                &__art {
+                    width: 50%;
+                }
+            }
+        }
     }
 
 }

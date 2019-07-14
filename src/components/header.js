@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from '../assets/qfl-logo.svg';
 
 import './header.scss'
 
@@ -11,7 +12,7 @@ const Header = ({ contactModal }) => (
         <Link
           to="/"
         >
-          <img src="" alt="Quick Fox Labs" />
+          <img src={logo} alt="Quick Fox Labs" />
         </Link>
       </div>
       <section className="header__links">
