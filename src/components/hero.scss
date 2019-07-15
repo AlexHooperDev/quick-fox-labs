@@ -20,18 +20,21 @@
                 min-width: 940px; // to delete
 
                 &__content {
+                    transition: all 0.4s;
                     max-width: 400px;
                     h1 {
                         font-size: 68px;
                     }
                     h2 {
-                        font-size: 22px;
+                        font-size: 20px;
+                        line-height: 27px;
                         font-family: 'Rubik';
                         font-weight: 300;
                     }
                 }
 
                 &__art {
+                    transition: all 0.4s 0.3s;
                     width: 50%;
                 }
             }

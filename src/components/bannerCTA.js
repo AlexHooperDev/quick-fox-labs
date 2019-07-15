@@ -1,11 +1,15 @@
 import React from 'react';
 import Button from './button'
+import makeVisible from '../hooks/makeVisible'
 
 export default function BannerCTA({ title, copy, link1, link2 }) {
+
+    const [bodyContent, isVisible] = makeVisible();
+
     return (
-        <section className="section section--cta">
+        <section className="section section--cta" ref={bodyContent}>
             <div className="section__wrapper--col">
-                <div className="section__wrapper__content">
+                <div className="section__wrapper__content" style={{ opacity: `${isVisible ? '1' : '0'}`, transform: `translate3d(${isVisible ? '0%' : '-10%'} ,0, 0)` }}>
                     <h2 className="no-underline">
                         {title}
                     </h2>
@@ -14,8 +18,8 @@ export default function BannerCTA({ title, copy, link1, link2 }) {
                     </p>
                 </div>
                 <div className="section__wrapper__cta">
-                    <Button banner link={link1} copy="Take the quiz" />
-                    <Button banner2 link={link2} copy="Book a meeting" />
+                    <Button banner link={link1} copy="Take the quiz" style={{ opacity: `${isVisible ? '1' : '0'}`, transform: `translate3d(0, ${isVisible ? '0%' : '-30%'}, 0)` }} />
+                    <Button banner2 link={link2} copy="Book a meeting" style={{ opacity: `${isVisible ? '1' : '0'}`, transform: `translate3d(0, ${isVisible ? '0' : '30%'}, 0)` }} />
                 </div>
             </div>
         </section>

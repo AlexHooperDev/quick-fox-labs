@@ -1,6 +1,7 @@
 .cta-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 button {
@@ -29,23 +30,34 @@ button {
 
       &--main {
         background: #ff6952;
-        width: 180px;
+        width: 190px;
         border: none;
+        line-height: 17px;
+        padding: 15px 0px;
 
         a {
           color: #fff;
+          font-size: 13px;
         }
 
       }
 
       &--secondary {
-        width: 180px;
+        width: 190px;
         background: none;
         border: none;
         border-bottom: 2px solid #ff6952;
+        line-height: 17px;
+        padding: 15px 0px;
+
+        a {
+          font-size: 13px;
+        }
+
       }
 
       &--banner {
+        transition: 0.4s 0.5s;
         background: #ffdd57;
         border: none;
         clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -53,6 +65,7 @@ button {
       }
 
       &--banner-secondary {
+        transition: 0.4s 0.5s;
         background: #ffdd57;
         border: none;
         clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);

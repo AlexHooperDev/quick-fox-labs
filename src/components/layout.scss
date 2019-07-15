@@ -688,12 +688,20 @@ main {
     margin: 0 auto;
 
     &__content {
+      transition: all 0.4s;
       position: relative;
     }
 
   }
 
   &__wrapper {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+    transition: 0.6s;
+    &--visible {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
     .list {
       display: flex;
       justify-content: space-between;

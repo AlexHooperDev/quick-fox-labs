@@ -1,3 +1,21 @@
 .footer {
+  &__wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    &__contact {
+      color: #fff;
+    }
+    &__location {
+      color: #fff;
+    }
+    &__links {
+      color: #fff;
+    }
+  }
   background: #1a1c38;
+
+
 }

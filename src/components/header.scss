@@ -1,6 +1,7 @@
 .header {
     position: fixed;
-    background: #cfe0e8;
+    background: #fff;
+    border-bottom: 4px solid #ff6952;
     width: 100%;
     box-shadow: -1px 3px 11px rgba(0, 0, 0, 0.11);
     z-index: 999;
@@ -27,8 +28,10 @@
         align-items: center;
 
         &__cta {
+            margin-left: 20px;
             button {
                 background: #ff6952;
+                border: none;
                 color: #fff;
                 font-size: 13px;
                 letter-spacing: 1.5px;

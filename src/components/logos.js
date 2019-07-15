@@ -1,9 +1,13 @@
 import React from 'react'
+import makeVisible from '../hooks/makeVisible'
 
 export default function Logos({ title, copy, brands }) {
+
+    const [bodyContent, isVisible] = makeVisible();
+
     return (
-        <section className="section section--d-blue">
-            <div className="section__wrapper">
+        <section className="section section--d-blue" ref={bodyContent}>
+            <div className={`section__wrapper ${isVisible ? 'section__wrapper--visible' : ''}`}>
                 <h2 className="white">
                     {title}
                 </h2>
