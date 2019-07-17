@@ -1,0 +1,10 @@
+.brands {
+  margin: 50px 0 0;
+  display: flex;
+  justify-content: space-around;
+  &__item {
+    color: #fff;
+    font-size: 68px;
+    font-family: 'Rubik';
+  }
+}

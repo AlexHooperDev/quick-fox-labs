@@ -21,6 +21,18 @@ export default function WhatWeDo({ title, subtitle, points }) {
                         <span> “Digital marketing costs a lot, right?” </span>
                         <Typist.Backspace count={40} delay={2000} />
                         <span> “I have no idea where to start” </span>
+                        <Typist.Backspace count={32} delay={2000} />
+                        <span> "I know something needs fixing but I don't know what" </span>
+                        <Typist.Backspace count={54} delay={2000} />
+                        <span> “Digital marketing costs a lot, right?” </span>
+                        <Typist.Backspace count={40} delay={2000} />
+                        <span> “I have no idea where to start” </span>
+                        <Typist.Backspace count={32} delay={2000} />
+                        <span> "I know something needs fixing but I don't know what" </span>
+                        <Typist.Backspace count={54} delay={2000} />
+                        <span> “Digital marketing costs a lot, right?” </span>
+                        <Typist.Backspace count={40} delay={2000} />
+                        <span> “I have no idea where to start” </span>
                     </Typist>
                 </div>
                 <p>

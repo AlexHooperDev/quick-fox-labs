@@ -37,7 +37,7 @@ const IndexPage = () => (
     <Logos
       title="And some of the results..."
       copy="We work with some very clever people. Here’s just a few of them:"
-      brands={[{ name: 'microsoft' }, { name: 'apple' }, { name: 'tesla' },]} />
+      brands={[{ name: 'LOGO' }, { name: 'LOGO' }, { name: 'LOGO' },]} />
     <BannerCTA
       title="Ready to get started?"
       copy="Take our quiz and we'll give you an idea of cost and ROI right away."

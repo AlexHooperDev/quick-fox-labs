@@ -646,6 +646,11 @@ main {
 
   &--d-blue {
     background: #3d8ca3;
+    .section__wrapper {
+      p {
+        color: #fff;
+      }
+    }
   }
 
   &__wrapper--col {

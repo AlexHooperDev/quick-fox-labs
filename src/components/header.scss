@@ -36,6 +36,11 @@
                 font-size: 13px;
                 letter-spacing: 1.5px;
                 padding: 5px 10px;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: #1a1b38;
+                }
             }
         }
 

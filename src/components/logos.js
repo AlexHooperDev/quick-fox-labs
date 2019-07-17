@@ -1,5 +1,6 @@
 import React from 'react'
 import makeVisible from '../hooks/makeVisible'
+import './logos.scss';
 
 export default function Logos({ title, copy, brands }) {
 

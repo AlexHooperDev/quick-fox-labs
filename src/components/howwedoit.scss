@@ -9,7 +9,12 @@
       transition: all 0.4s;
       filter: drop-shadow(9px 6px 0px #ff6952);
       &--right {
+      filter: drop-shadow(-9px 6px 0px #ff6952);
       order: 2;
+      .process__item__content__inner {
+        clip-path: polygon(10% 0%, 100% 1%, 100% 100%, 10% 100%, 0% 50%);
+        padding-left: 40px;
+      }
     }
     &__inner {
       clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
