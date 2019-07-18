@@ -5,14 +5,46 @@
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    h2 {
+      color: #3d8ca3;
+    }
+    h4 {
+      font-family: 'P22 Underground CY Pro';
+      color: #3d8ca3;
+    }
+    p {
+      margin: 0;
+      color: #8788ab;
+    }
     &__contact {
       color: #fff;
+      ul {
+        margin: 20px 0;
+        list-style: none;
+        display: flex;
+        li {
+          margin: 0 10px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
     }
     &__location {
       color: #fff;
     }
     &__links {
       color: #fff;
+      ul {
+        columns: 2;
+        list-style: none;
+        font-family: "rubik";
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: #8788ab;
+      }
     }
   }
   background: #1a1c38;
