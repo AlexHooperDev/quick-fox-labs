@@ -1,5 +1,6 @@
 import React from 'react'
 import Process from './process'
+import Stepper from './stepper'
 import './howwedoit.scss'
 import makeVisible from '../hooks/makeVisible'
 
@@ -16,7 +17,8 @@ export default function HowWeDoIt({ title, subtitle, points }) {
                 <p>
                     {subtitle}
                 </p>
-                <Process points={points} />
+                {/* <Process points={points} /> */}
+                <Stepper steps={points} />
             </div>
         </section>
     )

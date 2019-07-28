@@ -1,0 +1,103 @@
+.stepper {
+  display: flex;
+  flex-flow: column;
+  margin: 80px 0px 0;
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    height: 370px;
+    width: 88%;
+    margin: 0 auto 40px;
+
+    &__item {
+      width: 350px;
+      left: 50%;
+      transform: translate(-50%);
+      margin: 0;
+      position: absolute;
+    }
+    img {
+      transition: all 0.3s ease-in-out 0.4s;
+    }
+    p {
+      width: 100%;
+      margin: 0px auto;
+      font-size: 19px;
+      text-align: center;
+      color: rgb(55, 127, 148);
+      font-weight: 500;
+      transition: all 0.3s ease-in-out 0.6s;
+
+    }
+  }
+  
+  .step-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__line {
+    z-index: 1;
+    width: 90%;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 83%;
+    transform: translate(-50%, 50%);
+    &__progress {
+      position: absolute;
+      background: #ff6952;
+      z-index: 3;
+      height: 100%;
+      width: 100%;
+      transition: all 0.5s;
+    }
+    &__outline {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #e0e0e0;
+      z-index: 2;
+    }
+  }
+
+  .step {
+    z-index: 2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    &__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1c38;
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s 0.4s;
+      &:hover {
+      transition-delay: 0s;
+      transform: scale(1.2);
+      }
+      span {
+        text-align: center;
+        font-family: "Rubik";
+        font-weight: 900;
+      }
+    }
+    &__name {
+      h2 {
+        margin-top: 20px;
+        font-size: 24px;
+        font-family: "Rubik";
+        transition: all 0.3s 0.4s;
+      }
+    }
+  }
+}

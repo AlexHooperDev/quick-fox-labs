@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     background: #fff;
-    border-bottom: 4px solid #ff6952;
+    border-bottom: 2px solid #ff6952;
     width: 100%;
     box-shadow: -1px 3px 11px rgba(0, 0, 0, 0.11);
     z-index: 999;
@@ -30,7 +30,7 @@
         &__cta {
             margin-left: 20px;
             button {
-                background: #ff6952;
+                background: #1a1b38;;
                 border: none;
                 color: #fff;
                 font-size: 13px;
@@ -39,7 +39,8 @@
                 transition: all 0.3s;
 
                 &:hover {
-                    background: #1a1b38;
+                    transform: translate3d(0, -3px, 0);
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
                 }
             }
         }
@@ -54,6 +55,23 @@
                     margin: 0;
 
                     a {
+                        &:after {
+                            content: '';
+                            height: 2px;
+                            width: 0%;
+                            background: #3d8ca3;
+                            position: absolute;
+                            bottom: -5px;
+                            left: 50%;
+                            transform: translate3d(-50%, 0%, 0);
+                            transition: all 0.3s;
+                        }
+                        &:hover {
+                            &:after {
+                                width: 100%;
+                            }
+                        }
+                        position: relative;
                         font-family: 'P22 Underground CY Pro';
                         text-transform: uppercase;
                         letter-spacing: 1px;
