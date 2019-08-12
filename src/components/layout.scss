@@ -653,6 +653,10 @@ main {
     }
   }
 
+  &--no-width {
+    padding: 0;
+  }
+
   &__wrapper--col {
     display: flex;
     align-items: center;
@@ -707,13 +711,20 @@ main {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
+    &--no-width {
+      max-width: unset;
+      margin: 0;
+    }
     .list {
       display: flex;
       justify-content: space-between;
       align-items: center;
       list-style: none;
       margin: 50px 0;
+      flex-wrap: wrap;
       li {
+        flex-basis: 28%;
+        margin-bottom: 50px;
         width: 100%;
         display: flex;
         align-items: center;

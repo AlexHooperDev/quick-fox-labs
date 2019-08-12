@@ -1,11 +1,75 @@
 .brands {
-  margin: 50px 0 0;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
   &__item {
+    transform: translate3d(100%, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 105px 140px;
     color: #fff;
     font-size: 68px;
     line-height: normal;
     font-family: 'Rubik';
+    transition: transform 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h3 {
+      font-size: 40px;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    h4 {
+      margin-bottom: 10px;
+      color: #d6d6d6;
+    }
+    &--visible {
+      transform: translate3d(0, 0, 0);
+    }
+    &--prev {
+      transform: transalte3d(-100%, 0, 0);
+    }
+    &--next {
+      transform: translate3d(100%, 0, 0);
+    }
+
   }
+
+  &__controls {
+    position: absolute;
+    width: 95%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    z-index: 2;
+    transform: translateY(50%);
+    bottom: 50%;
+    button {
+      outline: none;
+      height: 40px;
+      border: none;
+      background: none;
+      padding: 0;
+      &:nth-of-type(2) {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      img {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+      &:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+      }
+  }
+}
+
+.prev {
+  transform: translateX(-100%);
+}
 }

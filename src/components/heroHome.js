@@ -22,19 +22,19 @@ export default function HeroHome({ header, copy }) {
                     <h1>{header}</h1>
                     <div className="quote--typed">
                         <Typist>
-                            <span>"I need to reach new audiences"</span>
-                            <Typist.Backspace count={24} delay={3000} />
-                            <span> more quality leads"</span>
-                            <Typist.Backspace count={19} delay={3000} />
-                            <span> results fast"</span>
-                            <Typist.Backspace count={13} delay={3000} />
-                            <span> to start small and scale"</span>
-                            <Typist.Backspace count={26} delay={3000} />
-                            <span> more quality leads"</span>
-                            <Typist.Backspace count={19} delay={3000} />
-                            <span> results fast"</span>
-                            <Typist.Backspace count={13} delay={3000} />
-                            <span> to start small and scale"</span>
+                            <span>"How do some events get new leads every day?"</span>
+                            <Typist.Backspace count={25} delay={3000} />
+                            <span>sell out events?"</span>
+                            <Typist.Backspace count={17} delay={3000} />
+                            <span>reach niche audiences?"</span>
+                            <Typist.Backspace count={23} delay={3000} />
+                            <span>double their reach?"</span>
+                            <Typist.Backspace count={20} delay={3000} />
+                            <span>sell out events?"</span>
+                            <Typist.Backspace count={17} delay={3000} />
+                            <span>reach niche audiences?"</span>
+                            <Typist.Backspace count={23} delay={3000} />
+                            <span>double their reach?"</span>
                         </Typist>
                     </div>
                     <h2 className="no-underline">{copy}</h2>

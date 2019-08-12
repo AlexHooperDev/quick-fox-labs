@@ -8,7 +8,6 @@ export default function Stepper({ steps }) {
 
   useEffect(() => {
     setStepPercentage(activeStep / (steps.length - 1) * 100);
-    console.log(activeStep, steps.length);
   }, [activeStep]);
 
   return (
