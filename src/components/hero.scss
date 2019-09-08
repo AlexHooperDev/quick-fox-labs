@@ -11,6 +11,7 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
+        margin-bottom: 5vw;
 
         .hero {
             &__wrapper {
@@ -46,6 +47,44 @@
                 &__art {
                     transition: all 0.4s 0.3s;
                     width: 50%;
+                }
+            }
+        }
+    }
+
+    &--normal {
+        padding-top: 79px;
+        padding-bottom: 4vw;
+        .hero__wrapper {
+            height: 100%;
+            padding: 100px 25px;
+
+            &__fox {
+                position: absolute;
+                right: -140px;
+                top: 13%;
+                img {
+                    height: 370px;
+                    opacity: 0.3;
+                }
+            }
+
+            &__content {
+                h1 {
+                    margin-bottom: 0px;
+                }
+
+                h5 {
+                    color: #ff6952;
+                    letter-spacing: 3px;
+                    font-size: 22px;
+                    font-family: "Proxima Nova Rg";
+                    font-weight: 900;
+                    margin-bottom: 10px
+                }
+
+                p {
+                    width: 590px;
                 }
             }
         }

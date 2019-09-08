@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './button.scss'
 
-export default function Button({ link, copy, main, secondary, banner, banner2, base, style }) {
+export default function Button({ link, copy, main, secondary, banner, banner2, base, product, style }) {
     return (
         <button className={
-            `cta${base ? '--base' : ''}${banner ? '--banner' : ''}${banner2 ? '--banner-secondary' : ''}${main ? '--main' : ''}${secondary ? '--secondary' : ''}`}
+            `cta${base ? '--base' : ''}${banner ? '--banner' : ''}${banner2 ? '--banner-secondary' : ''}${main ? '--main' : ''}${secondary ? '--secondary' : ''}${product ? '--product' : ''}`}
             style={{ ...style }}
         >
             <Link to={link}>

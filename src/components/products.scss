@@ -1,0 +1,114 @@
+.product-carousel {
+  padding: 50px 0;
+
+  .slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .slick-prev {
+    left: -45px;
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+  }
+  
+  .slick-next {
+    right: -45px;
+    transform: rotate(180deg);
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+  }
+
+  .slick-slide {
+    opacity: 0.8;
+    transform: scale(0.9);
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: all 0.4s;
+  }
+
+  .slick-current {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: column;
+    background: #fff;
+    border-top: 4px solid #ff6952;
+    padding: 20px;
+    height: 450px;
+    border-radius: 10px;
+    &__upper {
+      border-bottom: 1px solid #eaeaea;
+      display: flex;
+      flex-flow: column;
+      h3 {
+        font-size: 16px;
+        text-align: center;
+        font-family: "Proxima Nova Rg";
+        background: #ff6952;
+        margin: 0 auto 20px;
+        padding: 10px 15px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 13px;
+        border-radius: 5px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        font-family: "Proxima Nova Rg";
+        color: #398098;
+        margin: 0;
+      }
+      h5 {
+        font-size: 12px;
+        text-align: center;
+        color: #bdbdbd;
+        margin-top: 5px;
+      }
+    }
+    &__lower {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      padding-top: 5px;
+      ul {
+        margin: 0;
+        li {
+          line-height: 13px;
+          margin: 20px 0;
+          list-style: none;
+          color: #2b6173;
+          span {
+            font-family: "Rubik";
+            font-size: 13px;
+            font-weight: 300;
+            b {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

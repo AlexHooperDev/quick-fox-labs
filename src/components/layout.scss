@@ -638,15 +638,49 @@ main {
 }
 
 .section {
+  position: relative;
   padding: 50px 0;
 
   &--l-blue {
+    &:before {
+      content: url('../assets/wave-l-blue.svg');
+      position: absolute;
+      top: -17vw;
+      height: auto;
+      width: 100%;
+    }
     background: #cfe0e8;
+    padding: 100px 0 50px;
   }
 
   &--d-blue {
-    background: #3d8ca3;
+    background: #1a1c38;
     .section__wrapper {
+      h2,
+      p {
+        color: #fff;
+      }
+    }
+  }
+
+  &--products {
+    background: #1a1c38;
+
+    &:before {
+      content: url('../assets/wave.svg');
+      position: absolute;
+      top: -10vw;
+      height: auto;
+      width: 100%;
+    }
+
+    .section__wrapper {
+      position: relative;
+
+      h2 {
+        color: #fff;
+      }
+
       p {
         color: #fff;
       }
@@ -714,6 +748,9 @@ main {
     &--no-width {
       max-width: unset;
       margin: 0;
+    }
+    &--simple {
+
     }
     .list {
       display: flex;

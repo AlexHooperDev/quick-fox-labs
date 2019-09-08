@@ -14,16 +14,16 @@ const Cost = () => (
     <Hero
       page="Pricing"
       pageTitle="What We Cost"
-      copy="We're people who love digital marketing. Love it. Yes, we know that sounds weird but it's a badge wear proudly. Our experience comes from right across the industry, marketing global events and delivering results."
+      copy="We list our pricing on our website, so you know you're paying the same as everybody else. Revolutionary, right?"
     />
     <Products
-      title="Pricing"
-      copy="we put the pricing on our website, so you know you’re paying the same as everybody else."
+      title="How does it work?"
+      copy="We're highly streamlined as we know what works and only charge you for the time that you use, so you're never forking out for a service you don't need. Simple. You'll have experts on-hand, in your office or online for up to once a week if you need us there. Stop at any time - No long-term commitments needed. If you don’t like the results, stop at any time with 30-days notice."
       productData={[
         {
           icon: '',
           name: '5 week training',
-          cost: '4500',
+          cost: '4,500',
           costDetails: 'per course',
           productDetails: [
             { bold: 'For:', copy: 'People who want to test digital for themselves' },
@@ -33,13 +33,13 @@ const Cost = () => (
         {
           icon: '',
           name: '4 - 6 month starter pack',
-          cost: '2200',
+          cost: '2,200',
           costDetails: 'excluding digital spend',
           productDetails: [
             { bold: 'For:', copy: 'First-timers and last-minute organisers' },
             { bold: 'You:', copy: 'want to test digital marketing and gauge your results' },
             { bold: 'Time until event:', copy: 'three months or less' },
-            { bold: 'Well give you,', copy: '4 days per month & technical set up' },
+            { bold: 'Well give you:', copy: '4 days per month & technical set up' },
           ]
         },
         {
@@ -51,7 +51,7 @@ const Cost = () => (
             { bold: 'For:', copy: 'businesses who are ready to scale' },
             { bold: 'You:', copy: 'know digital works and you want to keep your campaigns running' },
             { bold: 'Time until event:', copy: 'three months or less' },
-            { bold: 'Well give you,', copy: '4 days per month & technical set up' },
+            { bold: 'Well give you:', copy: '4 days per month & technical set up' },
           ]
         },
         {
@@ -78,10 +78,14 @@ const Cost = () => (
         },
       ]}
     />
-    <SimpleP
+    {/* <SimpleP
+      darkBlue
       title="How does it work?"
-      copy="We're highly streamlined and only charge you for the time that you use, so you're never forking out for a service you don't need. Simple, right? You'll have two experts on-hand, in your office up to once a week if you need us there, plus an army of freelancers on speed-dial if we're helping with your creative as well."
-    />
+      copy="We're highly streamlined as we know what works and only charge you for the time that you use, so you're never forking out for a service you don't need. Simple. You'll have experts on-hand, in your office or online for up to once a week if you need us there.
+
+      Stop at any time - No long-term commitments needed. If you don’t like the results, stop at any time with 30-days notice.
+      "
+    /> */}
     <BannerCTA title="Meet the team" copy="See how we an help your business grow..." link1="/about" link2="/" />
   </Layout>
 )
