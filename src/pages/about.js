@@ -16,10 +16,21 @@ const About = () => (
     <Hero
       page="About"
       pageTitle="Who We Are"
-      copy="We're people who love digital marketing. Love it. Yes, we know that sounds weird but it's a badge wear proudly. Our experience comes from right across the industry, marketing global events and delivering results."
+      copy="We're people who love digital marketing. Love it. Weird? Maybe, but it's a badge we wear proudly. We are a small agency who pack a big punch, with over 10 years experience marketing events across the industry. Whether it's advertising at Cannes Lions, selling out niche events or building audiences for global campaigns, we will deliver."
     />
     <SimpleP
-      copy="We sell out events – simple as that. Our methods means we're never worried about getting bums on seats, but we are worried about working in an industry that doesn't support our values. That's why we set up Quick Fox Labs. To fix the agency problem, to provide a service we believe in, and to sell out your events, without breaking the bank. Simple. "
+      medBlue
+      title="Our Story"
+      copy="Quick Fox exists for two reasons: 
+      1. Great digital marketing should be accessible to all. It's not a dark art reserved for the few with big budgets– it's data,used well, and that should be available for everyone.
+      2. We've been in-house events marketers. We know what it's like. And when we couldn't find an agency who did what we needed, and quickly, we started one.
+      "
+    />
+    <SimpleP
+      medBlue
+      noWave
+      title="Why a lab?"
+      copy="Honestly? It's nerdy. We are obsessed with constantly testing and monitoring results, just like in a science lab. It means we're always tweaking bits, and working to get you the best results."
     />
     <Team
       members={[{
@@ -32,13 +43,13 @@ const About = () => (
       }
       ]}
     />
-    <ThreeColBlock
+    {/* <ThreeColBlock
       data={[
         { img: '/', title: 'We keep it simple', copy: 'Everything we do is designed to simplify digital marketing. From our pricing plans to our streamline approach, we’re here to de-mystify and deliver.' },
         { img: '/', title: 'We keep it focused', copy: 'One word: strategy. We’re experts in digital marketing, so we know where your audience is and how to engage them within your budget.' },
         { img: '/', title: 'We keep it transparent', copy: 'Our fee structure is crystal clear. You always know everything we’re doing and our campaigns are ethically sound and fully legally compliant.' }
       ]}
-    />
+    /> */}
     <Family
       title="Our family"
       copy="If you need them, we work with them - we have a contacts book of the best creative and tech talent in town."

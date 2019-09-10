@@ -1,4 +1,60 @@
 .family,
 .family-carousel {
   flex-basis: 50%;
+  width: 50%;
+}
+
+.family {
+  padding: 25px;
+  background: #1a1c38;
+}
+
+.family-carousel {
+  height: 40vh;
+
+  &__item {
+    height: 40vh;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+
+  .slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 999;
+  }
+  .slick-prev {
+    top: 10%;
+    transform: rotate(90deg);
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+  }
+  
+  .slick-next {
+    bottom: 10%;
+    transform: rotate(-90deg);
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+  }
 }
