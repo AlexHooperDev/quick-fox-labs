@@ -653,6 +653,24 @@ main {
     padding: 100px 0 50px;
   }
 
+  &--m-blue {
+    &:before {
+      content: url('../assets/wave-m-blue.svg');
+      position: absolute;
+      top: -13vw;
+      height: auto;
+      width: 100%;
+    }
+    background: #3d8ca3;
+    padding: 100px 0 50px;
+    .section__wrapper {
+      h2,
+      p {
+        color: #fff;
+      }
+    }
+  }
+
   &--d-blue {
     background: #1a1c38;
     .section__wrapper {
@@ -660,6 +678,12 @@ main {
       p {
         color: #fff;
       }
+    }
+  }
+
+  &--no-wave {
+    &:before {
+      content: none!important;
     }
   }
 

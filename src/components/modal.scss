@@ -2,14 +2,81 @@
     height: 100vh;
     position: absolute;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.56);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
+    z-index: 2;
+    transition: opacity 0.4s;
 
     &__wrapper {
-        height: 300px;
-        width: 300px;
+        position: relative;
+        z-index: 3;
         margin: auto;
         background: #fff;
+        padding: 35px 35px 10px;
+        border-radius: 9px;
+        border-top: 4px solid #ff6952;
+        transition: all 0.4s 0.2s;
+
+        &__close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        &__upper {
+            h3 {
+                margin: 0;
+            }
+            
+            p {
+
+            }
+        }
+
+        &__form {
+            input {
+                background: #1a1b38;
+                color: #fff;
+                margin-right: 20px;
+                padding: 10px;
+                font-size: 18px;
+                font-family: "Proxima Nova Rg";
+                border: none;
+                border-radius: 3px;
+                &::placeholder {
+                    font-family: "Proxima Nova Rg";
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+
+            textarea {
+                background: #1a1b38;
+                color: white;
+                font-size: 18px;
+                width: 100%;
+                margin: 15px 0;
+                padding: 10px;
+                font-family: "Proxima Nova Rg";
+                border: none;
+                border-radius: 3px;
+                &::placeholder {
+                    font-family: "Proxima Nova Rg";
+                }
+            }
+            button {
+                display: block;
+                border: none;
+                background: #ff6952;
+                color: #fff;
+                font-size: 15px;
+                letter-spacing: 2px;
+                padding: 6px 17px;
+                font-family: "Proxima Nova Rg";
+                margin: 0 0 0 auto;
+            }
+        }
     }
 
 }
