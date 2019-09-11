@@ -4,7 +4,7 @@ import Button from '../components/button'
 import heroArt from '../assets/home/hero-art.svg';
 import './hero.scss';
 
-export default function HeroHome({ header, copy }) {
+export default function HeroHome({ header, subheader, copy }) {
 
     const [loaded, setLoaded] = useState(false);
 
@@ -20,24 +20,23 @@ export default function HeroHome({ header, copy }) {
             <div className="hero__wrapper">
                 <div className="hero__wrapper__content" style={{ opacity: `${loaded ? '1' : '0'}`, transform: `translate3d(${loaded ? '0%' : '-10%'}, 0, 0)` }}>
                     <h1>{header}</h1>
+                    <h2 className="no-underline">{subheader}</h2>
                     <div className="quote--typed">
                         <Typist>
-                            <span>"How do some events get new leads every day?"</span>
-                            <Typist.Backspace count={25} delay={3000} />
-                            <span>sell out events?"</span>
-                            <Typist.Backspace count={17} delay={3000} />
-                            <span>reach niche audiences?"</span>
-                            <Typist.Backspace count={23} delay={3000} />
-                            <span>double their reach?"</span>
+                            <span>"I need to sell more tickets fast?"</span>
+                            <Typist.Backspace count={24} delay={3000} />
+                            <span>find new customers?"</span>
                             <Typist.Backspace count={20} delay={3000} />
-                            <span>sell out events?"</span>
-                            <Typist.Backspace count={17} delay={3000} />
                             <span>reach niche audiences?"</span>
                             <Typist.Backspace count={23} delay={3000} />
-                            <span>double their reach?"</span>
+                            <span>sell more tickets fast?"</span>
+                            <Typist.Backspace count={24} delay={3000} />
+                            <span>find new customers?"</span>
+                            <Typist.Backspace count={20} delay={3000} />
+                            <span>reach niche audiences?"</span>
                         </Typist>
                     </div>
-                    <h2 className="no-underline">{copy}</h2>
+                    <h3 className="no-underline">{copy}</h3>
                     <div className="cta-container">
                         <Button main link="/#down" copy='Sort my digital marketing' />
                         <Button secondary link='/school' copy='Digital marketing training' />

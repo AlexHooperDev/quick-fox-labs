@@ -22,36 +22,59 @@ const Cost = () => (
       productData={[
         {
           icon: '',
-          name: '5 week training',
-          cost: '4,500',
+          name: '10 days online training course',
+          cost: '5,000',
           costDetails: 'per course',
           productDetails: [
-            { bold: 'For:', copy: 'People who want to test digital for themselves' },
-            { bold: 'You:', copy: 'Want to do it yourself before investing' },
+            { bold: 'We\'ll give you:', copy: 'access to the online course for 2 months' },
           ]
         },
         {
           icon: '',
-          name: '4 - 6 month starter pack',
-          cost: '2,200',
-          costDetails: 'excluding digital spend',
+          name: '5 Week \'virtual classroom\' Training',
+          cost: '2,500',
+          costDetails: 'per course',
           productDetails: [
-            { bold: 'For:', copy: 'First-timers and last-minute organisers' },
-            { bold: 'You:', copy: 'want to test digital marketing and gauge your results' },
-            { bold: 'Time until event:', copy: 'three months or less' },
-            { bold: 'Well give you:', copy: '4 days per month & technical set up' },
+            { bold: 'For:', copy: 'People who want us to do it with them' },
+            { bold: 'We\'ll give you:', copy: 'Access to online training plus 25 days over 5 weeks face to face training & 8 hours of follow up to be used when required to ensure success' },
           ]
         },
         {
           icon: '',
-          name: 'Full partnership pack',
-          cost: '15,000',
+          name: '3 Month Starter Pack',
+          cost: '2,000',
+          costDetails: 'per month (excluding digital spend)',
+          productDetails: [
+            { bold: 'For:', copy: 'first-timers and last-minute organisers' },
+            { bold: 'You:', copy: 'want to test digital marketing and gauge your results' },
+            {
+              bold: 'You\'ll get:', copy: [
+                '1 ad channel & retargeting set up',
+                'four days per month',
+                'weekly reporting',
+                'Bi weekly calls',
+                'Technical set-up for free',
+              ]
+            },
+          ]
+        },
+        {
+          icon: '',
+          name: '3 - 12 Month Full throttle',
+          cost: '2,500',
           costDetails: 'or 15% of your digital spend',
           productDetails: [
             { bold: 'For:', copy: 'businesses who are ready to scale' },
-            { bold: 'You:', copy: 'know digital works and you want to keep your campaigns running' },
-            { bold: 'Time until event:', copy: 'three months or less' },
-            { bold: 'Well give you:', copy: '4 days per month & technical set up' },
+            { bold: 'You:', copy: 'know digital works and want to keep your campaigns running' },
+            {
+              bold: 'You\'ll get:', copy: [
+                'Up to 3 channels',
+                'four days per month',
+                'weekly reporting',
+                'weekly calls',
+                'Technical set-up',
+              ]
+            },
           ]
         },
         {
@@ -64,16 +87,19 @@ const Cost = () => (
           ]
         },
         {
+          extras: true,
           icon: '',
           name: 'Added extras',
-          cost: 'x',
-          costDetails: 'x',
+          costDetails: 'For businesses who want extra support in getting started',
           productDetails: [
-            { bold: 'Landing page:', copy: '750' },
-            { bold: 'email design and build', copy: '750' },
-            { bold: 'email set-up', copy: '750' },
-            { bold: 'Copywriting,', copy: '750' },
-            { bold: 'Video (three days)', copy: '1000' }
+            { bold: '5 x post lead generation email -', copy: '£100' },
+            { bold: 'Marketing automation email + set up -', copy: '£500' },
+            { bold: 'Post purchase email templates & set up -', copy: '£750' },
+            { bold: 'Landing page design and build -,', copy: '£500' },
+            { bold: '1 x email design and build -', copy: '£150' },
+            { bold: '1 x advert copywriting -', copy: '£300' },
+            { bold: '1 x landing page copywriting -', copy: '£400' },
+            { bold: '1 x event promo video (three days) -', copy: '£1,000' }
           ]
         },
       ]}
@@ -86,7 +112,7 @@ const Cost = () => (
       Stop at any time - No long-term commitments needed. If you don’t like the results, stop at any time with 30-days notice.
       "
     /> */}
-    <BannerCTA title="Meet the team" copy="See how we an help your business grow..." link1="/about" link2="/" />
+    <BannerCTA title="Meet the team" copy="Come and get to know a little about us..." link1="/about" link1Copy="Meet the Team" link2="/" link2Copy="Book a meeting" />
   </Layout>
 )
 

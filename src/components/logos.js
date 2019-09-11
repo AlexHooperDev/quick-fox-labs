@@ -33,6 +33,7 @@ export default function Logos({ title, copy, brands }) {
                             <div className="brands__item__inner">
                                 <h4>Our Work</h4>
                                 <h3>{brand.name}</h3>
+                                <h5>Results: <span>{brand.copy}</span></h5>
                                 <Button link="" copy="Find out more" base />
                             </div>
                         </div>

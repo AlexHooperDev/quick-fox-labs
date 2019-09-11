@@ -19,7 +19,8 @@ export default function Products({ title, copy, productData }) {
     infinite: true,
     slidesToShow: 3,
     initialSlide: 1,
-    speed: 500
+    speed: 500,
+    variableWidth: true
   };
 
   return (
@@ -34,6 +35,7 @@ export default function Products({ title, copy, productData }) {
         <Slider {...settings}>
           {productData.map(item => (
             <Product
+              extras={item.extras ? true : false}
               icon={item.icon}
               name={item.name}
               cost={item.cost}

@@ -642,15 +642,7 @@ main {
   padding: 50px 0;
 
   &--l-blue {
-    &:before {
-      content: url('../assets/wave-l-blue.svg');
-      position: absolute;
-      top: -17vw;
-      height: auto;
-      width: 100%;
-    }
     background: #cfe0e8;
-    padding: 100px 0 50px;
   }
 
   &--m-blue {
@@ -689,14 +681,6 @@ main {
 
   &--products {
     background: #1a1c38;
-
-    &:before {
-      content: url('../assets/wave.svg');
-      position: absolute;
-      top: -10vw;
-      height: auto;
-      width: 100%;
-    }
 
     .section__wrapper {
       position: relative;
@@ -737,6 +721,7 @@ main {
     h2 {
       padding-top: 20px;
       font-size: 47px;
+      margin-bottom: 0;
     }
 
     h2:before {

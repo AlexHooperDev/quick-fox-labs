@@ -27,12 +27,13 @@ const IndexPage = () => (
     <SEO title="Home" />
     <HeroHome
       header="Quick Fox Labs"
-      copy="Quick Fox Funnels are the smart digital marketing specialists for people who run events. 
-      With over 10 years experience we know what works, and create marketing funnels that generate leads and sell out  the world’s most exciting events quickly.
+      subheader="We help you find new customers and grow."
+      copy="We are the smart digital marketing specialists for people who run events. With over 10 years experience we know what works, and create customer journeys that generate leads and sell out the world’s most exciting events, quickly.
+      
       " />
     <WhatWeDo
-      title="How we can help"
-      subtitle="We take you from, 'Digital what now?' right through to your sold-out event, using our Quick Fox method that's tried and tested on global events. Using data and over 10 years of experience, we build simple, intuitive customer journeys (funnels) designed to sell tickets. From strategy and implementation to training up your teams (and yes, we can also do a bit of both)."
+      title="Grow your business with digital marketing."
+      subtitle="We take you from, 'Digital what now?' right through to your sold-out event, using our Quick Fox method that's tried and tested on global events. Using data and over 10 years of experience, we build simple, intuitive customer journeys designed to sell tickets. From strategy and implementation to training up your teams (and yes, we can also do a bit of both)."
       points={[{ img: leadgen, copy: 'Reach new customers fast' }, { img: reporting, copy: 'Test and scale your ad campaigns ' }, { img: strategy, copy: 'Generate high quality leads ' }, { img: leadgen, copy: 'Reduce your customer acquisition cost ' }, { img: reporting, copy: 'Save time by automating the process' }, { img: strategy, copy: 'Increase your sales' }]}
     />
     <HowWeDoIt
@@ -48,7 +49,11 @@ const IndexPage = () => (
       title="Ready to get started?"
       copy="Want an idea of cost and ROI right now? We have a quiz for that. "
       link1="/quiz"
-      link2="/" />
+      link2="/" 
+      link1Copy="Take the Quiz" link2="/"
+      link2Copy="Book a meeting"
+      />
+      
   </Layout>
 )
 

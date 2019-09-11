@@ -1,5 +1,7 @@
 .product-carousel {
   padding: 50px 0;
+  max-height: 580px; // TODO: this is a temporary fix to a bigger issue
+
 
   .slick-arrow {
     font-size: 0;
@@ -53,7 +55,17 @@
     border-top: 4px solid #ff6952;
     padding: 20px;
     height: 450px;
+    width: 235px;
+    box-sizing: content-box;
     border-radius: 10px;
+    &--wide {
+      width: 320px;
+      border-top: 4px solid #377b92;
+      h3 {
+        background: #ffdd57;
+        color: #25243a;
+      }
+    }
     &__upper {
       border-bottom: 1px solid #eaeaea;
       display: flex;
@@ -68,6 +80,7 @@
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 1px;
+        line-height: 20px;
         font-size: 13px;
         border-radius: 5px;
       }
