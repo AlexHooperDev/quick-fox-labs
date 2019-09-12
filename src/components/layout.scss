@@ -633,13 +633,22 @@ main {
 
 
 .noScroll {
-  position: fixed;
-  overflow: hidden;
+  // position: fixed;
+  // overflow: hidden;
 }
 
 .section {
   position: relative;
   padding: 50px 0;
+
+  &--hero {
+    padding: 130px 0 50px;
+
+    .section__wrapper {
+      opacity: 1;
+      transform: none;
+    }
+  }
 
   &--l-blue {
     background: #cfe0e8;
@@ -654,7 +663,6 @@ main {
       width: 100%;
     }
     background: #3d8ca3;
-    padding: 100px 0 50px;
     .section__wrapper {
       h2,
       p {

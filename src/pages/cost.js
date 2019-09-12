@@ -13,8 +13,7 @@ const Cost = () => (
     <SEO title="Pricing" />
     <Hero
       page="Pricing"
-      pageTitle="What We Cost"
-      copy="We list our pricing on our website, so you know you're paying the same as everybody else. Revolutionary, right?"
+      pageTitle="We list our pricing on our website, so you know you're paying the same as everybody else. Revolutionary, right?"
     />
     <Products
       title="How does it work?"

@@ -26,8 +26,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroHome
-      header="Quick Fox Labs"
-      subheader="We help you find new customers and grow."
+      header="We help you find new customers and grow."
       copy="We are the smart digital marketing specialists for people who run events. With over 10 years experience we know what works, and create customer journeys that generate leads and sell out the world’s most exciting events, quickly.
       
       " />

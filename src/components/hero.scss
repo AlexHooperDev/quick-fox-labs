@@ -24,7 +24,8 @@
                     transition: all 0.4s;
                     max-width: 400px;
                     h1 {
-                        font-size: 68px;
+                        font-size: 49px;
+                        margin-bottom: 0;
                     }
 
                     .Typist {
@@ -33,6 +34,7 @@
                         line-height: 40px;
                         margin: 10px auto 20px;
                         max-width: 100%;
+                        min-height: 80px;
                         color: #ff6952;
                       }
 
@@ -72,6 +74,8 @@
             &__content {
                 h1 {
                     margin-bottom: 0px;
+                    font-size: 38px;
+                    max-width: 670px;
                 }
 
                 h5 {

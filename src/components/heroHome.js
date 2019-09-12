@@ -20,7 +20,6 @@ export default function HeroHome({ header, subheader, copy }) {
             <div className="hero__wrapper">
                 <div className="hero__wrapper__content" style={{ opacity: `${loaded ? '1' : '0'}`, transform: `translate3d(${loaded ? '0%' : '-10%'}, 0, 0)` }}>
                     <h1>{header}</h1>
-                    <h2 className="no-underline">{subheader}</h2>
                     <div className="quote--typed">
                         <Typist>
                             <span>"I need to sell more tickets fast?"</span>
