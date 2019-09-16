@@ -7,11 +7,10 @@
     }
 
     &--home {
-        min-height: calc(100vh + 77.7px);
+        min-height: calc(90vh + 77.7px);
         display: flex;
         flex-flow: column;
         justify-content: center;
-        margin-bottom: 5vw;
 
         .hero {
             &__wrapper {

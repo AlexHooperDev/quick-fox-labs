@@ -641,6 +641,14 @@ main {
   position: relative;
   padding: 50px 0;
 
+  &--cta--grey {
+    background: #f5f5f5;
+    button.cta--banner-secondary:before {
+      background: #f5f5f5;
+    }
+  }
+
+
   &--hero {
     padding: 130px 0 50px;
 
@@ -687,7 +695,7 @@ main {
     }
   }
 
-  &--products {
+  &--products, &--case-studies {
     background: #1a1c38;
 
     .section__wrapper {

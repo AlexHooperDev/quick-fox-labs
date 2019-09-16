@@ -7,20 +7,24 @@ import CaseStudiesList from '../components/caseStudiesList'
 import BannerCTA from '../components/bannerCTA'
 import SEO from "../components/seo"
 
+import waaImg from '../assets/waa.jpg'
+import pureImg from '../assets/pure.jpg'
+
 const CaseStudies = () => (
   <Layout>
     <SEO title="Case Studies" />
     <Hero
       page="Case Studies"
-      pageTitle="What We've Done"
-      copy="We're people who love digital marketing. Love it. Yes, we know that sounds weird but it's a badge wear proudly. Our experience comes from right across the industry, marketing global events and delivering results."
+      pageTitle="We deliver sell-out events time after time, and we have the case studies to prove it."
     />
-    <CaseStudiesList />
+    <CaseStudiesList caseStudies={[{ name: "We Are Africa", img: waaImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }, { name: "Pure Life Experiences", img: pureImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }]} />
     <BannerCTA
       title="Ready to get started?"
-      copy="Take our quiz and we'll give you an idea of cost and ROI right away."
+      copy="Want an idea of cost and ROI right now? We have a quiz for that."
       link1="/quiz"
       link2="/"
+      link1Copy="Take the quiz"
+      link2Copy="book a meeting"
     />
   </Layout>
 )

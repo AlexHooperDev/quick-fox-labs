@@ -27,9 +27,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <HeroHome
       header="We help you find new customers and grow."
-      copy="We are the smart digital marketing specialists for people who run events. With over 10 years experience we know what works, and create customer journeys that generate leads and sell out the world’s most exciting events, quickly.
-      
-      " />
+      copy="We are the smart digital marketing specialists for people who run events." />
     <WhatWeDo
       title="Grow your business with digital marketing."
       subtitle="We take you from, 'Digital what now?' right through to your sold-out event, using our Quick Fox method that's tried and tested on global events. Using data and over 10 years of experience, we build simple, intuitive customer journeys designed to sell tickets. From strategy and implementation to training up your teams (and yes, we can also do a bit of both)."
@@ -43,16 +41,16 @@ const IndexPage = () => (
     <Logos
       title="Our Work"
       copy="We work with some very clever people. Here’s just a few of them:"
-      brands={[{ name: 'PURE Life Experiences', copy: '3 x ROAS ', img: pure }, { name: 'We Are Africa', copy: '15% of ticket sales ', img: waa }, { name: 'MATTER Unconference', copy: '200 Qualified leads per month & 3 x ROAS', img: matter},]} />
+      brands={[{ name: 'PURE Life Experiences', copy: '3 x ROAS ', img: pure }, { name: 'We Are Africa', copy: '15% of ticket sales ', img: waa }, { name: 'MATTER Unconference', copy: '200 Qualified leads per month & 3 x ROAS', img: matter },]} />
     <BannerCTA
       title="Ready to get started?"
       copy="Want an idea of cost and ROI right now? We have a quiz for that. "
       link1="/quiz"
-      link2="/" 
+      link2="/"
       link1Copy="Take the Quiz" link2="/"
       link2Copy="Book a meeting"
-      />
-      
+    />
+
   </Layout>
 )
 

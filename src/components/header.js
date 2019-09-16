@@ -42,16 +42,19 @@ export default function Header({ contactModal }) {
           <nav className="header__links__nav">
             <ul>
               <li>
-                <Link to="/about">Who We Are</Link>
-              </li>
-              <li>
                 <Link to="/services">What We Do</Link>
               </li>
               <li>
-                <Link to="/case-studies">What We've Done</Link>
+                <Link to="/case-studies">Our Work</Link>
               </li>
               <li>
-                <Link to="/school">School</Link>
+                <Link to="/about">Who We Are</Link>
+              </li>
+              <li>
+                <Link to="/school">Training</Link>
+              </li>
+              <li>
+                <Link to="/cost">Prices</Link>
               </li>
             </ul>
           </nav>

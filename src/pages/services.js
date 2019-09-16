@@ -14,92 +14,85 @@ const Services = () => (
     <SEO title="Services" />
     <Hero
       page="Services"
-      pageTitle="What We Do"
-      copy="We're people who love digital marketing. Love it. Yes, we know that sounds weird but it's a badge wear proudly. Our experience comes from right across the industry, marketing global events and delivering results."
+      pageTitle="Are you spending more to get customers than they are worth or not sure where to start with digital marketing? We can help."
     />
-    <ServicesList data={[
-      {
-        title: 'Lead generation',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Marketing Automation',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Lead Nurturing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Digital Marketing Strategy',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Digital Transformation',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'LinkedIn Marketing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Facebook and Instagram Marketing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Google Display and search Marketing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-    ]} />
-    <Logos
-      title="The tech"
-      copy="We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – it's very likely we'll have used it before."
-      brands={[
-        { name: 'microsoft' },
-        { name: 'apple' },
-        { name: 'tesla' },
-      ]}
-    />
+    <ServicesList
+      title="Title"
+      subHeader="With over 10 years event marketing experience, we know what works, and understand that advertising alone won’t sell out your event. That’s why we work with your teams to build smart automated customer journeys that cover every step from the first hello, to purchase across channels."
+      data={[
+        {
+          title: 'Lead generation',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+        {
+          title: 'Marketing Automation',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+        {
+          title: 'Lead Nurturing',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+        {
+          title: 'Digital Marketing Strategy',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+        {
+          title: 'Digital Transformation',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+        {
+          title: 'LinkedIn Marketing',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+        {
+          title: 'Facebook and Instagram Marketing',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+        {
+          title: 'Google Display and search Marketing',
+          points: [
+            'one',
+            'two',
+            'three',
+            'four',
+          ],
+        },
+      ]} />
     <HowItWorksList title="How it works" data={[
       {
         subtitle: 'Step one: we scope',

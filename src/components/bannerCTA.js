@@ -2,12 +2,12 @@ import React from 'react';
 import Button from './button'
 import makeVisible from '../hooks/makeVisible'
 
-export default function BannerCTA({ title, copy, link1, link1Copy, link2, link2Copy }) {
+export default function BannerCTA({ title, copy, link1, link1Copy, link2, link2Copy, greyBg }) {
 
     const [bodyContent, isVisible] = makeVisible();
 
     return (
-        <section className="section section--cta" ref={bodyContent}>
+        <section className={`section section--cta ${greyBg ? 'section--cta--grey' : ''}`} ref={bodyContent}>
             <div className="section__wrapper--col">
                 <div className="section__wrapper__content" style={{ opacity: `${isVisible ? '1' : '0'}`, transform: `translate3d(${isVisible ? '0%' : '-10%'} ,0, 0)` }}>
                     <h2 className="no-underline">

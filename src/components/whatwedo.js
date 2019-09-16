@@ -8,7 +8,7 @@ export default function WhatWeDo({ title, subtitle, points }) {
     const [bodyContent, isVisible] = makeVisible();
 
     return (
-        <section className="section section--l-blue" ref={bodyContent}>
+        <section className="section section--d-blue" ref={bodyContent}>
             <div className={`section__wrapper ${isVisible ? 'section__wrapper--visible' : ''}`}>
                 <h2>
                     {title}
