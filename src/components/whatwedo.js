@@ -21,7 +21,7 @@ export default function WhatWeDo({ title, subtitle, points }) {
                         <li><img src={point.img} /><p>{point.copy}</p></li>
                     ))}
                 </ul>
-                <Button link="services" copy="Let's talk" base />
+                <Button link="services" copy="Let's talk" base orange />
             </div>
         </section>
     )

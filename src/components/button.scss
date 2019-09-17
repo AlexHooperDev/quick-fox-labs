@@ -24,13 +24,20 @@ button {
 
       &--base {
         display: flex;
+
+        &.orange {
+          background: #ff6952;
+        }
+
         &:hover {
           transform: translate3d(0, -3px, 0);
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         }
+
         background: #1a1b38;
         border: none;
         padding: 10px;
+
         a {
           color: #fff;
         }

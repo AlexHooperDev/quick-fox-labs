@@ -14,7 +14,7 @@ import '../components/about.scss'
 
 import teamImg from '../assets/icons/team.svg';
 import flexibleImg from '../assets/icons/flexible.svg';
-import deliverImg from '../assets/icons/deliver.svg';
+import simpleImg from '../assets/icons/simple.svg';
 import emmaAmyImg from '../assets/emmaamy.jpg';
 
 const About = () => (
@@ -63,7 +63,7 @@ const About = () => (
       title="The Quick Fox Promise:"
       subheader="Good business happens because of good partnerships, and the best partnerships are built on trust, transparency and generosity."
       data={[
-        { img: deliverImg, title: 'We keep it simple', copy: 'Everything we do is designed to simplify digital marketing. From our pricing plans to our streamlined approach, we\'re here to de-mystify and deliver.' },
+        { img: simpleImg, title: 'We keep it simple', copy: 'Everything we do is designed to simplify digital marketing. From our pricing plans to our streamlined approach, we\'re here to de-mystify and deliver.' },
         { img: flexibleImg, title: 'We keep it flexible', copy: 'No long-term commitments needed. If you don’t like the results, stop at any time with 30-days notice.' },
         { img: teamImg, title: 'We keep it collaborative', copy: 'Everything we do is an extension of your team. We will even come and sit in your office up to 1 day a week.' }
       ]}

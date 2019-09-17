@@ -4,7 +4,7 @@ import fox from '../assets/qfl-logo-notext.svg'
 
 export default function Hero({ page, pageTitle, copy }) {
     return (
-        <div className="hero--normal">
+        <div className="hero hero--normal">
             <div className="hero__wrapper">
                 <div className="hero__wrapper__fox">
                     <img src={fox} alt="Quick Fox Labs" />

@@ -625,6 +625,7 @@ pre tt:after {
 
 body {
   width: 100%;
+  overflow: hidden;
 }
 
 main {
@@ -693,6 +694,10 @@ main {
     &:before {
       content: none!important;
     }
+  }
+
+  &--case-studies {
+    padding: 100px 0;
   }
 
   &--products, &--case-studies {
@@ -777,6 +782,31 @@ main {
     &--simple {
 
     }
+
+    &--services-big {
+      .list {
+        li {
+          background: #171831;
+          min-height: 238px;
+          padding: 25px;
+          border-radius: 8px;
+          flex-flow: column;
+          align-items: flex-start!important;
+
+          h3 {
+            font-family: "Rubik";
+            font-weight: 500;
+            font-size: 22px;
+            color: #ff6952;
+            margin-bottom: 10px;
+          }
+          p {
+            padding-left: 0!important;
+          }
+        }
+      }
+    }
+
     .list {
       display: flex;
       justify-content: space-between;
