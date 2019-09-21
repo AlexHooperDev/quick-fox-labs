@@ -9,8 +9,8 @@ export default function servicesListBig({ data, title, subHeader, copy }) {
   return (
     <section className="section section--d-blue" ref={bodyContent}>
       <div className={`section__wrapper ${isVisible ? 'section__wrapper--visible' : ''} section__wrapper--col section__wrapper--services-big`}>
-        <h2>{title}</h2>
-        <p>{subHeader}</p>
+        {title && <h2>{title}</h2>}
+        {subHeader && <p>{subHeader}</p>}
         <ol className="list">
           {data.map((point, i) => (
             <li>

@@ -1,6 +1,6 @@
 .product-carousel {
   padding: 50px 0;
-  max-height: 580px; // TODO: this is a temporary fix to a bigger issue
+  max-height: 790px; // TODO: this is a temporary fix to a bigger issue
 
 
   .slick-arrow {
@@ -12,9 +12,6 @@
     width: 30px;
     height: 20px;
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
     color: transparent;
     border: none;
     outline: none;
@@ -36,16 +33,9 @@
   }
 
   .slick-slide {
-    opacity: 0.8;
-    transform: scale(0.9);
     padding: 0 20px;
     box-sizing: border-box;
     transition: all 0.4s;
-  }
-
-  .slick-current {
-    opacity: 1;
-    transform: scale(1);
   }
 
   &__item {
@@ -54,8 +44,8 @@
     background: #fff;
     border-top: 4px solid #ff6952;
     padding: 20px;
-    height: 450px;
-    width: 235px;
+    height: 680px;
+    width: 275px;
     box-sizing: content-box;
     border-radius: 10px;
     &--wide {
@@ -71,11 +61,14 @@
       display: flex;
       flex-flow: column;
       h3 {
+        span {
+          font-weight: 500;
+        }
         font-size: 16px;
         text-align: center;
         font-family: "Proxima Nova Rg";
         background: #ff6952;
-        margin: 0 auto 20px;
+        margin: 0 auto 14px;
         padding: 10px 15px;
         color: #fff;
         text-transform: uppercase;
@@ -98,6 +91,15 @@
         color: #bdbdbd;
         margin-top: 5px;
       }
+      p {
+        text-align: center;
+        color: #1a1b38 !important;
+        font-size: 14px;
+        font-family: "Rubik";
+        font-weight: 500;
+        margin: 0px 0 10px;
+        line-height: 18px;
+      }
     }
     &__lower {
       height: 100%;
@@ -108,16 +110,33 @@
       ul {
         margin: 0;
         li {
-          line-height: 13px;
-          margin: 20px 0;
+          position: relative;
+          border-bottom: 1px solid #e6e6e6;
+          line-height: 8px;
+          margin: 0;
+          padding: 9px 5px;
           list-style: none;
           color: #2b6173;
           span {
+            &:first-of-type {
+              position: absolute;
+              top: 22%;
+            }
+            &:not(:first-of-type) {
+              margin-left: 25px;
+            }
             font-family: "Rubik";
             font-size: 13px;
             font-weight: 300;
             b {
               margin-right: 5px;
+            }
+            img {
+              display: inline-block;
+              margin-right: 10px;
+              width: 15px;
+              height: 15px;
+              vertical-align: bottom;
             }
           }
         }

@@ -1,12 +1,12 @@
 .case-studies {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   &__item {
     position: relative;
     display: flex;
     background: #fff;
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     background-size: cover;
     background-position: center;
     overflow: hidden;

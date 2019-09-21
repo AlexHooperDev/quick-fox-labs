@@ -15,7 +15,7 @@ import '../components/about.scss'
 import teamImg from '../assets/icons/team.svg';
 import flexibleImg from '../assets/icons/flexible.svg';
 import simpleImg from '../assets/icons/simple.svg';
-import emmaAmyImg from '../assets/emmaamy.jpg';
+import emmaAmyImg from '../assets/headshot.jpg';
 
 const About = () => (
   <Layout>

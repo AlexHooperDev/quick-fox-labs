@@ -9,11 +9,12 @@ import HowItWorksList from '../components/howItWorksList'
 import HowWeDoIt from '../components/howwedoit'
 import BannerCTA from '../components/bannerCTA'
 import SEO from "../components/seo"
+import SimpleP from "../components/simpleP";
 
 import scope from '../assets/icons/scope.svg'
 import build from '../assets/icons/build.svg'
 import scale from '../assets/icons/scale.svg'
-import SimpleP from "../components/simpleP";
+import headerImg from '../assets/icons/services.svg'
 
 const Services = () => (
   <Layout>
@@ -21,10 +22,10 @@ const Services = () => (
     <Hero
       page="Services"
       pageTitle="Are you spending more to get customers than they are worth or not sure where to start with digital marketing? We can help."
+      copy="With over 10 years event marketing experience, we know what works, and understand that advertising alone won’t sell out your event. That’s why we work with your teams to build smart automated customer journeys that cover every step from the first hello, to purchase across channels."
+      img={headerImg}
     />
     <ServicesListBig
-      title="Title"
-      subHeader="With over 10 years event marketing experience, we know what works, and understand that advertising alone won’t sell out your event. That’s why we work with your teams to build smart automated customer journeys that cover every step from the first hello, to purchase across channels."
       data={[
         {
           title: 'Digital strategy',

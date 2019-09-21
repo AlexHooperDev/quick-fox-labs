@@ -8,12 +8,17 @@ import SimpleP from '../components/simpleP'
 import BannerCTA from '../components/bannerCTA'
 import SEO from "../components/seo"
 
+import tickImg from '../assets/tick.svg'
+import headerImg from '../assets/pricing.svg'
+
 const Cost = () => (
   <Layout>
     <SEO title="Pricing" />
     <Hero
+      img={headerImg}
       page="Pricing"
-      pageTitle="We list our pricing on our website, so you know you're paying the same as everybody else. Revolutionary, right?"
+      pageTitle="Pick the package that is right for you."
+      copy="We list our pricing on our website, so you know you're paying the same as everybody else. Revolutionary, right?"
     />
     <Products
       title="How does it work?"
@@ -21,84 +26,97 @@ const Cost = () => (
       productData={[
         {
           icon: '',
-          name: '10 days online training course',
-          cost: '5,000',
-          costDetails: 'per course',
+          type: 'Do it with you',
+          name: 'Training',
+          forTxt: 'people ready to become an expert in 8 weeks',
+          cost: '2,250',
+          costDetails: 'One time',
           productDetails: [
-            { bold: 'We\'ll give you:', copy: 'access to the online course for 2 months' },
+            { bold: 'Technical Audit', copy: tickImg },
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Technical set up', copy: tickImg },
+            { bold: 'Adverts Build', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Re-targeting', copy: tickImg },
+            { bold: 'Tracking and Pixels set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Emails', copy: tickImg },
+            { bold: 'Automated engagment campaigns', copy: tickImg },
+            { bold: 'Reporting', copy: tickImg },
+            { bold: 'Weekly Calls', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Full Digital Transformation' }
           ]
         },
         {
           icon: '',
-          name: '5 Week \'virtual classroom\' Training',
+          name: 'Starter pack',
+          type: 'Do it for you',
+          forTxt: 'First-timers and last-minute organisers',
           cost: '2,500',
-          costDetails: 'per course',
+          costDetails: 'per month (starts)',
           productDetails: [
-            { bold: 'For:', copy: 'People who want us to do it with them' },
-            { bold: 'We\'ll give you:', copy: 'Access to online training plus 25 days over 5 weeks face to face training & 8 hours of follow up to be used when required to ensure success' },
+            { bold: 'Technical Audit', copy: tickImg },
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Technical set up', copy: tickImg },
+            { bold: 'Adverts Build', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Re-targeting', copy: tickImg },
+            { bold: 'Tracking and Pixels set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Emails', copy: tickImg },
+            { bold: 'Automated engagment campaigns', copy: tickImg },
+            { bold: 'Reporting', copy: tickImg },
+            { bold: 'Weekly Calls', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Full Digital Transformation' }
           ]
         },
         {
           icon: '',
-          name: '3 Month Starter Pack',
-          cost: '2,000',
-          costDetails: 'per month (excluding digital spend)',
+          name: 'Scale',
+          type: 'Do it for you',
+          forTxt: 'businesses who are ready to scale',
+          cost: '3,500',
+          costDetails: 'or 15% of Ad spend per month (starts)',
           productDetails: [
-            { bold: 'For:', copy: 'first-timers and last-minute organisers' },
-            { bold: 'You:', copy: 'want to test digital marketing and gauge your results' },
-            {
-              bold: 'You\'ll get:', copy: [
-                '1 ad channel & retargeting set up',
-                'four days per month',
-                'weekly reporting',
-                'Bi weekly calls',
-                'Technical set-up for free',
-              ]
-            },
+            { bold: 'Technical Audit', copy: tickImg },
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Technical set up', copy: tickImg },
+            { bold: 'Adverts Build', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Re-targeting', copy: tickImg },
+            { bold: 'Tracking and Pixels set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Emails', copy: tickImg },
+            { bold: 'Automated engagment campaigns', copy: tickImg },
+            { bold: 'Reporting', copy: tickImg },
+            { bold: 'Weekly Calls', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Full Digital Transformation' }
           ]
         },
         {
           icon: '',
-          name: '3 - 12 Month Full throttle',
-          cost: '2,500',
-          costDetails: 'or 15% of your digital spend',
+          name: 'Full transformation',
+          type: 'Custom',
+          cost: 'ON REQUEST',
+          forTxt: 'businesses who need a full review',
           productDetails: [
-            { bold: 'For:', copy: 'businesses who are ready to scale' },
-            { bold: 'You:', copy: 'know digital works and want to keep your campaigns running' },
-            {
-              bold: 'You\'ll get:', copy: [
-                'Up to 3 channels',
-                'four days per month',
-                'weekly reporting',
-                'weekly calls',
-                'Technical set-up',
-              ]
-            },
-          ]
-        },
-        {
-          icon: '',
-          name: 'Digital transformation',
-          cost: 'POA',
-          costDetails: '',
-          productDetails: [
-            { bold: 'For:', copy: 'businesses facing challenges with disconnected platforms, in need of some expert guidance' },
-          ]
-        },
-        {
-          extras: true,
-          icon: '',
-          name: 'Added extras',
-          costDetails: 'For businesses who want extra support in getting started',
-          productDetails: [
-            { bold: '5 x post lead generation email -', copy: '£100' },
-            { bold: 'Marketing automation email + set up -', copy: '£500' },
-            { bold: 'Post purchase email templates & set up -', copy: '£750' },
-            { bold: 'Landing page design and build -,', copy: '£500' },
-            { bold: '1 x email design and build -', copy: '£150' },
-            { bold: '1 x advert copywriting -', copy: '£300' },
-            { bold: '1 x landing page copywriting -', copy: '£400' },
-            { bold: '1 x event promo video (three days) -', copy: '£1,000' }
+            { bold: 'Technical Audit', copy: tickImg },
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Technical set up', copy: tickImg },
+            { bold: 'Adverts Build', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Re-targeting', copy: tickImg },
+            { bold: 'Tracking and Pixels set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Emails', copy: tickImg },
+            { bold: 'Automated engagment campaigns', copy: tickImg },
+            { bold: 'Reporting', copy: tickImg },
+            { bold: 'Weekly Calls', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Full Digital Transformation', copy: tickImg }
           ]
         },
       ]}

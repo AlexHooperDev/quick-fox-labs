@@ -18,10 +18,39 @@
     justify-content: center;
     align-items: center;
 
-    h3 {
-      color: #fff;
-      font-size: 40px;
-      text-align: center;
+    &__inner {
+      background: #fff;
+      border-top: 3px solid #ff6952;
+      border-radius: 8px;
+
+      &__content {
+        padding: 100px 40px 45px;
+        position: relative;
+
+        h3 {
+          
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 41px;
+            width: 40px;
+            height: 40px;
+            background: url('../assets/quote.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+
+          margin: 0;
+          color: #000;
+          font-size: 16px;
+          font-family: "Rubik";
+          font-weight: 300;
+          line-height: 24px;
+          font-style: italic;
+        }
+      }
     }
   }
 
@@ -43,7 +72,7 @@
     z-index: 999;
   }
   .slick-prev {
-    top: 10%;
+    top: -10%;
     transform: rotate(90deg);
     &:before {
       content: url(../assets/icons/long-arrow.svg);
@@ -51,7 +80,7 @@
   }
   
   .slick-next {
-    bottom: 10%;
+    bottom: -10%;
     transform: rotate(-90deg);
     &:before {
       content: url(../assets/icons/long-arrow.svg);

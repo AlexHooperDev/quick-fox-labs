@@ -36,7 +36,11 @@ export default function Family({ title, copy, carouselData }) {
         <Slider {...settings}>
           {carouselData.map(item => (
             <div className="family-carousel__item">
-              <h3>{item}</h3>
+              <div className="family-carousel__item__inner">
+                <div className="family-carousel__item__inner__content">
+                  <h3>{item}</h3>
+                </div>
+              </div>
             </div>
           ))}
         </Slider>

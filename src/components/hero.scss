@@ -56,24 +56,27 @@
 
     &--normal {
         padding-top: 79px;
-        padding-bottom: 4vw;
+        padding-bottom: 50px;
         .hero__wrapper {
             height: 100%;
-            padding: 100px 25px;
+            padding: 50px 25px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1080px;
 
             &__fox {
-                position: absolute;
-                right: -140px;
-                top: 13%;
+                position: relative;
+                width: 35%;
                 img {
-                    height: 370px;
-                    opacity: 0.3;
+                    position: relative;
                 }
             }
 
             &__content {
+                max-width: 580px;
                 h1 {
-                    margin-bottom: 0px;
+                    margin-bottom: 30px;
                     font-size: 38px;
                     max-width: 670px;
                 }
@@ -89,13 +92,18 @@
 
                 p {
                     width: 590px;
-                    font-weight: 900;
                     font-size: 20px;
-                    color: grey;
-                    font-family: "Proxima Nova Rg";
+                    color: #333;
+                    font-family: "Rubik";
                 }
             }
         }
     }
-
+    
+    &--d-blue {
+        background: #1a1c38;
+        h1 {
+            color: #fff;
+        }
+    }
 }

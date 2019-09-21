@@ -38,6 +38,8 @@ export default function Products({ title, copy, productData }) {
               extras={item.extras ? true : false}
               icon={item.icon}
               name={item.name}
+              type={item.type}
+              forTxt={item.forTxt}
               cost={item.cost}
               costDetails={item.costDetails}
               productDetails={item.productDetails}
