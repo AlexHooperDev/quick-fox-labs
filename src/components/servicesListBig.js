@@ -11,7 +11,7 @@ export default function servicesListBig({ data, title, subHeader, copy }) {
       <div className={`section__wrapper ${isVisible ? 'section__wrapper--visible' : ''} section__wrapper--col section__wrapper--services-big`}>
         {title && <h2>{title}</h2>}
         {subHeader && <p>{subHeader}</p>}
-        <ol className="list">
+        <ol className="list list--services">
           {data.map((point, i) => (
             <li>
               <img src={point.img} />

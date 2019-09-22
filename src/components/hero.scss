@@ -13,16 +13,32 @@
         flex-flow: column;
         justify-content: center;
 
+        @media (max-width: 768px) {
+            min-height: unset;
+            padding: 127.7px 0 50px;
+        }
+
         .hero {
             &__wrapper {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                min-width: 940px; // to delete
+                width: 100%;
+                padding: 0 25px;
+
+                @media (max-width: 768px) {
+                    flex-flow: column;
+                    align-items: flex-start;
+                }
 
                 &__content {
                     transition: all 0.4s;
-                    max-width: 400px;
+                    width: 44%;
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+
                     h1 {
                         font-size: 49px;
                         margin-bottom: 0;
@@ -47,8 +63,17 @@
                 }
 
                 &__art {
+                    position: relative;
                     transition: all 0.4s 0.3s;
                     width: 50%;
+
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+
+                    img {
+                        width: 410px;
+                    }
                 }
             }
         }
@@ -68,6 +93,11 @@
             &__fox {
                 position: relative;
                 width: 35%;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+
                 img {
                     position: relative;
                 }
@@ -78,7 +108,11 @@
                 h1 {
                     margin-bottom: 30px;
                     font-size: 38px;
-                    max-width: 670px;
+
+                    @media (max-width: 768px) {
+                        font-size: 30px;
+                    }
+
                 }
 
                 h5 {
@@ -91,10 +125,14 @@
                 }
 
                 p {
-                    width: 590px;
                     font-size: 20px;
                     color: #333;
                     font-family: "Rubik";
+
+                    @media (max-width: 768px) {
+                        font-size: 17px;
+                    }
+
                 }
             }
         }

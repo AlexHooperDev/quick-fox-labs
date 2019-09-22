@@ -20,7 +20,18 @@ export default function Products({ title, copy, productData }) {
     slidesToShow: 3,
     initialSlide: 1,
     speed: 500,
-    variableWidth: true
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          centerMode: false,
+        }
+      },
+    ]
   };
 
   return (

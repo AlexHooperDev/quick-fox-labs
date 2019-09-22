@@ -651,7 +651,7 @@ main {
 
 
   &--hero {
-    padding: 130px 0 50px;
+    padding: 130px 25px 50px;
 
     .section__wrapper {
       opacity: 1;
@@ -703,7 +703,7 @@ main {
   }
 
   &--case-studies {
-    padding: 100px 0;
+    padding: 100px 25px;
   }
 
   &--products, &--case-studies {
@@ -818,14 +818,33 @@ main {
       justify-content: space-between;
       align-items: center;
       list-style: none;
-      margin: 50px 0;
+      margin: 0;
       flex-wrap: wrap;
+
+      &--services {
+
+        li {
+
+          @media (max-width: 475px) {
+            flex-basis: 100%!important;
+          }
+
+        }
+
+
+      }
+
       li {
-        flex-basis: 28%;
+        flex-basis: 240px;
         margin-bottom: 50px;
         width: 100%;
         display: flex;
         align-items: center;
+
+        @media (max-width: 768px) {
+          flex-basis: 170px;
+        }
+
         img {
           max-height: 70px;
           max-width: 80px;
@@ -844,6 +863,11 @@ main {
 h1 {
   font-family: 'P22 Underground CY Pro';
   font-size: 68px;
+
+  @media (max-width: 768px) {
+    font-size: 43px!important;
+  }
+
 }
 
 h2 {
@@ -851,6 +875,11 @@ h2 {
   font-family: 'P22 Underground CY Pro';
   font-size: 40px;
   padding: 0 0 10px 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -891,6 +920,11 @@ p {
   font-family: 'Rubik';
   font-weight: 300;
   font-size: 16px;
+  
+  @media (max-width: 768px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 button {

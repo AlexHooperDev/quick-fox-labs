@@ -1,6 +1,7 @@
 .case-studies {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   &__item {
     position: relative;
     display: flex;
@@ -11,6 +12,7 @@
     background-position: center;
     overflow: hidden;
     border-radius: 8px;
+    margin: 20px auto;
 
     &:hover {
       .case-studies__item__overlay {

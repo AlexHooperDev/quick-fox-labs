@@ -6,6 +6,7 @@
     display: flex;
     z-index: 2;
     transition: opacity 0.4s;
+    padding: 0 25px;
 
     &__wrapper {
         position: relative;
@@ -17,6 +18,10 @@
         border-top: 4px solid #ff6952;
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.46);
         transition: all 0.4s 0.2s;
+
+        @media (max-width: 768px) {
+            margin: auto auto 60px;
+        }
 
         &__close {
             height: 20px;
@@ -51,6 +56,13 @@
                 font-family: "Proxima Nova Rg";
                 border: none;
                 border-radius: 3px;
+
+                @media (max-width: 768px) {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+
                 &::placeholder {
                     font-family: "Proxima Nova Rg";
                 }
@@ -69,6 +81,11 @@
                 font-family: "Proxima Nova Rg";
                 border: none;
                 border-radius: 3px;
+
+                @media (max-width: 768px) {
+                    min-height: 90px;
+                }
+
                 &::placeholder {
                     font-family: "Proxima Nova Rg";
                 }
