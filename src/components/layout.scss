@@ -798,16 +798,20 @@ main {
           border-radius: 8px;
           flex-flow: column;
           align-items: flex-start!important;
+          flex-basis: 280px!important;
 
           h3 {
             font-family: "Rubik";
-            font-weight: 500;
+            font-weight: 900;
             font-size: 22px;
             color: #ff6952;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+            width: 100%;
+            text-align: center
           }
           p {
             padding-left: 0!important;
+            text-align: center;
           }
         }
       }
@@ -831,6 +835,21 @@ main {
 
         }
 
+
+      }
+
+      &--long {
+        width: 100%;
+
+        li {
+          margin-bottom: 0!important;
+
+          img {
+            max-height: unset!important;
+            max-width: 160px!important;
+          }
+
+        }
 
       }
 

@@ -9,6 +9,7 @@ import Logos from '../components/logos'
 import BannerCTA from '../components/bannerCTA'
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Family from '../components/family'
 
 
 import leadgen from '../assets/icons/leadgen.svg'
@@ -38,10 +39,16 @@ const IndexPage = () => (
       subtitle="Give us five days and we’ll show you. We spend time in your office, working with your team to understand your business and tackle each of your marketing challenges one by one."
       points={[{ number: '1', title: 'We Scope', copy: 'After a free discovery call, well assess where you are at right now', img: scope }, { number: '2', title: 'We Build', copy: 'We know where your audience is and how to engage them within your budget. You choose your service level and we spring into action. ', img: build }, { number: '3', title: 'We Scale', copy: 'You\'ll receive weekly reviews and reports to maximise exposure and minimise waste.', img: scale },]}
     />
-    <Logos
+    <Family
+      title="Our customers love what we do"
+      copy="What recent participants have to say:"
+      carouselData={['The  course was the most practical and hands on course I ever experienced. It gives you all the theory, process and tools to start growth hacking tomorrow!"', 'It was amazing to see how many easy tactics and simple tools / techniques you can use to make your product more successful ! Every Product Owner should do this !"', 'What a great atmosphere! At Growth Tribe it’s high paced, relevant, practical, no-nonsense learning."']}
+    />
+    {/* <Logos
       title="Our Work"
       copy="We work with some very clever people. Here’s just a few of them:"
-      brands={[{ name: 'PURE Life Experiences', copy: '3 x ROAS ', img: pure }, { name: 'We Are Africa', copy: '15% of ticket sales ', img: waa }, { name: 'MATTER Unconference', copy: '200 Qualified leads per month & 3 x ROAS', img: matter },]} />
+      brands={[{ name: 'PURE Life Experiences', copy: '3 x ROAS ', img: pure }, { name: 'We Are Africa', copy: '15% of ticket sales ', img: waa }, { name: 'MATTER Unconference', copy: '200 Qualified leads per month & 3 x ROAS', img: matter },]} /> */}
+
     <BannerCTA
       title="Ready to get started?"
       copy="Want an idea of cost and ROI right now? We have a quiz for that. "

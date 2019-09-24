@@ -10,58 +10,60 @@ import HowWeDoIt from '../components/howwedoit'
 import BannerCTA from '../components/bannerCTA'
 import SEO from "../components/seo"
 import SimpleP from "../components/simpleP";
+import LongList from '../components/LongList'
 
 import scope from '../assets/icons/scope.svg'
 import build from '../assets/icons/build.svg'
 import scale from '../assets/icons/scale.svg'
 import headerImg from '../assets/icons/services.svg'
 
+//Tech logos
+import linkedInImg from '../assets/logos/linkedin.png'
+import googleAdsImg from '../assets/logos/google-ads.svg'
+import mailchimpImg from '../assets/logos/mailchimp.png'
+import marketoImg from '../assets/logos/marketo.svg'
+import pardotImg from '../assets/logos/pardot.svg'
+import hubspotImg from '../assets/logos/hubspot.svg'
+
 const Services = () => (
   <Layout>
     <SEO title="Services" />
     <Hero
       page="Services"
-      pageTitle="Are you spending more to get customers than they are worth or not sure where to start with digital marketing? We can help."
-      copy="With over 10 years event marketing experience, we know what works, and understand that advertising alone won’t sell out your event. That’s why we work with your teams to build smart automated customer journeys that cover every step from the first hello, to purchase across channels."
+      pageTitle="Are you spending more to get customers than they are worth? We can help."
+      copy="With over 10 years event marketing experience, we know what works, and understand that advertising alone won’t sell out your event. That’s why we work with your teams to build smart automated customer journeys."
       img={headerImg}
     />
     <ServicesListBig
+      title="Our Services"
       data={[
         {
           title: 'Digital strategy',
-          copy: 'We make a plan. Doing the right things in the right places, for the right reasons.'
+          copy: 'We make a plan. Doing the right things in the right places, for the right reasons. '
         },
         {
-          title: 'Value proposition and messaging workshops',
-          copy: 'We discover your brand\'s USP\’s and expand on them.'
+          title: 'Value proposition and messaging',
+          copy: 'Discover your brand\'s USP\’s and expand on them.'
         },
         {
-          title: 'Setting up and running ad campaigns',
-          copy: 'We get your event in front of the right people at the right time and convert them into leads.'
+          title: 'Paid Social',
+          copy: 'Get your event in front of the right people at the right time and convert them into leads.'
         },
         {
           title: 'Lead generation',
-          copy: 'We get qualified leads directly to your sales teams to accelerate growth.'
+          copy: 'Get qualified leads directly to your sales teams to accelerate growth'
         },
         {
-          title: 'Lead nurturing',
-          copy: 'We build highly effective engagement funnels that nurture customers through to purchase.'
-        },
-        {
-          title: 'Marketing Automation',
-          copy: 'We automate every imaginable manual task,leaving you free to do what you do best.'
+          title: 'Automated Lead nurturing',
+          copy: 'Build highly effective engagement funnels that nurture customers through to purchase'
         },
         {
           title: 'Email marketing',
           copy: 'We plan, create and schedule your campaign emails to best work with your strategy.'
         },
         {
-          title: 'Reporting and Analytics',
+          title: 'Insights and reporting',
           copy: 'We work with full transparency, sending weekly reports so you know what\'s working, and quickly.'
-        },
-        {
-          title: 'Digital transformation',
-          copy: 'We totally transform your business\' digital landscape. Form your email and CRM platforms right through to fully integrated systems.',
         },
       ]} />
     <HowWeDoIt
@@ -76,11 +78,10 @@ const Services = () => (
       <p>Your customer journey might look like this:</p>
       <img src="https://via.placeholder.com/940x800?text=Customer+Journey" alt="Customer Journey" />
     </SimpleP>
-    <SimpleP
-    >
-      <h2>The tech</h2>
-      <p>We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – it's likely we'll have used it before.</p>
-    </SimpleP>
+    <LongList
+      title="The tech"
+      subHeader="We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – it's likely we'll have used it before."
+      data={[{ name: 'LinkedIn', img: linkedInImg }, { name: 'Google ads', img: googleAdsImg }, { name: 'Mailchimp', img: mailchimpImg }, { name: 'Marketo', img: marketoImg }, { name: 'Padrot', img: pardotImg }, { name: 'Hubspot', img: hubspotImg },]} />
     {/* <CustomerJ /> */}
     <BannerCTA
       greyBg

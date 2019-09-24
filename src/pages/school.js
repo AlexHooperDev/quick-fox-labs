@@ -13,8 +13,15 @@ import GatedCTA from '../components/gatedCTA'
 import BannerCTA from '../components/bannerCTA'
 import GivingBack from '../components/givingBack'
 import Family from '../components/family'
+import LongList from "../components/LongList";
 
 import heroImg from '../assets/training.svg'
+import spotifyImg from '../assets/logos/spotify.png'
+import cannesImg from '../assets/logos/cannes.png'
+import expertImg from '../assets/icons/expert.svg'
+import calendarImg from '../assets/icons/calendar.svg'
+import remoteImg from '../assets/icons/remote.svg'
+
 
 const School = () => (
   <Layout>
@@ -58,35 +65,20 @@ const School = () => (
           title: 'Setting up accurate reporting to showcase your results',
         },
       ]} />
-    <ThreeColBlock
-      title="Why us?"
-      copy="Because we know what we're doing. From building the system that sold out [X event] to helping [X client do X], our experience is wide-ranging, comprehensive and yours to learn from."
-      data={[
-        {
-          img: '/',
-          title: 'Case Studies',
-          copy: 'See More'
-        },
-        {
-          img: '/',
-          title: 'Companies we have helped to transform',
-          copy: 'See More'
-        },
-        {
-          img: '/',
-          title: 'What we have done in our careers to show we know what we’re talking about',
-          copy: 'See More'
-        }
-      ]} />
-    <ThreeColBlock
+        <ThreeColBlock
       title="How it works"
       subheader="Our training is bespoke to your business, with a hands-on approach designed to get you to your first lead generation. As well as guides and office time with our trainers, when you've finished the course, you'll join our Alumni of Quick Foxes, with access to updated learnings and our open Alumni forum."
       data={[
-        { title: 'Hands on training with your work reviewed by an expert' },
-        { title: 'Remote learning, the course can be taken anywhere' },
-        { title: 'Five weeks, Five days a week, Three hours a day' }
+        { title: 'Hands on training with your work reviewed by an expert', img: expertImg },
+        { title: 'Remote learning, the course can be taken anywhere', img: remoteImg },
+        { title: 'Five weeks, Five days a week, Three hours a day', img: calendarImg }
       ]}
     />
+      <LongList
+        title="Why us?"
+        subHeader="Because we know what we're doing. From building the system that sold out [X event] to helping [X client do X], our experience is wide-ranging, comprehensive and yours to learn from. We’ve trained people at:"
+        data={[{ name: 'Cannes Lions', img: cannesImg }, { name: 'Spotify', img: spotifyImg }]}
+      />
     <Family
       title="Our customers love what we do"
       copy="What recent participants have to say:"
