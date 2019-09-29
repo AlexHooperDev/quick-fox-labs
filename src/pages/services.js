@@ -35,6 +35,7 @@ const Services = () => (
       img={headerImg}
     />
     <ServicesListBig
+      blue
       title="Our Services"
       data={[
         {

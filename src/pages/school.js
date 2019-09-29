@@ -14,6 +14,7 @@ import BannerCTA from '../components/bannerCTA'
 import GivingBack from '../components/givingBack'
 import Family from '../components/family'
 import LongList from "../components/LongList";
+import Events from '../components/Events';
 
 import heroImg from '../assets/training.svg'
 import spotifyImg from '../assets/logos/spotify.png'
@@ -34,6 +35,8 @@ const School = () => (
       "
     />
     <ServicesListBig
+      small
+      blue
       title="What you will learn?"
       subHeader="Give us five weeks and we'll train you in:"
       data={[
@@ -77,13 +80,60 @@ const School = () => (
       <LongList
         title="Why us?"
         subHeader="Because we know what we're doing. From building the system that sold out [X event] to helping [X client do X], our experience is wide-ranging, comprehensive and yours to learn from. We’ve trained people at:"
-        data={[{ name: 'Cannes Lions', img: cannesImg }, { name: 'Spotify', img: spotifyImg }]}
+        data={[{ name: 'Cannes Lions', img: cannesImg }, { name: 'Spotify', img: spotifyImg }, { name: 'Cannes Lions', img: cannesImg },]}
       />
     <Family
       title="Our customers love what we do"
       copy="What recent participants have to say:"
       carouselData={['The  course was the most practical and hands on course I ever experienced. It gives you all the theory, process and tools to start growth hacking tomorrow!"', 'It was amazing to see how many easy tactics and simple tools / techniques you can use to make your product more successful ! Every Product Owner should do this !"', 'What a great atmosphere! At Growth Tribe it’s high paced, relevant, practical, no-nonsense learning."']}
     />
+    <ServicesListBig
+      small
+      title="Who it is for?"
+      subHeader="If you want to grow your business and become a true expert in digital marketing, this is for you. We'll take you way beyond what you learn on the job, in a structured set-up, designed to relate to your work. If you are:"
+      data={[
+        {
+          title: 'Marketers',
+        },
+        {
+          title: 'CEOs',
+        },
+        {
+          title: 'Executives & VPs',
+        },
+        {
+          title: 'Digital Consultants',
+        },
+        {
+          title: 'Product Owners & their teams',
+        },
+        {
+          title: 'Managers',
+        },
+        {
+          title: 'Developers',
+        },
+        {
+          title: 'Startup Founders',
+        },
+        {
+          title: 'Account Managers and Sales',
+        },
+        {
+          title: 'Consultants',
+        },
+        {
+          title: 'Business Developers',
+        },
+        {
+          title: 'Anyone interested in growing a product or business..',
+        },
+      ]} />
+      <Events
+      title=""
+      subHeader=""
+      events={[{date: "Oct 22 - Nov 26" , details: "From 6:30 - 9:30", cost: "2,479", ctaLink: '', }, {date: "Oct 22 - Nov 26" , details: "From 6:30 - 9:30", cost: "2,479", ctaLink: '', }]}
+      />
     {/* <GatedCTA title="What you'll learn" copy="Some copy should go here telling you about this gated PDF content" /> */}
     <GivingBack
       quote="There is a special place in hell for women who do not help other women"
@@ -91,10 +141,12 @@ const School = () => (
       copy="As female founders, we want to help other female founders on their road to success. So, per course, we offer two free spots to women doing incredible things in business. To find out more about this, <contact us>."
     />
     <BannerCTA
-      title="Want more?"
-      copy="Keep up to date with the latest digital marketing news and tips..."
+      title="Get in touch"
+      copy="Need more information? We have answers. Get in touch."
       link1="/blog"
       link2="/"
+      link1Copy="book a meeting"
+      link2Copy="apply now"
     />
   </Layout>
 )

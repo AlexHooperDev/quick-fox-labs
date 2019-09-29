@@ -23,6 +23,14 @@ import pure from '../assets/pure.jpg';
 import waa from '../assets/waa.jpg';
 import matter from '../assets/matter.jpg';
 
+import digitalImg from '../assets/icons/home/digital-strategy.svg'
+import valueImg from '../assets/icons/home/value-prop.svg'
+import socialImg from '../assets/icons/home/social.svg'
+import leadgenImg from '../assets/icons/home/lead-gen.svg'
+import automatedImg from '../assets/icons/home/automated-lead-nurturing.svg'
+import emailmarketingImg from '../assets/icons/home/email-marketing.svg'
+import insightsImg from '../assets/icons/home/insights.svg'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -32,7 +40,7 @@ const IndexPage = () => (
     <WhatWeDo
       title="Grow your business with digital marketing."
       subtitle="We take you from, 'Digital what now?' right through to your sold-out event, using our Quick Fox method that's tried and tested on global events. Using data and over 10 years of experience, we build simple, intuitive customer journeys designed to sell tickets. From strategy and implementation to training up your teams (and yes, we can also do a bit of both)."
-      points={[{ img: leadgen, copy: 'Reach new customers fast' }, { img: reporting, copy: 'Test and scale your ad campaigns ' }, { img: strategy, copy: 'Generate high quality leads ' }, { img: leadgen, copy: 'Reduce your customer acquisition cost ' }, { img: reporting, copy: 'Save time by automating the process' }, { img: strategy, copy: 'Increase your sales' }]}
+      points={[{ img: digitalImg, copy: 'Digital Strategy' }, { img: valueImg, copy: 'Value proposition and messaging' }, { img: socialImg, copy: 'Paid Social' }, { img: leadgenImg, copy: 'Lead Generation' }, { img: automatedImg, copy: 'Automated Lead nurturing' }, { img: emailmarketingImg, copy: 'Email marketing' }, { img: insightsImg, copy: 'Insights and reporting' }]}
     />
     <HowWeDoIt
       title="How it works..."

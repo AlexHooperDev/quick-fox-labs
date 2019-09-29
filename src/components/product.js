@@ -47,12 +47,6 @@ export default function Product({ icon, name, type, cost, costDetails, forTxt, l
           {name}
         </h3>
         <p>For: {forTxt}</p>
-        <h4>
-          £{cost}
-        </h4>
-        <h5>
-          {costDetails}
-        </h5>
       </div>
       <div className="product-carousel__item__lower">
         <ul>

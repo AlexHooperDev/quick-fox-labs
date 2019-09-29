@@ -790,6 +790,26 @@ main {
     }
 
     &--services-big {
+
+      &--school {
+
+        .list {
+
+          li {
+            min-height: 122px !important;
+            height: 100%;
+            justify-content: center;
+
+            h3 {
+              margin-bottom: 0!important;
+            }
+
+          }
+
+        }
+
+      }
+
       .list {
         li {
           background: #171831;
