@@ -9,6 +9,8 @@
         display: flex;
         padding: 10px 20px;
         flex-flow: row;
+        max-width: 1000px;
+        margin: 0 auto;
         justify-content: space-between;
 
         @media (max-width: 800px) {

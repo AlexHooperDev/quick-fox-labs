@@ -1,6 +1,7 @@
 import React from 'react';
 import './hero.scss';
 import fox from '../assets/qfl-logo-notext.svg'
+import arrow from '../assets/arrow-down.svg'
 
 export default function Hero({ page, pageTitle, copy, darkBlue, img }) {
     return (
@@ -14,6 +15,7 @@ export default function Hero({ page, pageTitle, copy, darkBlue, img }) {
                     <img src={img} alt="pageTitle" />
                 </div>
             </div>
+            <img className="arrow" src={arrow} alt="down arrow" />
         </div>
     );
 }

@@ -3,6 +3,7 @@ import Typist from 'react-typist';
 import Button from '../components/button'
 import heroArt from '../assets/home/hero-art.svg';
 import './hero.scss';
+import arrow from '../assets/arrow-down.svg'
 
 export default function HeroHome({ header, subheader, copy }) {
 
@@ -22,29 +23,29 @@ export default function HeroHome({ header, subheader, copy }) {
                     <h1>{header}</h1>
                     <div className="quote--typed">
                         <Typist>
-                            <span>"I need to sell more tickets fast?"</span>
+                            <span>Need to get more leads quickly?</span>
+                            <Typist.Backspace count={31} delay={3000} />
+                            <span>Want to reach niche audiences?</span>
+                            <Typist.Backspace count={30} delay={3000} />
+                            <span>Need to test digital marketing?</span>
+                            <Typist.Backspace count={31} delay={3000} />
+                            <span></span>
                             <Typist.Backspace count={24} delay={3000} />
-                            <span>find new customers?"</span>
+                            <span></span>
                             <Typist.Backspace count={20} delay={3000} />
-                            <span>reach niche audiences?"</span>
-                            <Typist.Backspace count={23} delay={3000} />
-                            <span>sell more tickets fast?"</span>
-                            <Typist.Backspace count={24} delay={3000} />
-                            <span>find new customers?"</span>
-                            <Typist.Backspace count={20} delay={3000} />
-                            <span>reach niche audiences?"</span>
+                            <span></span>
                         </Typist>
                     </div>
                     <h3 className="no-underline">{copy}</h3>
                     <div className="cta-container">
-                        <Button main link="/#down" copy='Sort my digital marketing' />
-                        <Button secondary link='/school' copy='Digital marketing training' />
+                        <Button main link="/#down" copy='Get in touch' />
                     </div>
                 </div>
                 <div className="hero__wrapper__art" style={{ opacity: `${loaded ? '1' : '0'}`, transform: `translate3d(0, ${loaded ? '0%' : '10%'}, 0)` }}>
                     <img src={heroArt} alt={header} />
                 </div>
             </div>
+            <img className="arrow" src={arrow} alt="down arrow" />
         </div>
     );
 }

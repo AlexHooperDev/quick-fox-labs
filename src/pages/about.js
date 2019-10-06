@@ -29,24 +29,41 @@ const About = () => (
       darkBlue
       noWave
     >
-      <h2>Our Story</h2>
+      <h2>Let us introduce ourselves.</h2>
       <div className="our-story">
         <div className="our-story__content">
           <p>
-            We’re Emma and Amy, and we're people who love digital marketing. Love it. Weird? Maybe, but it's a badge we wear proudly. We both believe digital,  used ethically, can be a tool for real human connection; a way to build real relationships and help power the ideas that happen when great people come together.
+            We’re Emma and Amy, and we love digital marketing. Yep, love it. Some might think that odd, but you see we believe digital done right is a powerful tool for human connection – a way to build relationships and nurture shared ideas. Because great things happen when people come together.
         </p>
           <p>
-            We’ve worked in events for over 12 years. Amy became Marketing Director of  This is Beyond and Emma launched digital teams, running successful campaigns globally. When we couldn’t find a digital partner to help us grow our own events, we decided to start one.
+            For more than 15 years Amy has transformed the digital marketing strategies at Guardian Edinburgh International Television Festival, The London Tea Company, Cannes Lions International Festival of Creativity and, most recently, This is Beyond. A dab hand at a rebrand, she understands how to align brand purpose with business goals via simple, intuitive customer journeys.
         </p>
           <p>
-            Today, our mutual desire to help others succeed, is the basis of our partnership at Quick Fox Labs and the reason behind our name. Foxes are known for being quick, cunning and a great guide when you are facing tricky situations. Which is exactly what we aim to do for all our clients. Plus, foxes go about the business of living life with sass and class.
-        </p>
-          <p>
-            We’re flexible with how we work – we can do it for you, do it with you or help you do it for yourself. We will work with you to find the right solution and succeed.
+            Emma has set up digital teams at Lawyers On Demand and This is Beyond, implementing brand new systems and processes across large teams and running successful global, cross-channel campaigns. A stickler for detail, she reads data like novels and knows exactly what story your customers are trying to tell you.
         </p>
         </div>
         <img className="our-story__img" src={emmaAmyImg} alt="Emma and Amy" />
       </div>
+    </SimpleP>
+    <SimpleP
+      darkBlue
+      noWave
+    >
+    <h3>
+          Where did it all start?
+        </h3>
+        <p>
+          We were working together for an events company, trying to find a digital partner we clicked with. Everyone we spoke to insisted on talking to us in riddles, locking us into endless contracts, and refusing to let us in on their process or results. That’s when we realised: why not do it ourselves? Honest, accessible digital marketing with no commitment and total transparency. Revolutionary, right?!
+        </p>
+        <h3>
+          So, why the name?
+        </h3>
+        <p>
+          We’ve both been lucky enough to have strong, capable women around us throughout our careers – women we’ve learned from and looked up to. Women who showed us that we could be whatever we want to be. Women who are smart, cunning, and unapologetically female.
+        </p>
+        <p>
+          Our business is a homage to Quick Foxes everywhere. Keep doing what you’re doing!
+        </p>
     </SimpleP>
     {/* <Team
       members={[{
@@ -63,9 +80,9 @@ const About = () => (
       title="The Quick Fox Promise:"
       subheader="Good business happens because of good partnerships, and the best partnerships are built on trust, transparency and generosity."
       data={[
-        { img: simpleImg, title: 'We keep it simple', copy: 'Everything we do is designed to simplify digital marketing. From our pricing plans to our streamlined approach, we\'re here to de-mystify and deliver.' },
-        { img: flexibleImg, title: 'We keep it flexible', copy: 'No long-term commitments needed. If you don’t like the results, stop at any time with 30-days notice.' },
-        { img: teamImg, title: 'We keep it collaborative', copy: 'Everything we do is an extension of your team. We will even come and sit in your office up to 1 day a week.' }
+        { img: simpleImg, title: 'We keep it simple', copy: 'We’re on a mission to demystify digital marketing. From our streamlined approach to our total transparency, we\'re here to simplify and deliver.' },
+        { img: teamImg, title: 'Keep it collaborative', copy: 'We think teamwork makes the dream work. That’s why we take time getting to know your business, so we can be an extension of your team.' },
+        { img: flexibleImg, title: 'Keep it flexible.', copy: 'We pride ourselves on being adaptable. Whether you want lots of support or the occasional helping hand, you pay for what you need – and no more.' }
       ]}
     />
     {/* <Family

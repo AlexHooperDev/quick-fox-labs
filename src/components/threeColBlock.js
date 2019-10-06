@@ -3,7 +3,7 @@ import makeVisible from '../hooks/makeVisible'
 
 import './threeColBlock.scss'
 
-export default function ThreeColBlock({ data, title, subheader }) {
+export default function ThreeColBlock({ data, title, subheader, numbers }) {
 
   const [bodyContent, isVisible] = makeVisible();
 
@@ -13,7 +13,7 @@ export default function ThreeColBlock({ data, title, subheader }) {
         <h2>{title}</h2>
         <p>{subheader}</p>
         {data.map(col => (
-          <div className="col">
+          <div className={`col ${numbers ? 'col--numbers' : ''}`}>
             <img src={col.img} alt={col.title} />
             <h4>
               {col.title}

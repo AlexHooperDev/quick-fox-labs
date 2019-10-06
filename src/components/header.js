@@ -53,9 +53,6 @@ export default function Header({ contactModal }) {
               <li>
                 <Link to="/school">Training</Link>
               </li>
-              <li>
-                <Link to="/cost">Prices</Link>
-              </li>
             </ul>
           </nav>
           <div className="header__links__cta">
