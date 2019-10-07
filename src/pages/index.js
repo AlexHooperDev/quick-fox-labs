@@ -10,7 +10,7 @@ import BannerCTA from '../components/bannerCTA'
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Family from '../components/family'
-import ThreeColBlock from '../components/ThreeColBlock'
+import ThreeColBlock from '../components/threeColBlock'
 
 
 import leadgen from '../assets/icons/leadgen.svg'
