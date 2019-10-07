@@ -8,7 +8,8 @@
     }
 
     &--home {
-        min-height: calc(90vh + 77.7px);
+        position: relative;
+        min-height: calc(80vh + 77.7px);
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -41,7 +42,10 @@
 
                     h1 {
                         font-size: 36px;
-                        margin-bottom: 0;
+                        margin-bottom: 20px;
+                    }
+                    h2 {
+                        font-size: 36px;
                     }
 
                     .Typist {
@@ -72,7 +76,7 @@
                     }
 
                     img {
-                        width: 410px;
+                        width: 100%;
                     }
                 }
             }

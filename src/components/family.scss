@@ -11,6 +11,7 @@
 
 .family-carousel {
   height: 40vh;
+  margin: 40px 0;
 
   &__item {
     height: 40vh;
@@ -49,8 +50,15 @@
           font-family: "Rubik";
           font-weight: 300;
           line-height: 24px;
-          font-style: italic;
         }
+
+        h4 {
+          color: #3e3e3e;
+          font-weight: 900;
+          font-family: "Proxima Nova Rg";
+          margin: 10px 0;
+        }
+
       }
     }
   }

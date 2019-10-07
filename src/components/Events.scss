@@ -1,0 +1,36 @@
+.events-wrapper {
+    display: flex;
+    margin: 40px 0;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+
+    .event-item {
+      background: #fff;
+      border-top: 4px solid #ff6952;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+
+      h3 {
+        color: rgba(0,0,0,0.8);
+        margin-bottom: 10px;
+        font-family: "Proxima Nova Rg";
+      }
+
+      h4 {
+        border-bottom: 1px solid #d0d0d0;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+      }
+
+      h5 {
+        font-size: 30px;
+        font-weight: 900;
+        font-family: "Proxima Nova Rg";
+        color: #398098;
+        margin: 16px 0;
+      }
+
+    }
+}

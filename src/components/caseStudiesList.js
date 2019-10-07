@@ -3,13 +3,14 @@ import './caseStudiesList.scss'
 
 import makeVisible from '../hooks/makeVisible'
 
-export default function CaseStudiesList({ caseStudies }) {
+export default function CaseStudiesList({ caseStudies, white, title }) {
 
   const [bodyContent, isVisible] = makeVisible();
 
   return (
-    <section className="section section--case-studies" ref={bodyContent}>
+    <section className={`section section--case-studies ${white ? 'section--case-studies--white' : ''}`} ref={bodyContent}>
       <div className={`section__wrapper ${isVisible ? 'section__wrapper--visible' : ''}`}>
+        {title && <h2 className="black">{title}</h2>}
         <div className="case-studies">
           {caseStudies.map(caseStudy => (
             <div className="case-studies__item" style={{ backgroundImage: `url(${caseStudy.img})` }}>

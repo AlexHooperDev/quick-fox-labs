@@ -38,7 +38,8 @@ export default function Family({ title, copy, carouselData }) {
             <div className="family-carousel__item">
               <div className="family-carousel__item__inner">
                 <div className="family-carousel__item__inner__content">
-                  <h3>{item}</h3>
+                  <h3>{item.quote}</h3>
+                  <h4>{item.title}</h4>
                 </div>
               </div>
             </div>

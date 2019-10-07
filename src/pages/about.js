@@ -27,7 +27,7 @@ const About = () => (
     <SimpleP
       hero
       darkBlue
-      noWave
+      noPaddingBottom
     >
       <h2>Let us introduce ourselves.</h2>
       <div className="our-story">
@@ -41,28 +41,28 @@ const About = () => (
           <p>
             Emma has set up digital teams at Lawyers On Demand and This is Beyond, implementing brand new systems and processes across large teams and running successful global, cross-channel campaigns. A stickler for detail, she reads data like novels and knows exactly what story your customers are trying to tell you.
         </p>
+          <h3>
+            Where did it all start?
+        </h3>
+          <p>
+            We were working together for an events company, trying to find a digital partner we clicked with. Everyone we spoke to insisted on talking to us in riddles, locking us into endless contracts, and refusing to let us in on their process or results. That’s when we realised: why not do it ourselves? Honest, accessible digital marketing with no commitment and total transparency. Revolutionary, right?!
+        </p>
         </div>
         <img className="our-story__img" src={emmaAmyImg} alt="Emma and Amy" />
       </div>
     </SimpleP>
     <SimpleP
       darkBlue
-      noWave
+      noPaddingTop
     >
-    <h3>
-          Where did it all start?
+      <h3>
+        So, why the name?
         </h3>
-        <p>
-          We were working together for an events company, trying to find a digital partner we clicked with. Everyone we spoke to insisted on talking to us in riddles, locking us into endless contracts, and refusing to let us in on their process or results. That’s when we realised: why not do it ourselves? Honest, accessible digital marketing with no commitment and total transparency. Revolutionary, right?!
+      <p>
+        We’ve both been lucky enough to have strong, capable women around us throughout our careers – women we’ve learned from and looked up to. Women who showed us that we could be whatever we want to be. Women who are smart, cunning, and unapologetically female.
         </p>
-        <h3>
-          So, why the name?
-        </h3>
-        <p>
-          We’ve both been lucky enough to have strong, capable women around us throughout our careers – women we’ve learned from and looked up to. Women who showed us that we could be whatever we want to be. Women who are smart, cunning, and unapologetically female.
-        </p>
-        <p>
-          Our business is a homage to Quick Foxes everywhere. Keep doing what you’re doing!
+      <p>
+        Our business is a homage to Quick Foxes everywhere. Keep doing what you’re doing!
         </p>
     </SimpleP>
     {/* <Team
@@ -92,11 +92,11 @@ const About = () => (
     /> */}
     <BannerCTA
       greyBg
-      title="Take the Quiz"
-      copy="Want an idea of cost and ROI right now? We have a quiz for that."
+      title="Get in touch"
+      copy="Want an idea of cost and ROI right now? Get in touch"
       link1="/quiz"
       link2="/"
-      link1Copy="Take the Quiz"
+      link1Copy="Contact us"
       link2Copy="Book a meeting"
     />
     {/*

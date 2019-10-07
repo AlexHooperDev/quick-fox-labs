@@ -11,27 +11,24 @@ export default function Footer() {
             <div className="footer__wrapper">
                 <div className="footer__wrapper__contact">
                     <h2 className="no-underline">Quick Fox Labs</h2>
-                    <p>07557644480</p>
+                    <p>00000000</p>
                     <p>contact@quickfoxlabs.com</p>
                     <ul>
                         <li><img src={fb} alt="facebook" /></li>
-                        <li><img src={ig} alt="facebook" /></li>
-                        <li><img src={twitter} alt="facebook" /></li>
+                        <li><img src={ig} alt="Instagram" /></li>
+                        <li><img src={twitter} alt="Twitter" /></li>
                     </ul>
                 </div>
                 <div className="footer__wrapper__location">
-                    <h4>Location</h4>
+                    <h2 className="no-underline">Location</h2>
                 </div>
                 <div className="footer__wrapper__links">
-                    <h4>Quick Links</h4>
+                    <h2 className="no-underline">Quick Links</h2>
                     <ul>
-                        <li>Brand</li>
                         <li>About</li>
                         <li>Services</li>
                         <li>Case Studies</li>
                         <li>School</li>
-                        <li>Blog</li>
-                        <li>Contact Us</li>
                         <li>Privacy Policy</li>
                     </ul>
                 </div>

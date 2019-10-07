@@ -35,16 +35,26 @@ import automatedImg from '../assets/icons/home/automated-lead-nurturing.svg'
 import emailmarketingImg from '../assets/icons/home/email-marketing.svg'
 import insightsImg from '../assets/icons/home/insights.svg'
 
+
+import userImg from '../assets/icons/home/new/user.svg';
+import settingImg from '../assets/icons/home/new/setting.svg';
+import flasksImg from '../assets/icons/home/new/flasks.svg';
+import groupImg from '../assets/icons/home/new/group.svg';
+import rocketImg from '../assets/icons/home/new/rocket.svg';
+import salesImg from '../assets/icons/home/new/sales.svg';
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroHome
-      header="Hi, we’re Quick Fox. We help you grow your business with smart digital marketing."
+      header="Hi, we’re Quick Fox."
+      subHeader="We help you grow your business with smart digital marketing."
       copy="We have got you covered." />
     <WhatWeDo
       title="Grow your business with digital marketing."
       subtitle="We take you from, 'Digital what now?' right through to growing leads and sales, using our Quick Fox method that's tried and tested. Using data and over 15 years of experience, we build simple, intuitive customer journeys designed to grow your business."
-      points={[{ img: digitalImg, copy: 'Find the right customers quickly' }, { img: valueImg, copy: 'Build campaigns that drive results' }, { img: socialImg, copy: 'Use data to test and scale what works' }, { img: leadgenImg, copy: 'Generate high-quality leads' }, { img: automatedImg, copy: 'Reduce your customer acquisition cost ' }, { img: emailmarketingImg, copy: 'Increase your sales' }]}
+      copy="From strategy to implementation, we can help you:"
+      points={[{ img: userImg, copy: 'Find the right customers quickly' }, { img: settingImg, copy: 'Build campaigns that drive results' }, { img: flasksImg, copy: 'Use data to test and scale what works' }, { img: groupImg, copy: 'Generate high-quality leads' }, { img: rocketImg, copy: 'Reduce your customer acquisition cost ' }, { img: salesImg, copy: 'Increase your sales' }]}
     />
     {/* <HowWeDoIt
       title="How it works..."
@@ -63,8 +73,7 @@ const IndexPage = () => (
     />
     <Family
       title="Our customers love what we do"
-      copy="What recent participants have to say:"
-      carouselData={['We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed resulted in new business sales! I would recommend them."', 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.']}
+      carouselData={[{ title: 'Director, PURE', quote: 'We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed resulted in new business sales! I would recommend them."' }, { title: 'MD, WAA', quote: 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.' }]}
     />
     {/* <Logos
       title="Our Work"
@@ -72,11 +81,11 @@ const IndexPage = () => (
       brands={[{ name: 'PURE Life Experiences', copy: '3 x ROAS ', img: pure }, { name: 'We Are Africa', copy: '15% of ticket sales ', img: waa }, { name: 'MATTER Unconference', copy: '200 Qualified leads per month & 3 x ROAS', img: matter },]} /> */}
 
     <BannerCTA
-      title="Ready to get started?"
-      copy="Want an idea of cost and ROI right now? We have a quiz for that. "
+      title="Get in touch"
+      copy="Want an idea of cost and ROI right now? Get in touch"
       link1="/quiz"
       link2="/"
-      link1Copy="Take the Quiz" link2="/"
+      link1Copy="Contact us" link2="/"
       link2Copy="Book a meeting"
     />
 

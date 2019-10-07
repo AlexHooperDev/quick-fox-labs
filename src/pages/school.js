@@ -13,15 +13,20 @@ import GatedCTA from '../components/gatedCTA'
 import BannerCTA from '../components/bannerCTA'
 import GivingBack from '../components/givingBack'
 import Family from '../components/family'
-import LongList from "../components/LongList";
-import Events from '../components/Events';
+import LongList from "../components/LongList"
+import Events from '../components/Events'
+import CaseStudiesList from '../components/caseStudiesList'
+
+import waaImg from '../assets/waa.jpg'
+import pureImg from '../assets/pure.jpg'
 
 import heroImg from '../assets/training.svg'
 import spotifyImg from '../assets/logos/spotify.png'
 import cannesImg from '../assets/logos/cannes.png'
+
 import expertImg from '../assets/icons/expert.svg'
 import calendarImg from '../assets/icons/calendar.svg'
-import remoteImg from '../assets/icons/remote.svg'
+import remoteImg from '../assets/icons/school/remote.png'
 
 
 const School = () => (
@@ -30,7 +35,7 @@ const School = () => (
     <Hero
       img={heroImg}
       page="School"
-      pageTitle="Learn how to grow your business, quickly."
+      pageTitle="Learn how to grow your business with smart digital marketing."
       copy="Ready to be an expert in digital marketing? We'll tell you how. In five weeks, we’ll take you from, ‘Digital what now?’ to creating and implementing a unique digital marketing strategy, capturing, nurturing and reporting on your first leads and sales. 
       "
     />
@@ -38,55 +43,66 @@ const School = () => (
       small
       blue
       title="What you will learn?"
-      subHeader="Give us five weeks and we'll train you in:"
+      subHeader="In five weeks, we’ll teach you how to:"
       data={[
         {
-          title: 'Creating a digital marketing strategy',
+          title: 'Create a digital marketing strategy to generate new leads to grow your business',
         },
         {
-          title: 'Understanding which channels will work best for you',
+          title: 'Understand which channels will work best for you',
         },
         {
-          title: 'Generating new leads for your business to grow',
+          title: 'Write, build and test landing pages that convert better',
         },
         {
-          title: 'Building landing pages',
+          title: 'Set up Facebook, Instagram and Google Adwords campaigns',
         },
         {
-          title: 'Building automation programmes',
+          title: 'Continuously optimise your campaigns to generate higher ROI',
         },
         {
-          title: 'Setting up Facebook, Instagram and Google Adwords campaigns',
+          title: 'Troubleshoot campaigns',
         },
         {
-          title: 'Optimising your campaigns',
+          title: 'Design and build successful nurturing automation programmes',
         },
         {
-          title: 'Benchmarking for success',
+          title: 'Benchmark for success',
         },
         {
-          title: 'Setting up accurate reporting to showcase your results',
+          title: 'Set up accurate reporting to showcase your results',
         },
       ]} />
         <ThreeColBlock
-      title="How it works"
-      subheader="Our training is bespoke to your business, with a hands-on approach designed to get you to your first lead generation. As well as guides and office time with our trainers, when you've finished the course, you'll join our Alumni of Quick Foxes, with access to updated learnings and our open Alumni forum."
+        noPaddingBottom
+      title="So, why should you choose us?"
       data={[
-        { title: 'Hands on training with your work reviewed by an expert', img: expertImg },
-        { title: 'Remote learning, the course can be taken anywhere', img: remoteImg },
-        { title: 'Five weeks, Five days a week, Three hours a day', img: calendarImg }
+        { title: 'We’ll give you insights you can use.', copy: 'Literally. Our training course is project-based learning, so we’ll help you overcome real-life challenges in your actual business, step by step. (So you can wow the boss.)', img: expertImg },
+        { title: 'We know our stuff.', copy:'Our 15 years of experience have taught us a thing or two (check out our case studies to learn more), and we’re raring to pass on our expertise.', img: remoteImg },
+        { title: 'We don’t believe in silly questions.', copy: 'We were once where you are now, so we understand that barking instructions helps no one. Our trainers are savvy, friendly, and have the patience of a saint.', img: calendarImg }
       ]}
     />
-      <LongList
+     <ThreeColBlock
+      noPaddingTop
+      data={[
+        { title: 'We make it bite size.', copy: 'We know too much new information can blow up the best of brains, so we break it down into three hours a day, five days a week, for five weeks.', img: expertImg },
+        { title: 'We teach remotely.', copy:'All you need is a laptop and an internet connection, so you can take the course wherever you’re currently calling your office.', img: remoteImg },
+        { title: 'We’ll make you a Quick Fox.', copy: 'Officially. Once you finish the course you’ll become part of our honorary alumni, which gets you access to updated learnings and our exclusive forum. ', img: calendarImg }
+      ]}
+    />
+    <CaseStudiesList
+      title="Case Studies"
+      caseStudies={[{ name: "We Are Africa", img: waaImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }, { name: "Pure Life Experiences", img: pureImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }]} />
+      {/* <LongList
         title="Why us?"
         subHeader="Because we know what we're doing. From building the system that sold out [X event] to helping [X client do X], our experience is wide-ranging, comprehensive and yours to learn from. We’ve trained people at:"
         data={[{ name: 'Cannes Lions', img: cannesImg }, { name: 'Spotify', img: spotifyImg }, { name: 'Cannes Lions', img: cannesImg },]}
-      />
-    <Family
+      /> */}
+    {/* <Family
       title="Our customers love what we do"
       copy="What recent participants have to say:"
       carouselData={['The  course was the most practical and hands on course I ever experienced. It gives you all the theory, process and tools to start growth hacking tomorrow!"', 'It was amazing to see how many easy tactics and simple tools / techniques you can use to make your product more successful ! Every Product Owner should do this !"', 'What a great atmosphere! At Growth Tribe it’s high paced, relevant, practical, no-nonsense learning."']}
-    />
+    /> */}
     <ServicesListBig
       small
       title="Who it is for?"
@@ -117,7 +133,7 @@ const School = () => (
           title: 'Startup Founders',
         },
         {
-          title: 'Account Managers and Sales',
+          title: 'Account Managers and Sales Managers',
         },
         {
           title: 'Consultants',
@@ -130,24 +146,26 @@ const School = () => (
         },
       ]} />
       <Events
-      title=""
+      title="Dates, pricing and booking"
       subHeader=""
-      events={[{date: "Oct 22 - Nov 26" , details: "From 6:30 - 9:30", cost: "2,479", ctaLink: '', }, {date: "Oct 22 - Nov 26" , details: "From 6:30 - 9:30", cost: "2,479", ctaLink: '', }]}
+      events={[{date: "Oct 22 - Nov 26" , title: "Remote learning", cost: "2,479", ctaLink: '', limited: true },]}
       />
-    {/* <GatedCTA title="What you'll learn" copy="Some copy should go here telling you about this gated PDF content" /> */}
-    <GivingBack
-      quote="There is a special place in hell for women who do not help other women"
-      author="Madeleine Albright"
-      copy="As female founders, we want to help other female founders on their road to success. So, per course, we offer two free spots to women doing incredible things in business. To find out more about this, <contact us>."
-    />
-    <BannerCTA
+      <BannerCTA
       title="Get in touch"
       copy="Need more information? We have answers. Get in touch."
       link1="/blog"
       link2="/"
-      link1Copy="book a meeting"
+      link1Copy="book a call"
       link2Copy="apply now"
     />
+
+    {/* <GatedCTA title="What you'll learn" copy="Some copy should go here telling you about this gated PDF content" /> */}
+    <GivingBack
+      quote="There is a special place in hell for women who do not help other women"
+      author="Madeleine Albright"
+      copy="We believe women should be better represented in business – and we’re willing to prove it:.  on every course we offer two free spots to women doing incredible things in business. Get in touch to find out more and apply."
+    />
+    
   </Layout>
 )
 

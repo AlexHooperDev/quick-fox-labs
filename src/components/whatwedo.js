@@ -3,7 +3,7 @@ import Button from './button'
 import './whatwedo.scss'
 import makeVisible from '../hooks/makeVisible'
 
-export default function WhatWeDo({ title, subtitle, points }) {
+export default function WhatWeDo({ title, subtitle, copy, points }) {
 
     const [bodyContent, isVisible] = makeVisible();
 
@@ -15,6 +15,9 @@ export default function WhatWeDo({ title, subtitle, points }) {
                 </h2>
                 <p>
                     {subtitle}
+                </p>
+                <p>
+                    {copy}
                 </p>
                 <ul className="list">
                     {points.map((point) => (

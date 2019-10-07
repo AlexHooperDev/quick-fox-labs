@@ -14,11 +14,12 @@ export default function servicesListBig({ data, title, subHeader, copy, small, b
         <ol className="list list--services">
           {data.map((point, i) => (
             <li>
-              <img src={point.img} />
-              <h3>{!small ? `${i + 1}.` : ''} {point.title}</h3>
+              {point.img && <img src={point.img} />}
+              <h3>{point.title}</h3>
               <p>{point.copy}</p>
             </li>
           ))}
+          <p>Plus much more… If there’s something you need (even if you’re not sure what it is yet), let us know and we’ll put a plan together. </p>
         </ol>
       </div>
     </section>

@@ -3,15 +3,15 @@ import makeVisible from '../hooks/makeVisible'
 
 import './threeColBlock.scss'
 
-export default function ThreeColBlock({ data, title, subheader, numbers }) {
+export default function ThreeColBlock({ data, title, subheader, numbers, noPaddingTop, noPaddingBottom }) {
 
   const [bodyContent, isVisible] = makeVisible();
 
   return (
-    <section className="section" ref={bodyContent}>
+    <section className={`section ${noPaddingTop ? 'section--no-padding-top' : ''} ${noPaddingBottom ? 'section--no-padding-bottom' : ''}`} ref={bodyContent}>
       <div className={`section__wrapper section__wrapper--col ${isVisible ? 'section__wrapper--visible' : ''}`}>
-        <h2>{title}</h2>
-        <p>{subheader}</p>
+        {title && <h2>{title}</h2>}
+        {subheader && <p>{subheader}</p>}
         {data.map(col => (
           <div className={`col ${numbers ? 'col--numbers' : ''}`}>
             <img src={col.img} alt={col.title} />

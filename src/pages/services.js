@@ -26,6 +26,13 @@ import automatedImg from '../assets/icons/home/automated-lead-nurturing.svg'
 import emailmarketingImg from '../assets/icons/home/email-marketing.svg'
 import insightsImg from '../assets/icons/home/insights.svg'
 
+import userImg from '../assets/icons/home/new/user.svg';
+import settingImg from '../assets/icons/home/new/setting.svg';
+import flasksImg from '../assets/icons/home/new/flasks.svg';
+import groupImg from '../assets/icons/home/new/group.svg';
+import rocketImg from '../assets/icons/home/new/rocket.svg';
+import salesImg from '../assets/icons/home/new/sales.svg';
+
 // Tech logos
 import linkedInImg from '../assets/logos/linkedin.png'
 import googleAdsImg from '../assets/logos/google-ads.svg'
@@ -66,7 +73,7 @@ const Services = () => (
           copy: 'Getting your product in front of the right people, at the right time, and converting them into leads.'
         },
         {
-          img: leadgenImg,
+          img: groupImg,
           title: 'Lead generation',
           copy: 'Delivering qualified leads directly to your sales team.'
         },
@@ -94,16 +101,17 @@ const Services = () => (
       <img src="https://via.placeholder.com/940x800?text=Customer+Journey" alt="Customer Journey" />
     </SimpleP> */}
     <LongList
+      dBlue
       title="Tools we use"
       subHeader="We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – we’ve probably used it before."
       data={[{ name: 'LinkedIn', img: linkedInImg }, { name: 'Google ads', img: googleAdsImg }, { name: 'Mailchimp', img: mailchimpImg }, { name: 'Marketo', img: marketoImg }, { name: 'Padrot', img: pardotImg }, { name: 'Hubspot', img: hubspotImg }, { name: 'Instapage', img: instapageImg }, { name: 'Facebook Ads', img: facebookAdsImg }]} />
     {/* <CustomerJ /> */}
     <BannerCTA
       greyBg
-      title="Ready to get started?"
-      copy="Want an idea of cost and ROI right now? We have a quiz for that."
+      title="Get in touch"
+      copy="Want an idea of cost and ROI right now? Get in touch"
       link1="/quiz"
-      link1Copy="Take the quiz"
+      link1Copy="Contact us"
       link2="/"
       link2Copy="Book a meeting"
     />
