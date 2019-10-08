@@ -151,8 +151,7 @@ const School = () => (
       events={[{date: "Oct 22 - Nov 26" , title: "Remote learning", cost: "2,479", ctaLink: '', limited: true },]}
       />
       <BannerCTA
-      title="Get in touch"
-      copy="Need more information? We have answers. Get in touch."
+      title="Ready to get started"
       link1="/blog"
       link2="/"
       link1Copy="book a call"

@@ -905,12 +905,25 @@ main {
 
         @media (max-width: 768px) {
           flex-basis: 170px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 30px;
+        }
+
+        @media (max-width: 475px) {
+          flex-basis: 100%;
         }
 
         img {
           max-height: 70px;
           max-width: 80px;
           margin: 0;
+
+          @media (max-width: 475px) {
+            max-width: 60%!important;
+            margin: 30px auto;
+          }
+
         }
         p {
           font-family: "Rubik";

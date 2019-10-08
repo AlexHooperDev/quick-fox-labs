@@ -92,8 +92,7 @@ const About = () => (
     /> */}
     <BannerCTA
       greyBg
-      title="Get in touch"
-      copy="Want an idea of cost and ROI right now? Get in touch"
+      title="Ready to get started?"
       link1="/quiz"
       link2="/"
       link1Copy="Contact us"

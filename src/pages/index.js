@@ -47,11 +47,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroHome
-      header="Hi, we’re Quick Fox."
       subHeader="We help you grow your business with smart digital marketing."
       copy="We have got you covered." />
     <WhatWeDo
-      title="Grow your business with digital marketing."
+      title="What we do"
       subtitle="We take you from, 'Digital what now?' right through to growing leads and sales, using our Quick Fox method that's tried and tested. Using data and over 15 years of experience, we build simple, intuitive customer journeys designed to grow your business."
       copy="From strategy to implementation, we can help you:"
       points={[{ img: userImg, copy: 'Find the right customers quickly' }, { img: settingImg, copy: 'Build campaigns that drive results' }, { img: flasksImg, copy: 'Use data to test and scale what works' }, { img: groupImg, copy: 'Generate high-quality leads' }, { img: rocketImg, copy: 'Reduce your customer acquisition cost ' }, { img: salesImg, copy: 'Increase your sales' }]}
@@ -62,6 +61,7 @@ const IndexPage = () => (
       points={[{ number: '1', title: 'We Scope', copy: 'After a free discovery call, well assess where you are at right now', img: scope }, { number: '2', title: 'We Build', copy: 'We know where your audience is and how to engage them within your budget. You choose your service level and we spring into action. ', img: build }, { number: '3', title: 'We Scale', copy: 'You\'ll receive weekly reviews and reports to maximise exposure and minimise waste.', img: scale },]}
     /> */}
     <ThreeColBlock
+      wide
       numbers
       title="Why work with Quick Fox?"
       subheader=""
@@ -81,8 +81,7 @@ const IndexPage = () => (
       brands={[{ name: 'PURE Life Experiences', copy: '3 x ROAS ', img: pure }, { name: 'We Are Africa', copy: '15% of ticket sales ', img: waa }, { name: 'MATTER Unconference', copy: '200 Qualified leads per month & 3 x ROAS', img: matter },]} /> */}
 
     <BannerCTA
-      title="Get in touch"
-      copy="Want an idea of cost and ROI right now? Get in touch"
+      title="Ready to get started?"
       link1="/quiz"
       link2="/"
       link1Copy="Contact us" link2="/"

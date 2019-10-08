@@ -3,13 +3,13 @@ import makeVisible from '../hooks/makeVisible'
 
 import './threeColBlock.scss'
 
-export default function ThreeColBlock({ data, title, subheader, numbers, noPaddingTop, noPaddingBottom }) {
+export default function ThreeColBlock({ data, title, subheader, numbers, noPaddingTop, noPaddingBottom, wide }) {
 
   const [bodyContent, isVisible] = makeVisible();
 
   return (
     <section className={`section ${noPaddingTop ? 'section--no-padding-top' : ''} ${noPaddingBottom ? 'section--no-padding-bottom' : ''}`} ref={bodyContent}>
-      <div className={`section__wrapper section__wrapper--col ${isVisible ? 'section__wrapper--visible' : ''}`}>
+      <div className={`section__wrapper section__wrapper--col ${isVisible ? 'section__wrapper--visible' : ''} ${wide ? 'section__wrapper--wide' : ''}`}>
         {title && <h2>{title}</h2>}
         {subheader && <p>{subheader}</p>}
         {data.map(col => (

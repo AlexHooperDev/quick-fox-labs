@@ -22,8 +22,7 @@ const CaseStudies = () => (
     <CaseStudiesList
       caseStudies={[{ name: "We Are Africa", img: waaImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }, { name: "Pure Life Experiences", img: pureImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }]} />
     <BannerCTA
-      title="Get in touch"
-      copy="Want an idea of cost and ROI right now? Get in touch"
+      title="Ready to get started?"
       link1="/quiz"
       link2="/"
       link1Copy="Contact us"

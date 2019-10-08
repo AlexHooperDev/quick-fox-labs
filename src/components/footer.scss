@@ -6,6 +6,17 @@
     padding: 50px 25px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 515px) {
+      flex-flow: column;
+      align-items: center;
+    }
+
+
+    button {
+      margin: 0 auto;
+    }
+
     h2 {
       color: #b5b5b5;
     font-family: "Proxima Nova Rg";
@@ -22,10 +33,20 @@
     }
     &__contact {
       color: #fff;
+
+      @media (max-width: 515px) {
+        margin: 0 0 30px;
+      }
+
       ul {
         margin: 20px 0;
         list-style: none;
         display: flex;
+
+        @media (max-width: 515px) {
+         justify-content: center;
+        }
+
         li {
           margin: 0 10px;
           img {
@@ -48,6 +69,11 @@
         margin: 0;
         font-size: 16px;
         color: #8788ab;
+
+        a {
+          color: #8788ab;
+          text-decoration: none;
+        }
       }
     }
   }

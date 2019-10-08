@@ -33,16 +33,16 @@ export default function HeroHome({ header, subHeader, copy }) {
                             <span>get more leads quickly?</span>
                             <Typist.Backspace count={23} delay={3000} />
                             <span>reach niche audiences?</span>
-                            <Typist.Backspace count={23} delay={3000} />
-                            <span>get more leads quickly?</span>
-                            <Typist.Backspace count={23} delay={3000} />
-                            <span>reach niche audiences?</span>
-                            <Typist.Backspace count={23} delay={3000} />
+                            <Typist.Backspace count={22} delay={3000} />
                             <span>test digital marketing?</span>
                             <Typist.Backspace count={23} delay={3000} />
                             <span>get more leads quickly?</span>
                             <Typist.Backspace count={23} delay={3000} />
                             <span>reach niche audiences?</span>
+                            <Typist.Backspace count={22} delay={3000} />
+                            <span>test digital marketing?</span>
+                            <Typist.Backspace count={23} delay={3000} />
+                            <span>get more leads quickly?</span>
                         </Typist>
                     </div>
                     <h3 className="no-underline">{copy}</h3>

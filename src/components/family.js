@@ -20,6 +20,14 @@ export default function Family({ title, copy, carouselData }) {
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
+    responsive: [{
+      breakpoint: 1000,
+      settings: {
+        verticalSwiping: false,
+        vertical: false,
+      }
+    }
+    ]
   };
 
   return (
