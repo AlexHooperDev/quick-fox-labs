@@ -25,6 +25,9 @@ import heroImg from '../assets/training.svg'
 import spotifyImg from '../assets/logos/spotify.png'
 import cannesImg from '../assets/logos/cannes.png'
 
+import pureLogo from '../assets/logos/pure.svg'
+import waaLogo from '../assets/logos/waa.png'
+
 import insightsImg from '../assets/icons/school/insights.svg';
 import bitesizeImg from '../assets/icons/school/bitesize.svg';
 import knowyourstuffImg from '../assets/icons/school/knowyourstuff.svg';
@@ -94,9 +97,8 @@ const School = () => (
         { title: 'We’ll make you a Quick Fox.', copy: 'Officially. Once you finish the course you’ll become part of our honorary alumni, which gets you access to updated learnings and our exclusive forum. ', img: quickfoxImg }
       ]}
     />
-    <CaseStudiesList
-      title="Case Studies"
-      caseStudies={[{ name: "We Are Africa", img: waaImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }, { name: "Pure Life Experiences", img: pureImg, stats: ['18m views', '100 shares', '80% Qualified leads', '18% of sales to the event came directly from digital', '2005 ROA'], challenge: 'Generate 150 leads with a 10% conversion rate, spending only £1500.', gameplan: 'Implement a content strategy for Instagram and Facebook.', solution: '', results: '' }]} />
+        <CaseStudiesList
+      caseStudies={[{ name: "We Are Africa", img: waaImg, logo: waaLogo, link: 'waa', stats: ['18m views', '100 organic shares', '400% increase in leads', '80% qualified leads', '25% sales came directly from digital', '3 x ROAS'] }, { name: "Pure Life Experiences", img: pureImg, logo: pureLogo, link: 'pure', stats: ['11 Million views', '600% engagement uplift', '75% qualified leads', '15% sales came directly from digital', '3 x ROAS', '300% ROI'] }]} />
       {/* <LongList
         title="Why us?"
         subHeader="Because we know what we're doing. From building the system that sold out [X event] to helping [X client do X], our experience is wide-ranging, comprehensive and yours to learn from. We’ve trained people at:"
