@@ -18,11 +18,7 @@ export default function Footer() {
                         <li><img src={ig} alt="Instagram" /></li>
                         {/* <li><img src={twitter} alt="Twitter" /></li> */}
                     </ul>
-                    <Button
-                        copy="Contact us"
-                        base
-                        orange
-                    >Contact us</Button>
+                    <a>Contact us</a>
                 </div>
                 <div className="footer__wrapper__links">
                     <h2 className="no-underline">Quick Links</h2>

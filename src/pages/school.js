@@ -16,6 +16,7 @@ import Family from '../components/family'
 import LongList from "../components/LongList"
 import Events from '../components/Events'
 import CaseStudiesList from '../components/caseStudiesList'
+import BulletPointedList from '../components/bulletPointedList';
 
 import waaImg from '../assets/waa.jpg'
 import pureImg from '../assets/pure.jpg'
@@ -24,9 +25,12 @@ import heroImg from '../assets/training.svg'
 import spotifyImg from '../assets/logos/spotify.png'
 import cannesImg from '../assets/logos/cannes.png'
 
-import expertImg from '../assets/icons/expert.svg'
-import calendarImg from '../assets/icons/calendar.svg'
-import remoteImg from '../assets/icons/school/remote.png'
+import insightsImg from '../assets/icons/school/insights.svg';
+import bitesizeImg from '../assets/icons/school/bitesize.svg';
+import knowyourstuffImg from '../assets/icons/school/knowyourstuff.svg';
+import questionsImg from '../assets/icons/school/questions.svg';
+import quickfoxImg from '../assets/icons/school/quickfox.svg';
+import remoteImg from '../assets/icons/school/remote.svg';
 
 
 const School = () => (
@@ -77,17 +81,17 @@ const School = () => (
         noPaddingBottom
       title="So, why should you choose us?"
       data={[
-        { title: 'We’ll give you insights you can use.', copy: 'Literally. Our training course is project-based learning, so we’ll help you overcome real-life challenges in your actual business, step by step. (So you can wow the boss.)', img: expertImg },
-        { title: 'We know our stuff.', copy:'Our 15 years of experience have taught us a thing or two (check out our case studies to learn more), and we’re raring to pass on our expertise.', img: remoteImg },
-        { title: 'We don’t believe in silly questions.', copy: 'We were once where you are now, so we understand that barking instructions helps no one. Our trainers are savvy, friendly, and have the patience of a saint.', img: calendarImg }
+        { title: 'We’ll give you insights you can use.', copy: 'Literally. Our training course is project-based learning, so we’ll help you overcome real-life challenges in your actual business, step by step. (So you can wow the boss.)', img: insightsImg },
+        { title: 'We know our stuff.', copy:'Our 15 years of experience have taught us a thing or two (check out our case studies to learn more), and we’re raring to pass on our expertise.', img: knowyourstuffImg },
+        { title: 'We don’t believe in silly questions.', copy: 'We were once where you are now, so we understand that barking instructions helps no one. Our trainers are savvy, friendly, and have the patience of a saint.', img: questionsImg }
       ]}
     />
      <ThreeColBlock
       noPaddingTop
       data={[
-        { title: 'We make it bite size.', copy: 'We know too much new information can blow up the best of brains, so we break it down into three hours a day, five days a week, for five weeks.', img: expertImg },
+        { title: 'We make it bite size.', copy: 'We know too much new information can blow up the best of brains, so we break it down into three hours a day, five days a week, for five weeks.', img: bitesizeImg },
         { title: 'We teach remotely.', copy:'All you need is a laptop and an internet connection, so you can take the course wherever you’re currently calling your office.', img: remoteImg },
-        { title: 'We’ll make you a Quick Fox.', copy: 'Officially. Once you finish the course you’ll become part of our honorary alumni, which gets you access to updated learnings and our exclusive forum. ', img: calendarImg }
+        { title: 'We’ll make you a Quick Fox.', copy: 'Officially. Once you finish the course you’ll become part of our honorary alumni, which gets you access to updated learnings and our exclusive forum. ', img: quickfoxImg }
       ]}
     />
     <CaseStudiesList
@@ -103,7 +107,7 @@ const School = () => (
       copy="What recent participants have to say:"
       carouselData={['The  course was the most practical and hands on course I ever experienced. It gives you all the theory, process and tools to start growth hacking tomorrow!"', 'It was amazing to see how many easy tactics and simple tools / techniques you can use to make your product more successful ! Every Product Owner should do this !"', 'What a great atmosphere! At Growth Tribe it’s high paced, relevant, practical, no-nonsense learning."']}
     /> */}
-    <ServicesListBig
+    {/* <ServicesListBig
       small
       title="Who it is for?"
       subHeader="If you want to grow your business and become a true expert in digital marketing, this is for you. We'll take you way beyond what you learn on the job, in a structured set-up, designed to relate to your work. If you are:"
@@ -144,7 +148,47 @@ const School = () => (
         {
           title: 'Anyone interested in growing a product or business..',
         },
-      ]} />
+      ]} /> */}
+      <BulletPointedList
+      data={[
+        {
+          title: 'Marketers',
+        },
+        {
+          title: 'CEOs',
+        },
+        {
+          title: 'Executives & VPs',
+        },
+        {
+          title: 'Digital Consultants',
+        },
+        {
+          title: 'Product Owners & their teams',
+        },
+        {
+          title: 'Managers',
+        },
+        {
+          title: 'Developers',
+        },
+        {
+          title: 'Startup Founders',
+        },
+        {
+          title: 'Account Managers and Sales Managers',
+        },
+        {
+          title: 'Consultants',
+        },
+        {
+          title: 'Business Developers',
+        },
+        {
+          title: 'Anyone interested in growing a product or business..',
+        },
+      ]}
+      />
       <Events
       title="Dates, pricing and booking"
       subHeader=""

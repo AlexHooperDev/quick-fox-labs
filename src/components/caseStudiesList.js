@@ -2,6 +2,7 @@ import React from 'react'
 import './caseStudiesList.scss'
 
 import makeVisible from '../hooks/makeVisible'
+import Button from './button';
 
 export default function CaseStudiesList({ caseStudies, white, title }) {
 
@@ -14,28 +15,25 @@ export default function CaseStudiesList({ caseStudies, white, title }) {
         <div className="case-studies">
           {caseStudies.map(caseStudy => (
             <div className="case-studies__item" style={{ backgroundImage: `url(${caseStudy.img})` }}>
-              <div className="case-studies__item__overlay">
-                <h3>{caseStudy.name}</h3>
-                <h4>The challenge:</h4>
-                <p>{caseStudy.challenge}</p>
-                <h4>The gameplan:</h4>
-                <p>{caseStudy.gameplan}</p>
-                <h4>The solution:</h4>
-                <p>{caseStudy.solution}</p>
-                <h4>The results:</h4>
-              </div>
               <div className="case-studies__item__copy">
-                <h2>{caseStudy.name}</h2>
+                <img src={caseStudy.logo} alt={caseStudy.title} />
                 <ul>
                   {caseStudy.stats.map((point) => (
                     <li>{point}</li>
                   ))}
                 </ul>
+                <Button
+                  style={{ position: 'absolute', right: '20px', bottom: '20px' }}
+                  orange
+                  base
+                  copy="Read more"
+                  link={caseStudy.link}
+                />
               </div>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </section >
   )
 }

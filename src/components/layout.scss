@@ -642,6 +642,29 @@ main {
   position: relative;
   padding: 50px 25px;
 
+  .gen-list {
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 5px;
+      font-family: "Proxima Nova Rg", arial;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border: 2px solid #ff6952;
+        border-radius: 100%;
+        left: -20px;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+    }
+  }
+
   &--cta--grey {
     background: #f5f5f5;
     button.cta--banner-secondary:before {
@@ -685,7 +708,8 @@ main {
     .section__wrapper {
       h2,
       h3,
-      p {
+      p,
+      li, {
         color: #fff;
       }
     }
@@ -883,6 +907,10 @@ main {
 
       &--long {
         width: 100%;
+        &:after {
+          content: "";
+          flex: 0 0 32%;max-width: 225px;
+        }
 
         li {
           margin-bottom: 0!important;

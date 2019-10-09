@@ -91,7 +91,7 @@ const Services = () => (
     <HowWeDoIt
       title="How it works..."
       subtitle="It’s as easy as 1, 2, 3."
-      points={[{ number: '1', title: 'We Scope', copy: 'After a free discovery call, well assess where you are at right now', img: scope }, { number: '2', title: 'We Build', copy: 'We know where your audience is and how to engage them within your budget. You choose your service level and we spring into action. ', img: build }, { number: '3', title: 'We Scale', copy: 'You\'ll receive weekly reviews and reports to maximise exposure and minimise waste.', img: scale },]}
+      points={[{ number: '1', title: 'We Scope', copy: 'After a free discovery call, we\'ll assess where you are at right now', img: scope }, { number: '2', title: 'We Build', copy: 'We know where your audience is and how to engage them within your budget. You choose your service level and we spring into action. ', img: build }, { number: '3', title: 'We Scale', copy: 'You\'ll receive weekly reviews and reports to maximise exposure and minimise waste.', img: scale },]}
     />
     {/* <SimpleP
       darkBlue
@@ -101,7 +101,6 @@ const Services = () => (
       <img src="https://via.placeholder.com/940x800?text=Customer+Journey" alt="Customer Journey" />
     </SimpleP> */}
     <LongList
-      dBlue
       title="Tools we use"
       subHeader="We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – we’ve probably used it before."
       data={[{ name: 'LinkedIn', img: linkedInImg }, { name: 'Google ads', img: googleAdsImg }, { name: 'Mailchimp', img: mailchimpImg }, { name: 'Marketo', img: marketoImg }, { name: 'Padrot', img: pardotImg }, { name: 'Hubspot', img: hubspotImg }, { name: 'Instapage', img: instapageImg }, { name: 'Facebook Ads', img: facebookAdsImg }]} />

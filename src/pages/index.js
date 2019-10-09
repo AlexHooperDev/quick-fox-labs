@@ -66,14 +66,14 @@ const IndexPage = () => (
       title="Why work with Quick Fox?"
       subheader=""
       data={[
-        { img: oneImg, title: 'We see the big picture.', copy: 'We don’t just look at one stage of the customer journey, or specialise in only one channel. We take care of everything, from first click to purchase.' },
-        { img: twoImg, title: 'We’ve got the experience.', copy: 'We’ve worked in digital marketing for over 15 years, which means we know where you audience is and how to engage them with your budget.' },
-        { img: threeImg, title: 'We’re obsessed with testing.', copy: 'We’ll be honest: we’re nerds. We don’t want to waste time or money any more than you do, so we constantly test and monitor to get you the best results.' }
+        { title: 'We see the big picture.', copy: 'We don’t just look at one stage of the customer journey, or specialise in only one channel. We take care of everything, from first click to purchase.' },
+        { title: 'We’ve got the experience.', copy: 'We’ve worked in digital marketing for over 15 years, which means we know where you audience is and how to engage them with your budget.' },
+        { title: 'We’re obsessed with testing.', copy: 'We’ll be honest: we’re nerds. We don’t want to waste time or money any more than you do, so we constantly test and monitor to get you the best results.' }
       ]}
     />
     <Family
       title="Our customers love what we do"
-      carouselData={[{ title: 'Director, PURE', quote: 'We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed resulted in new business sales! I would recommend them."' }, { title: 'MD, WAA', quote: 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.' }]}
+      carouselData={[{ title: 'Emma Squire, Former Event Director, PURE', quote: 'We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed resulted in new business sales! I would recommend them."' }, { title: 'Ryan Wallace, Managing Director, We Are Africa', quote: 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.' }]}
     />
     {/* <Logos
       title="Our Work"
