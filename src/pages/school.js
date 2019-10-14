@@ -36,6 +36,18 @@ import quickfoxImg from '../assets/icons/school/quickfox.svg';
 import remoteImg from '../assets/icons/school/remote.svg';
 
 
+import barsImg from '../assets/icons/school/what/bars.svg';
+import emailImg from '../assets/icons/school/what/email.svg';
+import goalImg from '../assets/icons/school/what/goal.svg';
+import reportImg from '../assets/icons/school/what/report.svg';
+import salesFunnelImg from '../assets/icons/school/what/sales-funnel.svg';
+import socialMediaImg from '../assets/icons/school/what/social-media.svg';
+import startupImg from '../assets/icons/school/what/startup.svg';
+import technicsImg from '../assets/icons/school/what/technics.svg';
+import cogsImg from '../assets/icons/school/what/two-cogwheels.svg';
+import webImg from '../assets/icons/school/what/web.svg';
+import rocketImg from '../assets/icons/school/what/startup.svg';
+
 const School = () => (
   <Layout>
     <SEO title="Training" />
@@ -54,30 +66,39 @@ const School = () => (
       data={[
         {
           title: 'Create a digital marketing strategy to generate new leads to grow your business',
+          img: goalImg
         },
         {
           title: 'Understand which channels will work best for you',
+          img: salesFunnelImg
         },
         {
           title: 'Write, build and test landing pages that convert better',
+          img: webImg
         },
         {
           title: 'Set up Facebook, Instagram and Google Adwords campaigns',
+          img: socialMediaImg
         },
         {
           title: 'Continuously optimise your campaigns to generate higher ROI',
+          img: rocketImg
         },
         {
           title: 'Troubleshoot campaigns',
+          img: technicsImg
         },
         {
           title: 'Design and build successful nurturing automation programmes',
+          img: cogsImg
         },
         {
           title: 'Benchmark for success',
+          img: barsImg
         },
         {
           title: 'Set up accurate reporting to showcase your results',
+          img: reportImg
         },
       ]} />
         <ThreeColBlock
@@ -166,19 +187,10 @@ const School = () => (
           title: 'Digital Consultants',
         },
         {
-          title: 'Product Owners & their teams',
-        },
-        {
           title: 'Managers',
         },
         {
-          title: 'Developers',
-        },
-        {
           title: 'Startup Founders',
-        },
-        {
-          title: 'Account Managers and Sales Managers',
         },
         {
           title: 'Consultants',
@@ -194,7 +206,7 @@ const School = () => (
       <Events
       title="Dates, pricing and booking"
       subHeader=""
-      events={[{date: "Oct 22 - Nov 26" , title: "Remote learning", cost: "2,479", ctaLink: '', limited: true },]}
+      events={[{date: "Oct 22 - Nov 26" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }, {date: "Feb 3 - Mar 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }, {date: "May 4 - Jun 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }]}
       />
       <BannerCTA
       title="Ready to get started"

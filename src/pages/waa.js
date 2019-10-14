@@ -12,6 +12,7 @@ const WeAreAfrica = () => (
       hero
       darkBlue
     >
+      <h1>We Are Africa Case Study</h1>
       <h2>Brief:</h2>
       <p>We Are Africa had developed a great product which was popular with their existing audience but had exhausted their existing channels and need to  reach new audiences of senior leaders in travel. Having never used paid advertising channels they wanted to test its potential to acquire new customers.</p>
     </SimpleP>
@@ -38,8 +39,9 @@ const WeAreAfrica = () => (
       title="Ready to get started?"
       link1="/quiz"
       link2="/"
-      link1Copy="Contact us" link2="/"
+      link1Copy="Contact us" link2="https://calendly.com/quickfoxlabs/30min"
       link2Copy="Book a meeting"
+      external2
     />
   </Layout>
 )

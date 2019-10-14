@@ -94,9 +94,10 @@ const About = () => (
       greyBg
       title="Ready to get started?"
       link1="/quiz"
-      link2="/"
+      link2="https://calendly.com/quickfoxlabs/30min"
       link1Copy="Contact us"
       link2Copy="Book a meeting"
+      external2
     />
     {/*
     <GivingBack /> */}

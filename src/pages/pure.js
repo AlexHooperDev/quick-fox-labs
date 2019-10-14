@@ -12,6 +12,7 @@ const PureLifeExperiences = () => (
       hero
       darkBlue
     >
+      <h1>PURE Life Experiences Case Study</h1>
       <h2>Brief:</h2>
       <p>MATTER was a 2 day conference in Marrakech and wanted to grow the number of attendees and reach new audiences of senior leaders in UK and Europe. Having tested paid advertising but not seen direct sales the challenge was to drive results within eight weeks to demonstrate the potential.</p>
     </SimpleP>
@@ -37,8 +38,9 @@ const PureLifeExperiences = () => (
       title="Ready to get started?"
       link1="/quiz"
       link2="/"
-      link1Copy="Contact us" link2="/"
+      link1Copy="Contact us" link2="https://calendly.com/quickfoxlabs/30min"
       link2Copy="Book a meeting"
+      external2
     />
   </Layout>
 )

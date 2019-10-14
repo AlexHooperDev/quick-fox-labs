@@ -27,9 +27,10 @@ const CaseStudies = () => (
     <BannerCTA
       title="Ready to get started?"
       link1="/quiz"
-      link2="/"
+      link2="https://calendly.com/quickfoxlabs/30min"
       link1Copy="Contact us"
       link2Copy="book a meeting"
+      external2
     />
   </Layout>
 )

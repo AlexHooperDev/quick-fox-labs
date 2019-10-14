@@ -679,6 +679,10 @@ main {
     .section__wrapper {
       opacity: 1;
       transform: none;
+
+        h1 {
+          font-size: 50px;
+        }
     }
   }
 
@@ -696,6 +700,7 @@ main {
     }
     background: #3d8ca3;
     .section__wrapper {
+      h1,
       h2,
       p {
         color: #fff;
@@ -706,6 +711,7 @@ main {
   &--d-blue {
     background: #1a1c38;
     .section__wrapper {
+      h1,
       h2,
       h3,
       p,
@@ -833,7 +839,7 @@ main {
         .list {
 
           li {
-            min-height: 122px !important;
+            min-height: 237px !important;
             height: 100%;
             justify-content: center;
 
@@ -883,6 +889,7 @@ main {
       flex-wrap: wrap;
 
       &--services {
+        justify-content: space-around;
 
         li {
 
@@ -914,6 +921,7 @@ main {
 
         li {
           margin-bottom: 0!important;
+          min-height: 130px;
 
           img {
             max-height: unset!important;

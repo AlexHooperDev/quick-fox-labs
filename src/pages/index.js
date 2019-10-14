@@ -63,7 +63,7 @@ const IndexPage = () => (
     <ThreeColBlock
       wide
       numbers
-      title="Why work with Quick Fox?"
+      title="Why work with us"
       subheader=""
       data={[
         { title: 'We see the big picture.', copy: 'We don’t just look at one stage of the customer journey, or specialise in only one channel. We take care of everything, from first click to purchase.' },
@@ -73,7 +73,7 @@ const IndexPage = () => (
     />
     <Family
       title="Our customers love what we do"
-      carouselData={[{ title: 'Emma Squire, Former Event Director, PURE', quote: 'We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed resulted in new business sales! I would recommend them."' }, { title: 'Ryan Wallace, Managing Director, We Are Africa', quote: 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.' }]}
+      carouselData={[{ title: 'Ryan Wallace, Managing Director, We Are Africa', quote: 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.' }, { title: 'Director, PURE', quote: 'We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed which resulted in new business sales! They are a very trusted partner"' }]}
     />
     {/* <Logos
       title="Our Work"
@@ -83,9 +83,10 @@ const IndexPage = () => (
     <BannerCTA
       title="Ready to get started?"
       link1="/quiz"
-      link2="/"
-      link1Copy="Contact us" link2="/"
+      link2="https://calendly.com/quickfoxlabs/30min"
+      link1Copy="Contact us"
       link2Copy="Book a meeting"
+      external2
     />
 
   </Layout>

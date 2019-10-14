@@ -2,7 +2,7 @@ import React from 'react'
 import makeVisible from '../hooks/makeVisible'
 import './LongList.scss'
 
-export default function LongList({ data, title, subHeader, dBlue }) {
+export default function LongList({ data, title, subHeader, dBlue, post }) {
 
   const [bodyContent, isVisible] = makeVisible();
 
@@ -19,6 +19,7 @@ export default function LongList({ data, title, subHeader, dBlue }) {
             </li>
           ))}
         </ol>
+        {post && <p>{post}</p>}
       </div>
     </section>
   )

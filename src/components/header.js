@@ -5,6 +5,7 @@ import logo from '../assets/qfl-logo.svg'
 import logoNoText from '../assets/qfl-logo-notext.svg'
 
 import './header.scss'
+import Button from "./button"
 
 export default function Header({ contactModal }) {
 
@@ -56,7 +57,7 @@ export default function Header({ contactModal }) {
             </ul>
           </nav>
           <div className="header__links__cta">
-            <button onClick={() => contactModal()}>Contact us</button>
+            <Button modal>Contact us</Button>
           </div>
         </section>
       </div>

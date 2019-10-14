@@ -4,13 +4,15 @@
     flex-flow: row;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .event-item {
       background: #fff;
       border-top: 4px solid #ff6952;
       padding: 20px;
       border-radius: 10px;
-      width: 300px;
+      width: 290px;
+      margin: 30px auto;
 
       h3 {
         color: rgba(0,0,0,0.8);
@@ -32,5 +34,16 @@
         margin: 16px 0;
       }
 
+      h6 {
+        cursor: pointer;
+        font-family: "Proxima Nova Rg";
+        color: #a5a5a5;
+        margin: 16px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
     }
 }

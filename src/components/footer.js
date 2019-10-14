@@ -4,7 +4,7 @@ import './footer.scss'
 
 import fb from '../assets/icons/social/fb.svg'
 import ig from '../assets/icons/social/ig.svg'
-import twitter from '../assets/icons/social/twitter.svg'
+import linkedin from '../assets/icons/social/linkedin.svg';
 import Button from './button'
 
 export default function Footer() {
@@ -15,8 +15,8 @@ export default function Footer() {
                     <h2 className="no-underline">© 2019 Quick Fox Labs</h2>
                     <ul>
                         {/* <li><img src={fb} alt="facebook" /></li> */}
-                        <li><img src={ig} alt="Instagram" /></li>
-                        {/* <li><img src={twitter} alt="Twitter" /></li> */}
+                        <li><a href="https://www.instagram.com/quickfoxlabs/?hl=en" rel="noopener noreferrer" target="_blank"><img src={ig} alt="Instagram" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/26261756/admin/" rel="noopener noreferrer" target="_blank"><img src={linkedin} alt="LinkedIn" /></a></li>
                     </ul>
                     <a>Contact us</a>
                 </div>
@@ -26,7 +26,7 @@ export default function Footer() {
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/case-studies">Case Studies</Link></li>
-                        <li><Link to="/school">School</Link></li>
+                        <li><Link to="/school">Training</Link></li>
                         {/* <li><Link to="/privacy-policy">Privacy Policy</Link></li> */}
                     </ul>
                 </div>

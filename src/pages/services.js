@@ -103,7 +103,9 @@ const Services = () => (
     <LongList
       title="Tools we use"
       subHeader="We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – we’ve probably used it before."
-      data={[{ name: 'LinkedIn', img: linkedInImg }, { name: 'Google ads', img: googleAdsImg }, { name: 'Mailchimp', img: mailchimpImg }, { name: 'Marketo', img: marketoImg }, { name: 'Padrot', img: pardotImg }, { name: 'Hubspot', img: hubspotImg }, { name: 'Instapage', img: instapageImg }, { name: 'Facebook Ads', img: facebookAdsImg }]} />
+      data={[{ name: 'LinkedIn', img: linkedInImg }, { name: 'Google ads', img: googleAdsImg }, { name: 'Mailchimp', img: mailchimpImg }, { name: 'Marketo', img: marketoImg }, { name: 'Padrot', img: pardotImg }, { name: 'Hubspot', img: hubspotImg }, { name: 'Instapage', img: instapageImg }, { name: 'Facebook Ads', img: facebookAdsImg }]}
+      post="And many more..."
+    />
     {/* <CustomerJ /> */}
     <BannerCTA
       greyBg
