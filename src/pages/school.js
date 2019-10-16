@@ -206,14 +206,15 @@ const School = () => (
       <Events
       title="Dates, pricing and booking"
       subHeader=""
-      events={[{date: "Oct 22 - Nov 26" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }, {date: "Feb 3 - Mar 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }, {date: "May 4 - Jun 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }]}
+      events={[{date: "Oct 22 - Nov 26" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }, {date: "Feb 3 - Mar 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: false }, {date: "May 4 - Jun 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: false }]}
       />
       <BannerCTA
       title="Ready to get started"
-      link1="/blog"
+      link1="https://calendly.com/quickfoxlabs/30mintraining"
       link2="/"
       link1Copy="book a call"
       link2Copy="apply now"
+      external1
     />
 
     {/* <GatedCTA title="What you'll learn" copy="Some copy should go here telling you about this gated PDF content" /> */}

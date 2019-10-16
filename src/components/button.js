@@ -1,12 +1,11 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
+import { ModalContext } from './PopupState';
 import './button.scss'
-
-import { PopupContextProvider, PopupContext } from './PopupState'
 
 export default function Button({ link, copy, main, secondary, banner, banner2, base, product, style, orange, external, modal }) {
 
-    const state = useContext(PopupContext);
+    const state = useContext(ModalContext);
 
     if (external) {
         return (
@@ -24,18 +23,16 @@ export default function Button({ link, copy, main, secondary, banner, banner2, b
 
     if (modal) {
         return (
-            <PopupContextProvider>
-                <button
-                    onClick={() => state.setLanguage(state.modal ? false : true)}
-                    className={
-                        `cta${base ? '--base' : ''}${banner ? '--banner' : ''}${banner2 ? '--banner-secondary' : ''}${main ? '--main' : ''}${secondary ? '--secondary' : ''}${product ? '--product' : ''} ${orange ? 'orange' : ''}`}
-                    style={{ ...style }}
-                >
-                    <a href={link} rel="noreferrer noopener" target="_blank">
-                        {copy}
-                    </a>
-                </button>
-            </PopupContextProvider>
+            <button
+                onClick={() => state.setModal(true)}
+                className={
+                    `cta${base ? '--base' : ''}${banner ? '--banner' : ''}${banner2 ? '--banner-secondary' : ''}${main ? '--main' : ''}${secondary ? '--secondary' : ''}${product ? '--product' : ''} ${orange ? 'orange' : ''}`}
+                style={{ ...style }}
+            >
+                <a href={link} rel="noreferrer noopener" target="_blank">
+                    {copy}
+                </a>
+            </button>
         )
     }
 

@@ -20,7 +20,7 @@ const CaseStudies = () => (
     <Hero
       img={heroImg}
       page="School"
-      pageTitle="We deliver sell-out events time after time, and we have the case studies to prove it."
+      pageTitle="We deliver results time after time, and we have the case studies to prove it."
     />
     <CaseStudiesList
       caseStudies={[{ name: "We Are Africa", img: waaImg, logo: waaLogo, link: 'waa', stats: ['18m views', '100 organic shares', '400% increase in leads', '80% qualified leads', '25% sales came directly from digital', '3 x ROAS'] }, { name: "Pure Life Experiences", img: pureImg, logo: pureLogo, link: 'pure', stats: ['11 Million views', '600% engagement uplift', '75% qualified leads', '15% sales came directly from digital', '3 x ROAS', '300% ROI'] }]} />

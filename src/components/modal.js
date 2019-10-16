@@ -22,7 +22,7 @@ export default function Modal({ contactModal }) {
     return (
         <aside className="modal" style={{ opacity: `${mounted ? '1' : '0'}` }}>
             <div className="modal__wrapper" style={{ transform: `translateY(${mounted ? '0%' : '20%'})`, opacity: `${mounted ? '1' : '0'}` }}>
-                <button modal className="modal__wrapper__close" onClick={() => contactModal()}></button>
+                <button modal className="modal__wrapper__close"></button>
                 {/* <div className="modal__wrapper__upper">
                     <h3>
                         Contact us

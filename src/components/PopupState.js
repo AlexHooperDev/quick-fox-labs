@@ -1,26 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-export const PopupContext = React.createContext({
-  setLanguage: () => { },
-  modal: '',
+export const ModalContext = React.createContext({
+  modal: false,
+  setModal: () => { }
 })
 
-export const PopupContextProvider = (props) => {
+export const ModalContextProvider = (props) => {
 
-  const setLanguage = (isModal) => {
-    setState({ ...state, modal: isModal })
+  const setModal = (isModal) => {
+    console.log('setting state to true');
+    setState({ ...state, modal: isModal });
   }
 
   const initState = {
-    setLanguage: setLanguage,
-    modal: false
+    modal: false,
+    setModal: setModal,
   }
 
-  const [state, setState] = useState(initState);
+  const [state, setState] = useState(initState)
+
+  useEffect(() => {
+    console.log(state);
+  }, [state])
 
   return (
-    <PopupContext.Provider value={state}>
+    <ModalContext.Provider value={state}>
       {props.children}
-    </PopupContext.Provider>
+    </ModalContext.Provider>
   )
 }
