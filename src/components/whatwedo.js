@@ -21,10 +21,10 @@ export default function WhatWeDo({ title, subtitle, copy, points }) {
                 </p>
                 <ul className="list">
                     {points.map((point) => (
-                        <li><img src={point.img} /><p>{point.copy}</p></li>
+                        <li><img src={point.img} alt="point" /><p>{point.copy}</p></li>
                     ))}
                 </ul>
-                <Button link="services" copy="Let's talk" base orange />
+                <Button modal copy="Let's talk" base orange />
             </div>
         </section>
     )

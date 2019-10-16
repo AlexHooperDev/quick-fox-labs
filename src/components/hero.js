@@ -14,7 +14,7 @@ export default function Hero({ page, pageTitle, copy, darkBlue, img, bg }) {
                     <p>{copy}</p>
                 </div>
                 <div className="hero__wrapper__fox">
-                    <img src={img} alt="pageTitle" />
+                    <img src={img} alt="Hero" />
                 </div>
             </div>
             <img className="arrow" src={arrow} alt="down arrow" />

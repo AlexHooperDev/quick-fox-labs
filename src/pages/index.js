@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import LayoutHolder from "../components/layoutHolder"
 import HeroHome from '../components/heroHome'
 import HowWeDoIt from '../components/howwedoit'
 import WhatWeDo from '../components/whatwedo'
@@ -44,7 +44,7 @@ import rocketImg from '../assets/icons/home/new/rocket.svg';
 import salesImg from '../assets/icons/home/new/sales.svg';
 
 const IndexPage = () => (
-  <Layout>
+  <LayoutHolder>
     <SEO title="Home" />
     <HeroHome
       subHeader="We help you grow your business with smart digital marketing."
@@ -82,14 +82,14 @@ const IndexPage = () => (
 
     <BannerCTA
       title="Ready to get started?"
-      link1="/quiz"
       link2="https://calendly.com/quickfoxlabs/30min"
       link1Copy="Contact us"
       link2Copy="Book a meeting"
       external2
+      modal1
     />
 
-  </Layout>
+  </LayoutHolder>
 )
 
 export default IndexPage

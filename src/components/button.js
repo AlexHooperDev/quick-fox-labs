@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { ModalContext } from './PopupState';
 import './button.scss'
 
-export default function Button({ link, copy, main, secondary, banner, banner2, base, product, style, orange, external, modal }) {
+export default function Button({ link, copy, main, secondary, banner, banner2, base, product, style, orange, external, modal, header }) {
 
     const state = useContext(ModalContext);
 
@@ -26,7 +26,7 @@ export default function Button({ link, copy, main, secondary, banner, banner2, b
             <button
                 onClick={() => state.setModal(true)}
                 className={
-                    `cta${base ? '--base' : ''}${banner ? '--banner' : ''}${banner2 ? '--banner-secondary' : ''}${main ? '--main' : ''}${secondary ? '--secondary' : ''}${product ? '--product' : ''} ${orange ? 'orange' : ''}`}
+                    `cta${base ? '--base' : ''}${banner ? '--banner' : ''}${banner2 ? '--banner-secondary' : ''}${main ? '--main' : ''}${secondary ? '--secondary' : ''}${product ? '--product' : ''}${orange ? ' orange' : ''} ${header ? 'cta--header' : ''}`}
                 style={{ ...style }}
             >
                 <a href={link} rel="noreferrer noopener" target="_blank">

@@ -14,7 +14,7 @@ export default function servicesListBig({ data, title, subHeader, copy, small, b
         <ol className="list list--services">
           {data.map((point, i) => (
             <li>
-              {point.img && <img src={point.img} />}
+              {point.img && <img src={point.img} alt="Icon" />}
               <h3>{point.title}</h3>
               <p>{point.copy}</p>
             </li>

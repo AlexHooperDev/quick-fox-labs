@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "gatsby"
+import { ModalContext } from './PopupState'
 import './footer.scss'
 
 import fb from '../assets/icons/social/fb.svg'
@@ -8,6 +9,9 @@ import linkedin from '../assets/icons/social/linkedin.svg';
 import Button from './button'
 
 export default function Footer() {
+
+    const state = useContext(ModalContext);
+
     return (
         <footer className="footer">
             <div className="footer__wrapper">
@@ -18,7 +22,7 @@ export default function Footer() {
                         <li><a href="https://www.instagram.com/quickfoxlabs/?hl=en" rel="noopener noreferrer" target="_blank"><img src={ig} alt="Instagram" /></a></li>
                         <li><a href="https://www.linkedin.com/company/26261756/admin/" rel="noopener noreferrer" target="_blank"><img src={linkedin} alt="LinkedIn" /></a></li>
                     </ul>
-                    <a>Contact us</a>
+                    <a onClick={() => state.setModal(true)}>Contact us</a>
                 </div>
                 <div className="footer__wrapper__links">
                     <h2 className="no-underline">Quick Links</h2>

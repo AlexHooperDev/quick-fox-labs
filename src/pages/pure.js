@@ -1,12 +1,12 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import LayoutHolder from "../components/layoutHolder"
 import BannerCTA from '../components/bannerCTA'
 import SEO from "../components/seo"
 import SimpleP from "../components/simpleP"
 
 const PureLifeExperiences = () => (
-  <Layout>
+  <LayoutHolder>
     <SEO title="Pure Life Experiences" />
     <SimpleP
       hero
@@ -36,12 +36,12 @@ const PureLifeExperiences = () => (
     </SimpleP>
     <BannerCTA
       title="Ready to get started?"
-      link1="/quiz"
-      link2="/"
-      link1Copy="Contact us" link2="https://calendly.com/quickfoxlabs/30min"
+      link1Copy="Contact us"
       link2Copy="Book a meeting"
+      link2="https://calendly.com/quickfoxlabs/30min"
       external2
+      modal1
     />
-  </Layout>
+  </LayoutHolder>
 )
 export default PureLifeExperiences

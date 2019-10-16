@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import LayoutHolder from "../components/layoutHolder"
 import Hero from '../components/hero'
 import SimpleP from '../components/simpleP'
 import Team from '../components/team'
@@ -18,7 +18,7 @@ import simpleImg from '../assets/icons/simple.svg';
 import emmaAmyImg from '../assets/headshot.jpg';
 
 const About = () => (
-  <Layout>
+  <LayoutHolder>
     <SEO title="About" />
     {/* <Hero
       page="About"
@@ -93,15 +93,15 @@ const About = () => (
     <BannerCTA
       greyBg
       title="Ready to get started?"
-      link1="/quiz"
       link2="https://calendly.com/quickfoxlabs/30min"
       link1Copy="Contact us"
       link2Copy="Book a meeting"
       external2
+      modal1
     />
     {/*
     <GivingBack /> */}
-  </Layout>
+  </LayoutHolder>
 )
 
 export default About

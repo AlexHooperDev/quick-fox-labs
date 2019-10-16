@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import LayoutHolder from "../components/layoutHolder"
 import Hero from '../components/hero'
 import Logos from '../components/logos'
 import ServicesListBig from '../components/servicesListBig'
@@ -44,7 +44,7 @@ import facebookAdsImg from '../assets/logos/facebookads.png'
 import instapageImg from '../assets/logos/Instapage.png'
 
 const Services = () => (
-  <Layout>
+  <LayoutHolder>
     <SEO title="Services" />
     <Hero
       page="Services"
@@ -110,12 +110,13 @@ const Services = () => (
     <BannerCTA
       greyBg
       title="Ready to get started?"
-      link1="/quiz"
       link1Copy="Contact us"
-      link2="/"
+      link2="/https://calendly.com/quickfoxlabs/30min"
       link2Copy="Book a meeting"
+      external2
+      modal1
     />
-  </Layout>
+  </LayoutHolder>
 )
 
 export default Services

@@ -57,7 +57,7 @@ export default function Header({ contactModal }) {
             </ul>
           </nav>
           <div className="header__links__cta">
-            <Button modal>Contact us</Button>
+            <Button header copy="Contact us" modal></Button>
           </div>
         </section>
       </div>

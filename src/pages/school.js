@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import LayoutHolder from "../components/layoutHolder"
 import Hero from '../components/hero'
 import SimpleP from '../components/simpleP'
 import SEO from "../components/seo"
@@ -49,7 +49,7 @@ import webImg from '../assets/icons/school/what/web.svg';
 import rocketImg from '../assets/icons/school/what/startup.svg';
 
 const School = () => (
-  <Layout>
+  <LayoutHolder>
     <SEO title="Training" />
     <Hero
       img={heroImg}
@@ -211,10 +211,10 @@ const School = () => (
       <BannerCTA
       title="Ready to get started"
       link1="https://calendly.com/quickfoxlabs/30mintraining"
-      link2="/"
       link1Copy="book a call"
       link2Copy="apply now"
       external1
+      modal2
     />
 
     {/* <GatedCTA title="What you'll learn" copy="Some copy should go here telling you about this gated PDF content" /> */}
@@ -224,7 +224,7 @@ const School = () => (
       copy="We believe women should be better represented in business – and we’re willing to prove it:.  on every course we offer two free spots to women doing incredible things in business. Get in touch to find out more and apply."
     />
     
-  </Layout>
+  </LayoutHolder>
 )
 
 export default School

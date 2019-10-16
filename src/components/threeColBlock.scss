@@ -6,6 +6,7 @@
     flex-basis: 31%;
 
     .circles {
+      position: relative;
       height: 35px;
       width: 35px;
       border-radius: 100%;
@@ -13,17 +14,33 @@
       display: block;
       margin: 0 10px 30px;
 
-      &:nth-of-type(2) {
-        background: blue;
-        // &:before {
-        //   content: '';
-        //   height: 5px;
-        //   width: 5px;
-        //   position: absolute;
-        //   border: 1px solid #ff6952;
+      &--2,
+      &--3 {
+        &:after {
+          content: '';
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 100%;
+          border: 1px solid #ff6952;
+        }
+      }
 
-        // }
-
+      &--3 {
+        &:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 100%;
+          border: 1px solid #ff6952;
+        }
       }
 
     }

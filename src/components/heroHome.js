@@ -47,11 +47,11 @@ export default function HeroHome({ header, subHeader, copy }) {
                     </div>
                     <h3 className="no-underline">{copy}</h3>
                     <div className="cta-container">
-                        <Button main link="/#down" copy='Get in touch' />
+                        <Button modal main copy='Get in touch' />
                     </div>
                 </div>
                 <div className="hero__wrapper__art" style={{ opacity: `${loaded ? '1' : '0'}`, transform: `translate3d(0, ${loaded ? '0%' : '10%'}, 0)` }}>
-                    <img src={heroArt} alt={header} />
+                    <img src={heroArt} alt="Hero Art" />
                 </div>
             </div>
             <img className="arrow" src={arrow} alt="down arrow" />

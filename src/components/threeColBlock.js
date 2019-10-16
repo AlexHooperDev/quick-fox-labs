@@ -12,10 +12,10 @@ export default function ThreeColBlock({ data, title, subheader, numbers, noPaddi
       <div className={`section__wrapper section__wrapper--col ${isVisible ? 'section__wrapper--visible' : ''}`}>
         {title && <h2>{title}</h2>}
         {subheader && <p>{subheader}</p>}
-        {data.map(col => (
+        {data.map((col, i) => (
           <div className={`col ${numbers ? 'col--numbers' : ''}`}>
             {col.img && <img src={col.img} alt={col.title} />}
-            {numbers && <div className="circles"></div>}
+            {numbers && <div className={`circles circles--${ i+1 }`}></div>}
             <h4>
               {col.title}
             </h4>

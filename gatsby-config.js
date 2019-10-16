@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Quick Fox Labs`,
-    description: `We help the world’s most exciting events companies sell out, by running bespoke digital campaigns`,
-    author: `Alex Hooper`,
+    description: `We help you grow your business with smart digital marketing.`,
+    author: `Emma and Amy`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,18 +18,33 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Quick Fox Labs`,
+        short_name: `QFL`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#171831`,
+        theme_color: `#ff6952`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/qfl-logo.svg`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-150183296-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+      },
+    },
   ],
 }

@@ -23,7 +23,7 @@ function Layout({ children }) {
   }, [state]);
 
   return (
-    < ModalContextProvider >
+    <>
       <Header />
       <div className={`${state.modal ? 'noScroll' : ''}`}>
         <main>
@@ -32,7 +32,7 @@ function Layout({ children }) {
         </main>
         <Footer />
       </div>
-    </ModalContextProvider >
+    </>
   )
 }
 

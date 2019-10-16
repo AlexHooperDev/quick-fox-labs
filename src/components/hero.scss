@@ -89,6 +89,13 @@
             left: 50%;
             transform: translate(-50%, 0%);
             animation: bounce 2s infinite;
+
+            @media (max-width: 768px) {
+                width: 20px;
+                margin-bottom: 10px;
+                animation: none;
+            }
+
         }
 
         @keyframes bounce {

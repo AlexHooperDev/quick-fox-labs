@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+
+import { ModalContext } from '../components/PopupState'
 
 import './modal.scss'
 
 export default function Modal({ contactModal }) {
+
+    const state = useContext(ModalContext);
 
     useEffect(() => {
         // if mounted isnt true then wait 2 secs and set to true
@@ -17,12 +21,12 @@ export default function Modal({ contactModal }) {
 
     const [mounted, setMounted] = useState(false);
 
-    const url = "https://quickfoxlabs.us4.list-manage.com/subscribe/post?u=b8d03c20e961115a18311bb3c&amp;id=6f966dddfa";
-
     return (
         <aside className="modal" style={{ opacity: `${mounted ? '1' : '0'}` }}>
             <div className="modal__wrapper" style={{ transform: `translateY(${mounted ? '0%' : '20%'})`, opacity: `${mounted ? '1' : '0'}` }}>
-                <button modal className="modal__wrapper__close"></button>
+                <button
+                    onClick={() => state.setModal(false)}
+                className="modal__wrapper__close"></button>
                 {/* <div className="modal__wrapper__upper">
                     <h3>
                         Contact us
@@ -54,19 +58,19 @@ export default function Modal({ contactModal }) {
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span>
                                     </label>
-                                    <input type="email" defaultValue name="EMAIL" className="required email" id="mce-EMAIL" required />
+                                    <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required />
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-FNAME">First Name </label>
-                                    <input type="text" defaultValue name="FNAME" className id="mce-FNAME" />
+                                    <input type="text" name="FNAME" className id="mce-FNAME" />
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-LNAME">Last Name </label>
-                                    <input type="text" defaultValue name="LNAME" className id="mce-LNAME" />
+                                    <input type="text" name="LNAME" className id="mce-LNAME" />
                                 </div>
                                 <div className="mc-field-group size1of2">
                                     <label htmlFor="mce-PHONE">Phone Number </label>
-                                    <input type="text" name="PHONE" className defaultValue id="mce-PHONE" />
+                                    <input type="text" name="PHONE" className id="mce-PHONE" />
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-MMERGE6">What would you like to talk to us about?  <span className="asterisk">*</span>
