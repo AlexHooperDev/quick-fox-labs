@@ -8,81 +8,124 @@ import SimpleP from '../components/simpleP'
 import BannerCTA from '../components/bannerCTA'
 import SEO from "../components/seo"
 
+import tickImg from '../assets/tick.svg'
+import headerImg from '../assets/pricing.svg'
+
 const Cost = () => (
   <Layout>
     <SEO title="Pricing" />
     <Hero
+      img={headerImg}
       page="Pricing"
-      pageTitle="What We Cost"
-      copy="We're people who love digital marketing. Love it. Yes, we know that sounds weird but it's a badge wear proudly. Our experience comes from right across the industry, marketing global events and delivering results."
+      pageTitle="Pick the package that is right for you."
+      copy="We list our pricing on our website, so you know you're paying the same as everybody else. Revolutionary, right?"
     />
     <Products
-      title="Pricing"
-      copy="we put the pricing on our website, so you know you’re paying the same as everybody else."
+      title="How does it work?"
+      copy="We're highly streamlined as we know what works and only charge you for the time that you use, so you're never forking out for a service you don't need. Simple. You'll have experts on-hand, in your office or online for up to once a week if you need us there. Stop at any time - No long-term commitments needed. If you don’t like the results, stop at any time with 30-days notice."
       productData={[
         {
           icon: '',
-          name: '5 week training',
-          cost: '4500',
-          costDetails: 'per course',
+          type: 'Do it with you',
+          name: 'Training',
+          forTxt: 'People who want to run their digital in-house',
+          cost: '2,250',
+          costDetails: 'One time',
           productDetails: [
-            { bold: 'For:', copy: 'People who want to test digital for themselves' },
-            { bold: 'You:', copy: 'Want to do it yourself before investing' },
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Adverts Creation', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Single channel technical set up', copy: tickImg },
+            { bold: 'Multi channel technical set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Bi-weekly reports', copy: tickImg },
+            { bold: 'On Call Support' },
+            { bold: 'Automated email campaigns', },
+            { bold: 'Weekly Calls and reports', },
+            { bold: 'Full Technical Audit', },
+            { bold: 'Full optimisation of all digital tools', },
           ]
         },
         {
           icon: '',
-          name: '4 - 6 month starter pack',
-          cost: '2200',
-          costDetails: 'excluding digital spend',
+          name: 'Starter pack',
+          type: 'Do it for you',
+          forTxt: 'First-timers and last-minute organisers',
+          cost: '2,500',
+          costDetails: 'per month (starts)',
           productDetails: [
-            { bold: 'For:', copy: 'First-timers and last-minute organisers' },
-            { bold: 'You:', copy: 'want to test digital marketing and gauge your results' },
-            { bold: 'Time until event:', copy: 'three months or less' },
-            { bold: 'Well give you,', copy: '4 days per month & technical set up' },
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Adverts Creation', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Single channel technical set up', copy: tickImg },
+            { bold: 'Multi channel technical set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Bi-weekly reports', copy: tickImg },
+            { bold: 'On Call Support', copy: tickImg },
+            { bold: 'Automated email campaigns', },
+            { bold: 'Weekly Calls and reports', },
+            { bold: 'Full Technical Audit', },
+            { bold: 'Full optimisation of all digital tools', },
           ]
         },
         {
           icon: '',
-          name: 'Full partnership pack',
-          cost: '15,000',
-          costDetails: 'or 15% of your digital spend',
+          name: 'Scale',
+          type: 'Do it for you',
+          forTxt: 'businesses who are ready to scale',
+          cost: '3,500',
+          costDetails: 'or 15% of Ad spend per month (starts)',
           productDetails: [
-            { bold: 'For:', copy: 'businesses who are ready to scale' },
-            { bold: 'You:', copy: 'know digital works and you want to keep your campaigns running' },
-            { bold: 'Time until event:', copy: 'three months or less' },
-            { bold: 'Well give you,', copy: '4 days per month & technical set up' },
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Adverts Creation', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Single channel technical set up', copy: tickImg },
+            { bold: 'Multi channel technical set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Bi-weekly reports', copy: tickImg },
+            { bold: 'On Call Support', copy: tickImg },
+            { bold: 'Automated email campaigns', copy: tickImg },
+            { bold: 'Weekly Calls and reports', copy: tickImg },
+            { bold: 'Full Technical Audit', },
+            { bold: 'Full optimisation of all digital tools', },
           ]
         },
         {
           icon: '',
-          name: 'Digital transformation',
-          cost: 'POA',
-          costDetails: '',
+          name: 'Full transformation',
+          type: 'Custom',
+          cost: 'ON REQUEST',
+          forTxt: 'businesses who need a full review',
           productDetails: [
-            { bold: 'For:', copy: 'businesses facing challenges with disconnected platforms, in need of some expert guidance' },
-          ]
-        },
-        {
-          icon: '',
-          name: 'Added extras',
-          cost: 'x',
-          costDetails: 'x',
-          productDetails: [
-            { bold: 'Landing page:', copy: '750' },
-            { bold: 'email design and build', copy: '750' },
-            { bold: 'email set-up', copy: '750' },
-            { bold: 'Copywriting,', copy: '750' },
-            { bold: 'Video (three days)', copy: '1000' }
+            { bold: 'Digital Strategy', copy: tickImg },
+            { bold: 'Adverts Creation', copy: tickImg },
+            { bold: 'Audience Build', copy: tickImg },
+            { bold: 'Single channel technical set up', copy: tickImg },
+            { bold: 'Multi channel technical set up', copy: tickImg },
+            { bold: 'Landing Pages', copy: tickImg },
+            { bold: 'Daily Optimisation', copy: tickImg },
+            { bold: 'Bi-weekly reports', copy: tickImg },
+            { bold: 'On Call Support', copy: tickImg },
+            { bold: 'Automated email campaigns', copy: tickImg },
+            { bold: 'Weekly Calls and reports', copy: tickImg },
+            { bold: 'Full Technical Audit', copy: tickImg },
+            { bold: 'Full optimisation of all digital tools', copy: tickImg },
           ]
         },
       ]}
     />
-    <SimpleP
+    {/* <SimpleP
+      darkBlue
       title="How does it work?"
-      copy="We're highly streamlined and only charge you for the time that you use, so you're never forking out for a service you don't need. Simple, right? You'll have two experts on-hand, in your office up to once a week if you need us there, plus an army of freelancers on speed-dial if we're helping with your creative as well."
-    />
-    <BannerCTA title="Meet the team" copy="See how we an help your business grow..." link1="/about" link2="/" />
+      copy="We're highly streamlined as we know what works and only charge you for the time that you use, so you're never forking out for a service you don't need. Simple. You'll have experts on-hand, in your office or online for up to once a week if you need us there.
+
+      Stop at any time - No long-term commitments needed. If you don’t like the results, stop at any time with 30-days notice.
+      "
+    /> */}
+    <BannerCTA title="Meet the team" copy="Come and get to know a little about us..." link1="/about" link1Copy="Meet the Team" link2="/" link2Copy="Book a meeting" />
   </Layout>
 )
 

@@ -1,4 +1,142 @@
 .family,
 .family-carousel {
   flex-basis: 50%;
+  width: 50%;
+}
+
+.family {
+  padding: 25px;
+  background: #1a1c38;
+
+    @media (max-width: 1000px) {
+      flex-basis: 100%;
+    }
+
+}
+
+.family-carousel {
+  height: 40vh;
+  margin: 40px 0;
+
+  @media (max-width: 1000px) {
+    margin: 0 auto;
+    flex-basis: unset;
+    width: 80%;
+    height: auto;
+  }
+
+  @media (max-width: 475px ) {
+    width: 100%;
+  }
+
+  &__item {
+    height: 40vh;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      height: auto;
+    }
+
+    &__inner {
+      background: #fff;
+      border-top: 3px solid #ff6952;
+      border-radius: 8px;
+
+      &__content {
+        padding: 100px 40px 45px;
+        position: relative;
+
+        @media (max-width: 475px ) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        h3 {
+
+          &:before {
+            content: '';
+            position: absolute;
+            color: #000;
+            top: 40px;
+            left: 41px;
+            width: 40px;
+            height: 40px;
+            background: url('../assets/quote.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media (max-width: 475px ) {
+              left: 20px;
+             }
+
+          }
+
+          margin: 0;
+          color: #000!important;
+          font-size: 16px;
+          font-family: "Rubik";
+          font-weight: 300;
+          line-height: 24px;
+        }
+
+        h4 {
+          color: #3e3e3e;
+          font-weight: 900;
+          font-family: "Proxima Nova Rg";
+          margin: 10px 0;
+        }
+
+      }
+    }
+  }
+
+  .slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 999;
+  }
+  .slick-prev {
+    top: -10%;
+    transform: rotate(90deg);
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+
+    @media (max-width: 1000px) {
+      transform: rotate(0deg);
+      bottom: 50%;
+      left: -60px;
+      top: unset;
+    }
+
+  }
+  
+  .slick-next {
+    bottom: -10%;
+    transform: rotate(-90deg);
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+
+    @media (max-width: 1000px) {
+      transform: rotate(180deg);
+      bottom: 50%;
+      right: -60px;
+    }
+
+  }
 }

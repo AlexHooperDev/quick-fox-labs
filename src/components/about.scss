@@ -1,0 +1,33 @@
+.our-story {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__img {
+
+    width: 48%;
+    height: 660px;
+    object-fit: cover;
+    object-position: -362px;
+
+    @media (max-width: 768px) {
+      height: auto;
+    width: 100%;
+    object-fit: unset;
+    object-position: unset;
+    }
+  }
+
+  &__content {
+    width: 48%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      order: 2;
+    }
+
+  }
+
+}

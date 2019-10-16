@@ -1,157 +1,122 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import LayoutHolder from "../components/layoutHolder"
 import Hero from '../components/hero'
 import Logos from '../components/logos'
-import ServicesList from '../components/servicesList'
+import ServicesListBig from '../components/servicesListBig'
 import HowItWorksList from '../components/howItWorksList'
+import HowWeDoIt from '../components/howwedoit'
 import BannerCTA from '../components/bannerCTA'
 import SEO from "../components/seo"
+import SimpleP from "../components/simpleP";
+import LongList from '../components/LongList'
+
+import scope from '../assets/icons/scope.svg'
+import build from '../assets/icons/build.svg'
+import scale from '../assets/icons/scale.svg'
+import headerImg from '../assets/icons/services.svg'
+
+// Our Services logos
+import digitalImg from '../assets/icons/home/digital-strategy.svg'
+import valueImg from '../assets/icons/home/value-prop.svg'
+import socialImg from '../assets/icons/home/social.svg'
+import leadgenImg from '../assets/icons/home/lead-gen.svg'
+import automatedImg from '../assets/icons/home/automated-lead-nurturing.svg'
+import emailmarketingImg from '../assets/icons/home/email-marketing.svg'
+import insightsImg from '../assets/icons/home/insights.svg'
+
+import userImg from '../assets/icons/home/new/user.svg';
+import settingImg from '../assets/icons/home/new/setting.svg';
+import flasksImg from '../assets/icons/home/new/flasks.svg';
+import groupImg from '../assets/icons/home/new/group.svg';
+import rocketImg from '../assets/icons/home/new/rocket.svg';
+import salesImg from '../assets/icons/home/new/sales.svg';
+
+// Tech logos
+import linkedInImg from '../assets/logos/linkedin.png'
+import googleAdsImg from '../assets/logos/google-ads.svg'
+import mailchimpImg from '../assets/logos/mailchimp.png'
+import marketoImg from '../assets/logos/marketo.svg'
+import pardotImg from '../assets/logos/pardot.svg'
+import hubspotImg from '../assets/logos/hubspot.svg'
+import facebookAdsImg from '../assets/logos/facebookads.png'
+import instapageImg from '../assets/logos/Instapage.png'
 
 const Services = () => (
-  <Layout>
+  <LayoutHolder>
     <SEO title="Services" />
     <Hero
       page="Services"
-      pageTitle="What We Do"
-      copy="We're people who love digital marketing. Love it. Yes, we know that sounds weird but it's a badge wear proudly. Our experience comes from right across the industry, marketing global events and delivering results."
+      pageTitle="Want to increase sales while saving time and money?"
+      copy="Yeah, right – who doesn’t?  Thanks to over 15 years of digital marketing experience, we know what works. We also know that doesn’t look the same for everyone, which is why we develop the right plan that will drive results for your business (because that’s what really matters)."
+      img={headerImg}
     />
-    <ServicesList data={[
-      {
-        title: 'Lead generation',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Marketing Automation',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Lead Nurturing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Digital Marketing Strategy',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Digital Transformation',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'LinkedIn Marketing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Facebook and Instagram Marketing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-      {
-        title: 'Google Display and search Marketing',
-        points: [
-          'one',
-          'two',
-          'three',
-          'four',
-        ],
-      },
-    ]} />
-    <Logos
-      title="The tech"
-      copy="We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – it's very likely we'll have used it before."
-      brands={[
-        { name: 'microsoft' },
-        { name: 'apple' },
-        { name: 'tesla' },
-      ]}
+    <ServicesListBig
+      blue
+      title="Our Services"
+      subHeader="Here are some of the things that plan might include:"
+      data={[
+        {
+          img: digitalImg,
+          title: 'Digital strategy',
+          copy: 'Figuring out where you are you now, where you want to be, and how you’re going to get there. '
+        },
+        {
+          img: valueImg,
+          title: 'Value proposition and messaging',
+          copy: 'Outlining why your customers buy your product over your competitor’s, so you can sell yourself better.'
+        },
+        {
+          img: socialImg,
+          title: 'Paid social media and pay-per-click',
+          copy: 'Getting your product in front of the right people, at the right time, and converting them into leads.'
+        },
+        {
+          img: groupImg,
+          title: 'Lead generation',
+          copy: 'Delivering qualified leads directly to your sales team.'
+        },
+        {
+          img: emailmarketingImg,
+          title: 'Email & Marketing automation',
+          copy: 'Developing targeted messaging across various platforms to nudge your lead down the sales funnel and convince them to buy.'
+        },
+        {
+          img: insightsImg,
+          title: 'Insights and reporting',
+          copy: 'Keeping you in the loop with regular reports, so you know exactly what’s working and where we’re making tweaks.'
+        },
+      ]} />
+    <HowWeDoIt
+      title="How it works..."
+      subtitle="It’s as easy as 1, 2, 3."
+      points={[{ number: '1', title: 'We Scope', copy: 'After a free discovery call, we\'ll assess where you are at right now', img: scope }, { number: '2', title: 'We Build', copy: 'We know where your audience is and how to engage them within your budget. You choose your service level and we spring into action. ', img: build }, { number: '3', title: 'We Scale', copy: 'You\'ll receive weekly reviews and reports to maximise exposure and minimise waste.', img: scale },]}
     />
-    <HowItWorksList title="How it works" data={[
-      {
-        subtitle: 'Step one: we scope',
-        copy: 'After a free discovery call, well assess your where you are right now, looking at your assets and the health of your existing activity.',
-        img: '/',
-        points: [
-          'We work with you to understand your goals, and develop a  bespoke strategy.',
-          'Together we create your segmented offer to reach the right people, at the right time with the right message. '
-        ],
-        link: '/',
-        linkCopy: 'Do it yourself with our frameworks',
-      },
-      {
-        subtitle: 'Step two: we build',
-        copy: 'After a free discovery call, well assess your where you are right now, looking at your assets and the health of your existing activity.',
-        img: '/',
-        points: [
-          'We create your customer journey, which is your full technical set-up.',
-          'We test traffic and capture data across paid social, PPC and Google and beyond.',
-          'We capture your leads through a dedicated landing page.',
-          'We nurture those leads with email marketing.',
-          'We score your leads to calculate how valuable they are.'
-        ],
-        link: '/',
-        linkCopy: 'Do it yourself with our frameworks',
-      },
-      {
-        subtitle: 'Step three: we scale',
-        copy: 'With weekly reviews and reports to maximise exposure and minimise waste.',
-        img: '/',
-        points: [
-          'We constantly monitor your campaigns, reporting as we go.',
-          'We optimise your campaign based on these results, streamlining to maximise your budget and results.'
-        ],
-        link: '/',
-        linkCopy: 'Do it yourself with our frameworks',
-      }
-    ]} />
-    <BannerCTA
-      title="See how we can help your business grow"
-      copy="Our pirces are transparently layed out in full on the pricing page"
-      link1="/cost"
-      link2="/"
+    {/* <SimpleP
+      darkBlue
+    >
+      <h2>For example</h2>
+      <p>Your customer journey might look like this:</p>
+      <img src="https://via.placeholder.com/940x800?text=Customer+Journey" alt="Customer Journey" />
+    </SimpleP> */}
+    <LongList
+      title="Tools we use"
+      subHeader="We're fluent in tech. These are the platforms we get asked about the most, but if you can't see yours here, just ask – we’ve probably used it before."
+      data={[{ name: 'LinkedIn', img: linkedInImg }, { name: 'Google ads', img: googleAdsImg }, { name: 'Mailchimp', img: mailchimpImg }, { name: 'Marketo', img: marketoImg }, { name: 'Padrot', img: pardotImg }, { name: 'Hubspot', img: hubspotImg }, { name: 'Instapage', img: instapageImg }, { name: 'Facebook Ads', img: facebookAdsImg }]}
+      post="And many more..."
     />
     {/* <CustomerJ /> */}
     <BannerCTA
+      greyBg
       title="Ready to get started?"
-      copy="Take our quiz and we’ll give you an idea of cost and ROI right away."
-      link1="/quiz"
-      link2="/"
+      link1Copy="Contact us"
+      link2="/https://calendly.com/quickfoxlabs/30min"
+      link2Copy="Book a meeting"
+      external2
+      modal1
     />
-  </Layout>
+  </LayoutHolder>
 )
 
 export default Services

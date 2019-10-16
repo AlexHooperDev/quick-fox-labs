@@ -1,0 +1,67 @@
+.events-wrapper {
+    display: flex;
+    margin: 40px 0;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .event-item {
+      position: relative;
+      background: #fff;
+      border-top: 4px solid #ff6952;
+      padding: 20px;
+      border-radius: 10px;
+      width: 290px;
+      margin: 30px auto;
+
+      span {
+        font-family: "P22 Underground CY Pro";
+      background: #ffdd57;
+      color: #1a1c38;
+      position: absolute;
+      font-size: 11px;
+      right: -10px;
+      top: -20px;
+      border-radius: 50%;
+      padding: 16px 9px 9px;
+      line-height: 15px;
+      text-align: center;
+      height: 80px;
+      width: 80px;
+      text-transform: uppercase;
+      }
+
+      h3 {
+        color: rgba(0,0,0,0.8);
+        margin-bottom: 10px;
+        font-family: "Proxima Nova Rg";
+      }
+
+      h4 {
+        border-bottom: 1px solid #d0d0d0;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+      }
+
+      h5 {
+        font-size: 30px;
+        font-weight: 900;
+        font-family: "Proxima Nova Rg";
+        color: #398098;
+        margin: 16px 0;
+      }
+
+      h6 {
+        cursor: pointer;
+        font-family: "Proxima Nova Rg";
+        color: #a5a5a5;
+        margin: 16px 0 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+}

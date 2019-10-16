@@ -1,0 +1,145 @@
+.product-carousel {
+  padding: 50px 0;
+
+
+  .slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .slick-prev {
+    left: -45px;
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+  }
+  
+  .slick-next {
+    right: -45px;
+    transform: rotate(180deg);
+    &:before {
+      content: url(../assets/icons/long-arrow.svg);
+    }
+  }
+
+  .slick-slide {
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: all 0.4s;
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: column;
+    background: #fff;
+    border-top: 4px solid #ff6952;
+    padding: 20px;
+    height: 560px;
+    width: 275px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    &--wide {
+      width: 320px;
+      border-top: 4px solid #377b92;
+      h3 {
+        background: #ffdd57;
+        color: #25243a;
+      }
+    }
+    &__upper {
+      border-bottom: 1px solid #eaeaea;
+      display: flex;
+      flex-flow: column;
+      h3 {
+        span {
+          font-weight: 500;
+        }
+        font-size: 16px;
+        text-align: center;
+        font-family: "Proxima Nova Rg";
+        background: #ff6952;
+        margin: 0 auto 14px;
+        padding: 10px 15px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-size: 13px;
+        border-radius: 5px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        font-family: "Proxima Nova Rg";
+        color: #398098;
+        margin: 0;
+      }
+      h5 {
+        font-size: 12px;
+        text-align: center;
+        color: #bdbdbd;
+        margin-top: 5px;
+      }
+      p {
+        text-align: center;
+        color: #1a1b38 !important;
+        font-size: 14px;
+        font-family: "Rubik";
+        font-weight: 500;
+        margin: 0px 0 10px;
+        line-height: 18px;
+      }
+    }
+    &__lower {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      padding-top: 5px;
+      ul {
+        margin: 0;
+        li {
+          position: relative;
+          border-bottom: 1px solid #e6e6e6;
+          line-height: 8px;
+          margin: 0;
+          padding: 9px 5px;
+          list-style: none;
+          color: #2b6173;
+          span {
+            &:first-of-type {
+              position: absolute;
+              top: 22%;
+            }
+            &:not(:first-of-type) {
+              margin-left: 25px;
+            }
+            font-family: "Rubik";
+            font-size: 13px;
+            font-weight: 300;
+            b {
+              margin-right: 5px;
+            }
+            img {
+              display: inline-block;
+              margin-right: 10px;
+              width: 15px;
+              height: 15px;
+              vertical-align: bottom;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,27 +5,29 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React, { useState } from "react"
+import React, { useState, useContext, useEffect } from "react"
 import Footer from '../components/footer'
 import PropTypes from "prop-types"
+import { ModalContext, ModalContextProvider } from '../components/PopupState'
 
 import Header from "./header"
 import Modal from '../components/modal'
 import "./layout.scss"
 
 function Layout({ children }) {
-  const [modal, toggleModal] = useState(0);
 
-  function contactModal() {
-    toggleModal(modal ? false : true);
-  }
+  const state = useContext(ModalContext);
+
+  useEffect(() => {
+    console.log(state);
+  }, [state]);
 
   return (
     <>
-      <Header contactModal={contactModal} />
-      <div className={`${modal ? 'noScroll' : ''}`}>
+      <Header />
+      <div className={`${state.modal ? 'noScroll' : ''}`}>
         <main>
-          {modal ? <Modal contactModal={contactModal} /> : ''}
+          {state.modal && <Modal />}
           {children}
         </main>
         <Footer />
