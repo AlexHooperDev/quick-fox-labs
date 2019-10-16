@@ -785,6 +785,16 @@ main {
       &__wrapper {
         &__content {
           max-width: 280px;
+
+          @media (max-width: 768px) {
+            max-width: 100%
+          }
+
+          @media (max-width: 768px) {
+            h2 {
+              font-size: 32px;
+            }
+          }
         }
       }
     }
@@ -888,6 +898,14 @@ main {
       list-style: none;
       margin: 60px 0 0;
       flex-wrap: wrap;
+
+      &--home {
+        li {
+          img {
+            margin: 30px 0!important;
+          }
+        }
+      }
 
       &--services {
         justify-content: space-around;

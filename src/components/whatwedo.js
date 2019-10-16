@@ -19,7 +19,7 @@ export default function WhatWeDo({ title, subtitle, copy, points }) {
                 <p>
                     {copy}
                 </p>
-                <ul className="list">
+                <ul className="list list--home">
                     {points.map((point) => (
                         <li><img src={point.img} alt="point" /><p>{point.copy}</p></li>
                     ))}

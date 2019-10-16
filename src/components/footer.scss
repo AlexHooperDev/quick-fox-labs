@@ -46,6 +46,13 @@
         margin: 0 0 30px;
       }
 
+      a {
+        @media (max-width: 515px) {
+          display: block;
+          text-align: center;
+        }
+      }
+
       ul {
         margin: 20px 0;
         list-style: none;
