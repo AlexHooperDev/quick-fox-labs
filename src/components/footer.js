@@ -7,6 +7,7 @@ import fb from '../assets/icons/social/fb.svg'
 import ig from '../assets/icons/social/ig.svg'
 import linkedin from '../assets/icons/social/linkedin.svg';
 import Button from './button'
+import privacyPolicy from '../assets/privacy-policy.pdf';
 
 export default function Footer() {
 
@@ -31,7 +32,7 @@ export default function Footer() {
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/case-studies">Case Studies</Link></li>
                         <li><Link to="/school">Training</Link></li>
-                        {/* <li><Link to="/privacy-policy">Privacy Policy</Link></li> */}
+                        <li><a href={privacyPolicy} target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
