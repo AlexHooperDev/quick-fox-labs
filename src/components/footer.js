@@ -31,7 +31,7 @@ export default function Footer() {
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/case-studies">Case Studies</Link></li>
                         <li><Link to="/school">Training</Link></li>
-                        {/* <li><Link to="/privacy-policy">Privacy Policy</Link></li> */}
+                        <li><a href="/.netlify/large-media/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>

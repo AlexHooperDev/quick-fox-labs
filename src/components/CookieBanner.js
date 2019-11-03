@@ -14,7 +14,7 @@ export default function CookieBanner() {
   return (
     <aside className="cookie-banner" style={{ opacity: `${visible}` }}>
       <p>
-        We use cookies to give you the best online experience; their use improves our sites' functionality. By browsing this website you consent to the use of cookies. For further information regarding the use of cookies please check our privacy policy.
+        We use cookies to give you the best online experience; their use improves our sites' functionality. By browsing this website you consent to the use of cookies. For further information regarding the use of cookies please check our <a href="/.netlify/large-media/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">privacy policy.</a>
       </p>
       <button onClick={() => state.setCookieConsent()}>Continue</button>
     </aside>
