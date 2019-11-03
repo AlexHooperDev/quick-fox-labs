@@ -118,8 +118,8 @@ const School = () => (
         { title: 'We’ll make you a Quick Fox.', copy: 'Officially. Once you finish the course you’ll become part of our honorary alumni, which gets you access to updated learnings and our exclusive forum. ', img: quickfoxImg }
       ]}
     />
-        <CaseStudiesList
-      caseStudies={[{ name: "We Are Africa", img: waaImg, logo: waaLogo, link: 'waa', stats: ['18m views', '100 organic shares', '400% increase in leads', '80% qualified leads', '25% sales came directly from digital', '3 x ROAS'] }, { name: "Pure Life Experiences", img: pureImg, logo: pureLogo, link: 'pure', stats: ['11 Million views', '600% engagement uplift', '75% qualified leads', '15% sales came directly from digital', '3 x ROAS', '300% ROI'] }]} />
+        {/* <CaseStudiesList
+      caseStudies={[{ name: "We Are Africa", img: waaImg, logo: waaLogo, link: 'waa', stats: ['18m views', '100 organic shares', '400% increase in leads', '80% qualified leads', '25% sales came directly from digital', '3 x ROAS'] }, { name: "Pure Life Experiences", img: pureImg, logo: pureLogo, link: 'pure', stats: ['11 Million views', '600% engagement uplift', '75% qualified leads', '15% sales came directly from digital', '3 x ROAS', '300% ROI'] }]} /> */}
       {/* <LongList
         title="Why us?"
         subHeader="Because we know what we're doing. From building the system that sold out [X event] to helping [X client do X], our experience is wide-ranging, comprehensive and yours to learn from. We’ve trained people at:"
