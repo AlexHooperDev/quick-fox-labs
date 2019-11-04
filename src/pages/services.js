@@ -111,7 +111,7 @@ const Services = () => (
       greyBg
       title="Ready to get started?"
       link1Copy="Contact us"
-      link2="/https://calendly.com/quickfoxlabs/30min"
+      link2="https://calendly.com/quickfoxlabs/30min"
       link2Copy="Book a meeting"
       external2
       modal1
