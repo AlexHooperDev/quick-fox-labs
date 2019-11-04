@@ -210,7 +210,7 @@ const School = () => (
       />
       <BannerCTA
       title="Ready to get started"
-      link1="https://calendly.com/quickfoxlabs/30mintraining"
+      link1="https://calendly.com/quickfoxlabs/30min"
       link1Copy="book a call"
       link2Copy="apply now"
       external1
