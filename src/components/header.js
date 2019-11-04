@@ -45,9 +45,9 @@ export default function Header({ contactModal }) {
               <li>
                 <Link to="/services">What We Do</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/case-studies">Our Work</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/about">Who We Are</Link>
               </li>

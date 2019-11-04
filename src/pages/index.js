@@ -73,7 +73,7 @@ const IndexPage = () => (
     />
     <Family
       title="Our customers love what we do"
-      carouselData={[{ title: 'Managing Director, We Are Africa', quote: 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.' }, { title: 'Former Event Director, PURE', quote: 'We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed which resulted in new business sales! They are a very trusted partner"' }]}
+      carouselData={[{ title: 'Managing Director', quote: 'I have always found them a pleasure to work with. We knew we needed to grow but needed guiding on how. They came in and found the right solution for us and delivered quality leads and sales quickly. I have no hesitation in recommending them.' }, { title: 'Event Director', quote: 'We were totally new to Digital Marketing and the team made it quick, simple and effective to get started. Tailoring the approach to exactly what we needed which resulted in new business sales! They are a very trusted partner"' }]}
     />
     {/* <Logos
       title="Our Work"

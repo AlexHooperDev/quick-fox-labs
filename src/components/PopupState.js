@@ -12,16 +12,23 @@ export const ModalContextProvider = (props) => {
     setState({ ...state, modal: isModal });
   }
 
+  const setCookieConsent = () => {
+    setState({ ...state, cookieConsent: true });
+    localStorage.setItem('gdpr', 'true');
+  }
+
   const initState = {
     modal: false,
     setModal: setModal,
+    cookieConsent: false,
+    setCookieConsent: setCookieConsent
   }
 
-  const [state, setState] = useState(initState)
+  const [state, setState] = useState(initState);
 
   useEffect(() => {
     console.log(state);
-  }, [state])
+  }, [state]);
 
   return (
     <ModalContext.Provider value={state}>

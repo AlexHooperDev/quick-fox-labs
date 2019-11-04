@@ -12,6 +12,7 @@ import { ModalContext, ModalContextProvider } from '../components/PopupState'
 
 import Header from "./header"
 import Modal from '../components/modal'
+import CookieBanner from './CookieBanner';
 import "./layout.scss"
 
 function Layout({ children }) {
@@ -22,12 +23,20 @@ function Layout({ children }) {
     console.log(state);
   }, [state]);
 
+  useEffect(() => {
+    //If the local storage is set, then set cookie state
+    if (localStorage.getItem('gdpr')) {
+      state.setCookieConsent(false);
+    }
+  }, []);
+
   return (
     <>
       <Header />
       <div className={`${state.modal ? 'noScroll' : ''}`}>
         <main>
           {state.modal && <Modal />}
+          {!state.cookieConsent && <CookieBanner />}
           {children}
         </main>
         <Footer />

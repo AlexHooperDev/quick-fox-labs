@@ -26,7 +26,7 @@ export default function Modal({ contactModal }) {
             <div className="modal__wrapper" style={{ transform: `translateY(${mounted ? '0%' : '20%'})`, opacity: `${mounted ? '1' : '0'}` }}>
                 <button
                     onClick={() => state.setModal(false)}
-                className="modal__wrapper__close"></button>
+                    className="modal__wrapper__close"></button>
                 {/* <div className="modal__wrapper__upper">
                     <h3>
                         Contact us
