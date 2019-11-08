@@ -30,7 +30,6 @@ export default function Footer() {
                     <ul>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/case-studies">Case Studies</Link></li>
                         <li><Link to="/school">Training</Link></li>
                         <li><a href={privacyPolicy} target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
                     </ul>
