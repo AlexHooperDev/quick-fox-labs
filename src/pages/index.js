@@ -66,7 +66,7 @@ const IndexPage = () => (
       title="Why work with us"
       subheader=""
       data={[
-        { title: 'We see the big picture.', copy: 'We don’t just look at one stage of the customer journey, or specialise in only one channel. We take care of everything, from first click to purchase.' },
+        { title: 'We see the big picture.', copy: 'We don’t just look at one stage of the customer journey, or specialise in one channel. We take care of everything, from first click to purchase.' },
         { title: 'We’ve got the experience.', copy: 'We’ve worked in digital marketing for over 15 years, which means we know where you audience is and how to engage them with your budget.' },
         { title: 'We’re obsessed with testing.', copy: 'We’ll be honest: we’re nerds. We don’t want to waste time or money any more than you do, so we constantly test and monitor to get you the best results.' }
       ]}

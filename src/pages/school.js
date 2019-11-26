@@ -206,7 +206,7 @@ const School = () => (
       <Events
       title="Dates, pricing and booking"
       subHeader=""
-      events={[{date: "Oct 22 - Nov 26" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: true }, {date: "Feb 3 - Mar 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: false }, {date: "May 4 - Jun 6, 2020" , title: "Quick Fox Training", cost: "2,499", ctaLink: '', limited: false }]}
+      events={[{date: "Feb 3 - Mar 6, 2020" , title: "Quick Fox Training", cost: "2,499 - excl. VAT", ctaLink: '', limited: true }, {date: "May 4 - Jun 6, 2020" , title: "Quick Fox Training", cost: "2,499 - excl. VAT", ctaLink: '', limited: false }, {date: "Oct 22 - Nov 26 2020" , title: "Quick Fox Training", cost: "2,499 - excl. VAT", ctaLink: '', limited: false }]}
       />
       <BannerCTA
       title="Ready to get started"
@@ -221,7 +221,7 @@ const School = () => (
     <GivingBack
       quote="There is a special place in hell for women who do not help other women"
       author="Madeleine Albright"
-      copy="We believe women should be better represented in business – and we’re willing to prove it:.  on every course we offer two free spots to women doing incredible things in business. Get in touch to find out more and apply."
+      copy="We believe women should be better represented in business – and we’re willing to prove it. On every course we offer two free spots to women doing incredible things in business. Get in touch to find out more and apply."
     />
     
   </LayoutHolder>

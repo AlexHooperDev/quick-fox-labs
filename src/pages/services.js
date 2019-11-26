@@ -60,12 +60,12 @@ const Services = () => (
         {
           img: digitalImg,
           title: 'Digital strategy',
-          copy: 'Figuring out where you are you now, where you want to be, and how you’re going to get there. '
+          copy: 'Identifying where you are, where you want to be, and how you’re going to get there.'
         },
         {
           img: valueImg,
           title: 'Value proposition and messaging',
-          copy: 'Outlining why your customers buy your product over your competitor’s, so you can sell yourself better.'
+          copy: 'Defining why your customers should buy your product over competitors'
         },
         {
           img: socialImg,
